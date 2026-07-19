@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v7.1.1"><meta name="description" content="我重新审计了自己的 80 个 GitHub 仓库，从四年的变化中寻找真正值得继续积累的方向。"><meta name="theme-color" content="#f4f6f3" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#111412" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/images/ninthless.png"><link rel="canonical" href="https://ninthless.github.io/posts/github-80-repositories-timeline/"><link rel="alternate" type="application/rss+xml" title="Ninthless RSS" href="/rss.xml"><meta property="og:type" content="article"><meta property="og:site_name" content="Ninthless"><meta property="og:title" content="从 80 个仓库看我的工程轨迹：2023—2026 — Ninthless"><meta property="og:description" content="我重新审计了自己的 80 个 GitHub 仓库，从四年的变化中寻找真正值得继续积累的方向。"><meta property="og:url" content="https://ninthless.github.io/posts/github-80-repositories-timeline/"><meta property="og:image" content="https://ninthless.github.io/images/ninthless.png"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="从 80 个仓库看我的工程轨迹：2023—2026 — Ninthless"><meta name="twitter:description" content="我重新审计了自己的 80 个 GitHub 仓库，从四年的变化中寻找真正值得继续积累的方向。"><meta name="twitter:image" content="https://ninthless.github.io/images/ninthless.png"><title>从 80 个仓库看我的工程轨迹：2023—2026 — Ninthless</title><script>
+	const storedTheme = localStorage.getItem('theme');
+	const preferredTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	document.documentElement.dataset.theme = storedTheme || preferredTheme;
+</script><link rel="stylesheet" href="/_astro/BaseLayout.B0hnaoWk.css"></head><body class="post-page accent-coral"><a class="skip-link" href="#main-content">跳到主要内容</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Ninthless 首页"><span class="brand-mark" aria-hidden="true">N/</span><span>Ninthless</span></a><nav class="primary-nav" aria-label="主要导航"><a class="active" href="/posts/" aria-current="page">文章</a><a href="https://ninthless.github.io/vibe-coding-tutorial/">教程<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right nav-external-icon"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/projects/">项目</a><a href="/about/">关于</a></nav><div class="header-actions"><a class="icon-button" href="/search/" aria-label="搜索文章" title="搜索"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></a><a class="icon-button" href="/rss.xml" aria-label="订阅 RSS" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a><a class="icon-button" href="https://github.com/Ninthless" aria-label="访问 Ninthless 的 GitHub" title="GitHub" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle></svg></a><button class="icon-button theme-toggle" type="button" aria-label="切换为深色主题" title="切换主题"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-sun theme-icon theme-icon--light"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-moon theme-icon theme-icon--dark"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><script type="module">var e=document.querySelector(`.theme-toggle`);function t(){if(!e)return;let t=document.documentElement.dataset.theme===`dark`;e.setAttribute(`aria-label`,t?`切换为浅色主题`:`切换为深色主题`)}e?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme===`dark`?`light`:`dark`;document.documentElement.dataset.theme=e,localStorage.setItem(`theme`,e),t()}),t();</script></div></div></header><main id="main-content"><article class="post-shell shell"><header class="post-header"><a class="back-link" href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>全部文章</a><div class="post-kicker">NINTHLESS / NOTE</div><h1>从 80 个仓库看我的工程轨迹：2023—2026</h1><p class="post-description">我重新审计了自己的 80 个 GitHub 仓库，从四年的变化中寻找真正值得继续积累的方向。</p><div class="post-meta"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-calendar-days"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>2026/07/19</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-clock-3"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6h4"></path></svg>8 分钟阅读</span></div><ul class="tag-list post-tags" aria-label="文章标签"><li><a href="/tags/GitHub/">#GitHub</a></li><li><a href="/tags/%E5%B7%A5%E7%A8%8B%E5%A4%8D%E7%9B%98/">#工程复盘</a></li><li><a href="/tags/%E4%BD%9C%E5%93%81%E9%9B%86/">#作品集</a></li></ul></header><div class="post-layout"><div class="prose"><p>如果只看自己的 GitHub 首页，我很容易把仓库数量、提交频率和绿色方格误认为成长本身。它们能说明我做过事情，却不能说明哪些工作已经形成了可复用的能力。</p>
+<p>我用 GitHub CLI 重新检查了账号下的全部仓库，包括元数据、目录结构、依赖清单、README 和关键提交。审计时共有 <strong>80 个仓库</strong>：65 个非 Fork、15 个 Fork；35 个公开、45 个私有。这里的“非 Fork”只是 GitHub 的仓库关系字段，不自动等于从零原创，也不等于已经适合作为作品展示。</p>
+<p>这篇文章不做项目陈列墙，而是回答三个更重要的问题：过去四年在反复解决什么问题，哪些仓库已经长成工程资产，下一步应该把时间放在哪里。</p>
+<h2 id="数量背后的时间线">数量背后的时间线</h2>
+<table>
+<thead>
+<tr>
+<th>年份</th>
+<th style="text-align: right">新建仓库</th>
+<th>主要阶段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td style="text-align: right">2</td>
+<td>建立账号身份与最初的代码存档</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right">18</td>
+<td>Java、Minecraft、课程项目与 Web 基础扩张</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right">31</td>
+<td>研究复现、桌面/浏览器工具、数据与前端项目快速增多</td>
+</tr>
+<tr>
+<td>2026</td>
+<td style="text-align: right">29</td>
+<td>开始重视边界、验证、发布、安全更新与方法沉淀</td>
+</tr>
+</tbody>
+</table>
+<p>只统计 65 个非 Fork 仓库时，主语言最多的是 Java、Python、JavaScript、C# 和 Kotlin。这个分布比“全栈”更具体：早期重心在 Java 生态，之后 Python 承担研究和数据实验，JavaScript/TypeScript 承担界面与扩展，C# 则集中在 Windows 桌面工具。</p>
+<p>真正明显的变化不是语言变多，而是仓库开始从“能运行”走向“能维护”。</p>
+<h2 id="2023先有一个公开身份">2023：先有一个公开身份</h2>
+<p>2023 年的仓库很少，核心意义是建立公开身份和代码存档。这个阶段没有必要包装成宏大起点，它更像一条基线：账号存在，但尚未形成稳定的项目叙事。</p>
+<p>作品集的第一个常见误区，是试图把每一次练习都解释成重要成果。更诚实的做法是保留它们，同时承认当时解决的问题很小。基线越真实，后面的变化越清楚。</p>
+<h2 id="2024大量练习开始暴露工程问题">2024：大量练习开始暴露工程问题</h2>
+<p>2024 年，我开始集中接触 Minecraft/Java 生态、配置库、静态站点和课程项目。我做的 <a href="https://github.com/Ninthless/TaskFlow">TaskFlow</a> 是这一阶段很典型的样本：我完整覆盖了任务、日历、主题和本地存储，但它也带着期末作业常见的边界，功能齐全，长期维护与真实用户验证不足。</p>
+<p>我的 <a href="https://github.com/Ninthless/Configurate">Configurate</a> 仓库则提醒了我另一件事：GitHub 没有标记为 Fork，不代表代码谱系不需要说明。只要仓库来自上游项目、课程模板或迁移历史，我就应该在 README 中明确来源、修改范围和当前维护关系。作品集最怕的不是使用现成代码，而是让读者无法判断哪些判断属于我。</p>
+<p>这一年最值得保留的能力，不是某个页面或某段 API，而是第一次接触多模块项目、依赖管理、构建失败和代码来源问题。</p>
+<h2 id="2025广度快速增加也开始出现证据焦虑">2025：广度快速增加，也开始出现证据焦虑</h2>
+<p>2025 年我新建了 31 个仓库，是数量增长最快的一年。公开项目覆盖股票辅助界面、双碳管理、图像复原、浏览器国际化和自动化实验；私有项目中则有更多研究复现、数据处理与交付型工程。</p>
+<p>这一阶段，我开始处理真实复杂度。例如我在 <a href="https://github.com/Ninthless/Single-lens">Single-lens</a> 中不只实现维纳滤波和 Lucy–Richardson，还加入 PSF 验证、指标比较、性能诊断与实验输出。我后来又对 <a href="https://github.com/Ninthless/Postman-Web-i18n">Postman-Web-i18n</a> 做了质量审计，修复 XSS、规则校验、语言切换原子性和动态页面兼容问题。</p>
+<p>但仓库也暴露了一个共同风险：README 很容易写出“完整复现”“专业级”“性能提升”之类的结论，而证据可能仍停留在本机输出、合成数据或单次实验。研究项目越复杂，越需要把数据来源、基线、随机种子、运行环境和失败条件写清楚。</p>
+<p>另外，我也保留了 <a href="https://github.com/Ninthless/AutoGreen">AutoGreen</a> 这个很适合作为反例的项目。自动提交能够改变活动图，却不会自动增加项目价值。绿色方格是副产品，不应该成为我的目标函数。</p>
+<h2 id="2026从功能实现转向边界与交付">2026：从功能实现转向边界与交付</h2>
+<p>到 2026 年，我的代表项目开始呈现共同结构：先声明边界，再实现功能，然后补验证和发布链路。</p>
+<ul>
+<li>我把 <a href="https://github.com/Ninthless/ACEOptimizer">ACEOptimizer</a> 的行为限制在 Windows 公开的优先级与 CPU 亲和性设置，并补上测试、版本校验和 Ed25519 更新签名。</li>
+<li>我让 <a href="https://github.com/Ninthless/Emergency-Stop">Emergency-Stop</a> 保持键盘输入与外部覆盖层边界，不读进程、不注入、不自动操作。</li>
+<li>我为 <a href="https://github.com/Ninthless/HybridFont">HybridFont</a> 准备了默认禁用的保守包和恢复路径。</li>
+<li>我没有在 <a href="https://github.com/Ninthless/Tau-gui">Tau-gui</a> 中重写 Agent 内核，而是围绕 Pi 的 RPC/SDK 做会话、上下文和包管理界面。</li>
+<li>我在 <a href="https://github.com/Ninthless/agent-skills">agent-skills</a> 中把反复出现的工作方法写成可触发、可评估的操作协议。</li>
+<li>我用 <a href="https://github.com/Ninthless/vibe-coding-tutorial/">vibe-coding-tutorial</a> 把规格、拆解、上下文、验证和复盘组织成一套公开教程。</li>
+</ul>
+<p>这些项目之间看似跨度很大，实际上共享一个判断：<strong>工具的价值不仅在于它能做什么，也在于它明确不做什么，以及失败后如何恢复。</strong></p>
+<h2 id="哪些仓库值得写成文章">哪些仓库值得写成文章</h2>
+<p>我用四个条件筛选本系列的主题：</p>
+<ol>
+<li>仓库中有可核对的演进，而不只是一次性提交。</li>
+<li>问题具有迁移价值，能帮助其他项目做判断。</li>
+<li>可以公开讲清楚，不依赖私有代码或敏感数据。</li>
+<li>文章能诚实写出限制，而不是把 README 再扩写一遍。</li>
+</ol>
+<p>因此，本系列选择了 Agent Skills、Vibe Coding 工作流、Windows 工具边界、动态网页国际化、Android 系统修改、科研复现和 Agent 桌面工作台。课程项目也会写，但重点是如何判断它们是否已经成为资产，而不是替旧作业补一层包装。</p>
+<h2 id="下一阶段比新建仓库更重要的事">下一阶段比新建仓库更重要的事</h2>
+<p>80 个仓库已经足够证明探索广度。下一阶段的增量更可能来自以下工作：</p>
+<ul>
+<li>为公开项目补充最小可复现路径、测试证据和清晰许可证。</li>
+<li>将一次性交付中的通用模块抽离，但只在确实有第二个使用者时抽离。</li>
+<li>为导入或改造的仓库补全来源与修改说明。</li>
+<li>把私有项目中的通用经验写成不泄露实现的文章。</li>
+<li>让博客、教程和仓库互相引用，形成“判断—实现—证据”的闭环。</li>
+</ul>
+<p>GitHub 主页保存的是结果，博客应该保存结果背后的判断。接下来的文章会沿着这条线展开。</p>
+<h2 id="系列导航">系列导航</h2>
+<ul>
+<li><a href="/posts/agent-skills-as-operating-protocols/">把提示词变成可维护的 Agent 操作协议</a></li>
+<li><a href="/posts/vibe-coding-delivery-loop/">Vibe Coding 不是一句提示词，而是一条交付闭环</a></li>
+<li><a href="/posts/course-projects-to-assets/">课程项目什么时候才算工程资产</a></li>
+</ul>
+<p>数据快照来自 <a href="https://github.com/Ninthless">我的 GitHub 主页</a>，统计日期为 2026 年 7 月 19 日。仓库可见性、数量和内容之后仍可能变化。</p>
+</div><aside class="table-of-contents" aria-label="文章目录"><strong>目录</strong><nav><a href="#数量背后的时间线">数量背后的时间线</a><a href="#2023先有一个公开身份">2023：先有一个公开身份</a><a href="#2024大量练习开始暴露工程问题">2024：大量练习开始暴露工程问题</a><a href="#2025广度快速增加也开始出现证据焦虑">2025：广度快速增加，也开始出现证据焦虑</a><a href="#2026从功能实现转向边界与交付">2026：从功能实现转向边界与交付</a><a href="#哪些仓库值得写成文章">哪些仓库值得写成文章</a><a href="#下一阶段比新建仓库更重要的事">下一阶段比新建仓库更重要的事</a><a href="#系列导航">系列导航</a></nav></aside></div><footer class="post-footer"><p>写到这里，继续去看看其他笔记。</p><a class="text-link" href="/posts/">浏览全部文章 <span aria-hidden="true">→</span></a></footer></article></main><footer class="site-footer"><div class="shell footer-inner"><div><strong>Ninthless</strong><p>代码、工具与随手实验。</p></div><div class="footer-links"><a href="https://ninthless.github.io/vibe-coding-tutorial/">Vibe Coding 教程<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="https://github.com/Ninthless" target="_blank" rel="noreferrer">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/rss.xml">RSS</a></div><p class="copyright">© 2026 Ninthless</p></div></footer></body></html>

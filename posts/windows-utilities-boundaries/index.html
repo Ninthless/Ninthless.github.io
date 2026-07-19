@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v7.1.1"><meta name="description" content="我从 ACEOptimizer 与 Emergency-Stop 中总结，Windows 工具如何用最小权限、明确非目标和可恢复更新建立信任。"><meta name="theme-color" content="#f4f6f3" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#111412" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/images/ninthless.png"><link rel="canonical" href="https://ninthless.github.io/posts/windows-utilities-boundaries/"><link rel="alternate" type="application/rss+xml" title="Ninthless RSS" href="/rss.xml"><meta property="og:type" content="article"><meta property="og:site_name" content="Ninthless"><meta property="og:title" content="Windows 小工具最先要设计的不是功能，而是边界 — Ninthless"><meta property="og:description" content="我从 ACEOptimizer 与 Emergency-Stop 中总结，Windows 工具如何用最小权限、明确非目标和可恢复更新建立信任。"><meta property="og:url" content="https://ninthless.github.io/posts/windows-utilities-boundaries/"><meta property="og:image" content="https://ninthless.github.io/images/ninthless.png"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Windows 小工具最先要设计的不是功能，而是边界 — Ninthless"><meta name="twitter:description" content="我从 ACEOptimizer 与 Emergency-Stop 中总结，Windows 工具如何用最小权限、明确非目标和可恢复更新建立信任。"><meta name="twitter:image" content="https://ninthless.github.io/images/ninthless.png"><title>Windows 小工具最先要设计的不是功能，而是边界 — Ninthless</title><script>
+	const storedTheme = localStorage.getItem('theme');
+	const preferredTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	document.documentElement.dataset.theme = storedTheme || preferredTheme;
+</script><link rel="stylesheet" href="/_astro/BaseLayout.B0hnaoWk.css"></head><body class="post-page accent-coral"><a class="skip-link" href="#main-content">跳到主要内容</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Ninthless 首页"><span class="brand-mark" aria-hidden="true">N/</span><span>Ninthless</span></a><nav class="primary-nav" aria-label="主要导航"><a class="active" href="/posts/" aria-current="page">文章</a><a href="https://ninthless.github.io/vibe-coding-tutorial/">教程<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right nav-external-icon"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/projects/">项目</a><a href="/about/">关于</a></nav><div class="header-actions"><a class="icon-button" href="/search/" aria-label="搜索文章" title="搜索"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></a><a class="icon-button" href="/rss.xml" aria-label="订阅 RSS" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a><a class="icon-button" href="https://github.com/Ninthless" aria-label="访问 Ninthless 的 GitHub" title="GitHub" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle></svg></a><button class="icon-button theme-toggle" type="button" aria-label="切换为深色主题" title="切换主题"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-sun theme-icon theme-icon--light"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-moon theme-icon theme-icon--dark"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><script type="module">var e=document.querySelector(`.theme-toggle`);function t(){if(!e)return;let t=document.documentElement.dataset.theme===`dark`;e.setAttribute(`aria-label`,t?`切换为浅色主题`:`切换为深色主题`)}e?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme===`dark`?`light`:`dark`;document.documentElement.dataset.theme=e,localStorage.setItem(`theme`,e),t()}),t();</script></div></div></header><main id="main-content"><article class="post-shell shell"><header class="post-header"><a class="back-link" href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>全部文章</a><div class="post-kicker">NINTHLESS / NOTE</div><h1>Windows 小工具最先要设计的不是功能，而是边界</h1><p class="post-description">我从 ACEOptimizer 与 Emergency-Stop 中总结，Windows 工具如何用最小权限、明确非目标和可恢复更新建立信任。</p><div class="post-meta"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-calendar-days"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>2026/03/30</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-clock-3"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6h4"></path></svg>7 分钟阅读</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-refresh-cw"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg>更新于 2026/07/10</span></div><ul class="tag-list post-tags" aria-label="文章标签"><li><a href="/tags/Windows/">#Windows</a></li><li><a href="/tags/CSharp/">#CSharp</a></li><li><a href="/tags/%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C/">#安全边界</a></li></ul></header><div class="post-layout"><div class="prose"><p>我做 Windows 小工具时，需求常常很小：降低某个进程的资源影响，或根据键盘状态显示一个训练提示。真正让我花时间的部分却不是窗口和按钮，而是系统权限、平台规则、误报、更新链路和用户预期。</p>
+<p>我做的 <a href="https://github.com/Ninthless/ACEOptimizer">ACEOptimizer</a> 与 <a href="https://github.com/Ninthless/Emergency-Stop">Emergency-Stop</a> 解决的问题不同，但最后都收敛到同一种设计方法：<strong>先写清楚工具绝对不会做什么，再决定功能如何实现。</strong></p>
+<h2 id="两个项目的时间线">两个项目的时间线</h2>
+<h3 id="aceoptimizer从单一优化动作到可验证发布">ACEOptimizer：从单一优化动作到可验证发布</h3>
+<ul>
+<li><strong>2026-03-30</strong>：初始版本与自动发布流程建立。</li>
+<li><strong>2026-04-17</strong>：从游戏白名单转为直接识别目标进程，减少不必要的耦合。</li>
+<li><strong>2026-05-30</strong>：加入更新检查，同时开始处理下载隔离、SHA-256 确认、权限级别和 Defender 误报面。</li>
+<li><strong>2026-05-31</strong>：补充取消、临时目录清理、限流处理与 20 个更新/版本/亲和性测试。</li>
+<li><strong>2026-07-10</strong>：升级为 Ed25519 签名更新源，校验标签与应用版本一致，并拒绝无效签名发布。</li>
+</ul>
+<p>我始终把 ACEOptimizer 的行为限定在 Windows 公开的进程优先级与 CPU 亲和性设置，不修改游戏文件、反作弊文件、驱动或系统服务。</p>
+<h3 id="emergency-stop从覆盖层原型到诚实的训练工具">Emergency-Stop：从覆盖层原型到诚实的训练工具</h3>
+<ul>
+<li><strong>2026-06-29</strong>：完成键盘状态与屏幕覆盖层原型。</li>
+<li><strong>2026-06-30</strong>：增加主题、国际化、准星设置、状态精度修复和 Velopack 更新。</li>
+<li><strong>2026-07-03</strong>：完善更新失败反馈。</li>
+</ul>
+<p>我让 Emergency-Stop 只读取本机键盘输入并绘制透明置顶窗口，不读取游戏进程、不注入图形 API、不抓包、不模拟按键，也不执行宏。我把急停状态明确标成可调整的时间估算，不声称复刻未公开的游戏物理。</p>
+<h2 id="最小权限不是口号而是-api-选择">最小权限不是口号，而是 API 选择</h2>
+<p>Windows 的进程对象有细分访问权。<a href="https://learn.microsoft.com/en-us/windows/win32/procthread/process-security-and-access-rights">Microsoft 的进程安全文档</a> 明确建议只申请操作需要的最小权限，而不是默认请求 <code>PROCESS_ALL_ACCESS</code>。</p>
+<p>这对小工具有直接意义：</p>
+<ul>
+<li>只设置优先级，就不应申请读写进程内存的权限。</li>
+<li>只显示键盘状态，就不需要打开目标游戏进程。</li>
+<li>只绘制外部覆盖层，就不需要注入渲染管线。</li>
+</ul>
+<p>更少的权限意味着更小的错误面、更少的安全软件疑虑，也更容易向用户解释工具行为。</p>
+<h2 id="优化必须承认系统调度的复杂性">“优化”必须承认系统调度的复杂性</h2>
+<p><a href="https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setpriorityclass">SetPriorityClass 官方文档</a> 提醒，高优先级可能占用几乎全部 CPU，而单纯调整 CPU 调度优先级也不能解决磁盘和内存造成的系统响应问题。</p>
+<p>因此，ACEOptimizer 的实现只能被描述为“改变特定进程的调度条件”，不能承诺所有机器都降低总体占用、提升帧率或完全没有副作用。CPU 拓扑、目标进程行为、系统版本和平台更新都会改变结果。</p>
+<p>一个可信的系统工具应该把兼容性写成条件句，而不是营销结论。</p>
+<h2 id="输入监听也需要边界">输入监听也需要边界</h2>
+<p>Emergency-Stop 使用 Windows Raw Input 与按键状态轮询来提高键盘状态读取稳定性。<a href="https://learn.microsoft.com/en-us/windows/win32/inputdev/raw-input">Raw Input</a> 是 Windows 为 HID 设备提供的公开输入路径，应用注册后通过窗口消息接收设备数据。</p>
+<p>但“能够读取键盘”不等于“应该记录键盘”。训练覆盖层只需要当前移动键状态，不需要保存输入历史、上传数据或监听与功能无关的按键。数据最小化同样适用于本地工具。</p>
+<h2 id="非目标清单为什么重要">非目标清单为什么重要</h2>
+<p>对于与游戏、系统权限或覆盖层有关的软件，用户往往先问“它会不会做危险的事”。README 中的非目标清单比功能列表更能建立信任：</p>
+<table>
+<thead>
+<tr>
+<th>风险问题</th>
+<th>明确边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否读取进程内存</td>
+<td>否</td>
+</tr>
+<tr>
+<td>是否注入游戏/图形进程</td>
+<td>否</td>
+</tr>
+<tr>
+<td>是否模拟输入或自动操作</td>
+<td>否</td>
+</tr>
+<tr>
+<td>是否修改受保护文件</td>
+<td>否</td>
+</tr>
+<tr>
+<td>是否保证平台长期允许</td>
+<td>否，规则可能变化</td>
+</tr>
+</tbody>
+</table>
+<p>非目标不是法律护身符，也不能代替平台确认。它的工程作用是防止后续功能在“顺便实现”中越过最初边界。</p>
+<h2 id="更新链路也是产品功能">更新链路也是产品功能</h2>
+<p>桌面工具一旦提供自动更新，就获得了修改用户机器上可执行文件的能力。此时“从 GitHub 下载最新版本”远远不够。</p>
+<p>ACEOptimizer 的后期提交把更新链拆成多个可验证条件：版本标签必须与项目版本一致，更新清单需要 Ed25519 签名，安装包在进入安装流程前需要验证，私钥不进入仓库，同版本不重复提示。</p>
+<p>这套设计仍不等于操作系统级代码签名。仓库也明确说明二进制没有 Authenticode 签名，SmartScreen 可能警告。把未完成的信任层写出来，比隐藏警告更专业。</p>
+<h2 id="诚实精度比假精确更有价值">诚实精度比假精确更有价值</h2>
+<p>Emergency-Stop 无法读取游戏内部速度，也没有官方完整移动曲线。因此它用键位变化与可调时间窗估算 <code>MOVE</code>、<code>STOP</code>、<code>BRAKE</code> 和 <code>READY</code>。</p>
+<p>这里最重要的产品决定不是把数字调得更像，而是把状态标为“训练提示”而非“真实物理状态”。用户可以在训练场校准，项目不把未知包装成精确模型。</p>
+<p>这种诚实同样适用于性能优化、网络诊断和硬件监控：只要测量链缺少关键变量，就应该降低结论强度。</p>
+<h2 id="可复用的边界清单">可复用的边界清单</h2>
+<p>开发类似 Windows 工具前，可以先回答：</p>
+<ol>
+<li>最小操作对象是什么，能否不打开其他进程？</li>
+<li>需要哪些具体权限，哪些权限明确不需要？</li>
+<li>工具会不会记录、上传或长期保存输入？</li>
+<li>平台规则变化时，功能如何降级或停止？</li>
+<li>更新包如何验证，失败后如何清理和回退？</li>
+<li>哪些结果只是估算，哪些有可重复测量证据？</li>
+</ol>
+<p>小工具不需要复杂架构，但需要清晰边界。越接近系统、游戏或自动更新，边界越应该成为第一等功能。</p>
+<h2 id="相关项目">相关项目</h2>
+<ul>
+<li><a href="https://github.com/Ninthless/ACEOptimizer">ACEOptimizer</a></li>
+<li><a href="https://github.com/Ninthless/Emergency-Stop">Emergency-Stop</a></li>
+<li><a href="/posts/github-80-repositories-timeline/">从 80 个仓库看我的工程轨迹</a></li>
+</ul>
+</div><aside class="table-of-contents" aria-label="文章目录"><strong>目录</strong><nav><a href="#两个项目的时间线">两个项目的时间线</a><a class="nested" href="#aceoptimizer从单一优化动作到可验证发布">ACEOptimizer：从单一优化动作到可验证发布</a><a class="nested" href="#emergency-stop从覆盖层原型到诚实的训练工具">Emergency-Stop：从覆盖层原型到诚实的训练工具</a><a href="#最小权限不是口号而是-api-选择">最小权限不是口号，而是 API 选择</a><a href="#优化必须承认系统调度的复杂性">“优化”必须承认系统调度的复杂性</a><a href="#输入监听也需要边界">输入监听也需要边界</a><a href="#非目标清单为什么重要">非目标清单为什么重要</a><a href="#更新链路也是产品功能">更新链路也是产品功能</a><a href="#诚实精度比假精确更有价值">诚实精度比假精确更有价值</a><a href="#可复用的边界清单">可复用的边界清单</a><a href="#相关项目">相关项目</a></nav></aside></div><footer class="post-footer"><p>写到这里，继续去看看其他笔记。</p><a class="text-link" href="/posts/">浏览全部文章 <span aria-hidden="true">→</span></a></footer></article></main><footer class="site-footer"><div class="shell footer-inner"><div><strong>Ninthless</strong><p>代码、工具与随手实验。</p></div><div class="footer-links"><a href="https://ninthless.github.io/vibe-coding-tutorial/">Vibe Coding 教程<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="https://github.com/Ninthless" target="_blank" rel="noreferrer">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/rss.xml">RSS</a></div><p class="copyright">© 2026 Ninthless</p></div></footer></body></html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v7.1.1"><meta name="description" content="我如何把反复使用的提示词整理成可维护、可触发、可验证的 Agent 操作协议。"><meta name="theme-color" content="#f4f6f3" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#111412" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/images/ninthless.png"><link rel="canonical" href="https://ninthless.github.io/posts/agent-skills-as-operating-protocols/"><link rel="alternate" type="application/rss+xml" title="Ninthless RSS" href="/rss.xml"><meta property="og:type" content="article"><meta property="og:site_name" content="Ninthless"><meta property="og:title" content="把提示词变成可维护的 Agent 操作协议 — Ninthless"><meta property="og:description" content="我如何把反复使用的提示词整理成可维护、可触发、可验证的 Agent 操作协议。"><meta property="og:url" content="https://ninthless.github.io/posts/agent-skills-as-operating-protocols/"><meta property="og:image" content="https://ninthless.github.io/images/ninthless.png"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="把提示词变成可维护的 Agent 操作协议 — Ninthless"><meta name="twitter:description" content="我如何把反复使用的提示词整理成可维护、可触发、可验证的 Agent 操作协议。"><meta name="twitter:image" content="https://ninthless.github.io/images/ninthless.png"><title>把提示词变成可维护的 Agent 操作协议 — Ninthless</title><script>
+	const storedTheme = localStorage.getItem('theme');
+	const preferredTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	document.documentElement.dataset.theme = storedTheme || preferredTheme;
+</script><link rel="stylesheet" href="/_astro/BaseLayout.B0hnaoWk.css"></head><body class="post-page accent-yellow"><a class="skip-link" href="#main-content">跳到主要内容</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Ninthless 首页"><span class="brand-mark" aria-hidden="true">N/</span><span>Ninthless</span></a><nav class="primary-nav" aria-label="主要导航"><a class="active" href="/posts/" aria-current="page">文章</a><a href="https://ninthless.github.io/vibe-coding-tutorial/">教程<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right nav-external-icon"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/projects/">项目</a><a href="/about/">关于</a></nav><div class="header-actions"><a class="icon-button" href="/search/" aria-label="搜索文章" title="搜索"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></a><a class="icon-button" href="/rss.xml" aria-label="订阅 RSS" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a><a class="icon-button" href="https://github.com/Ninthless" aria-label="访问 Ninthless 的 GitHub" title="GitHub" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle></svg></a><button class="icon-button theme-toggle" type="button" aria-label="切换为深色主题" title="切换主题"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-sun theme-icon theme-icon--light"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-moon theme-icon theme-icon--dark"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><script type="module">var e=document.querySelector(`.theme-toggle`);function t(){if(!e)return;let t=document.documentElement.dataset.theme===`dark`;e.setAttribute(`aria-label`,t?`切换为浅色主题`:`切换为深色主题`)}e?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme===`dark`?`light`:`dark`;document.documentElement.dataset.theme=e,localStorage.setItem(`theme`,e),t()}),t();</script></div></div></header><main id="main-content"><article class="post-shell shell"><header class="post-header"><a class="back-link" href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>全部文章</a><div class="post-kicker">NINTHLESS / NOTE</div><h1>把提示词变成可维护的 Agent 操作协议</h1><p class="post-description">我如何把反复使用的提示词整理成可维护、可触发、可验证的 Agent 操作协议。</p><div class="post-meta"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-calendar-days"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>2026/05/15</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-clock-3"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6h4"></path></svg>8 分钟阅读</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-refresh-cw"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg>更新于 2026/07/19</span></div><ul class="tag-list post-tags" aria-label="文章标签"><li><a href="/tags/Agent%20Skills/">#Agent Skills</a></li><li><a href="/tags/AI%20%E5%B7%A5%E7%A8%8B/">#AI 工程</a></li><li><a href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">#工作流</a></li></ul></header><div class="post-layout"><div class="prose"><p>提示词可以帮我解决一次对话，操作协议解决的是接下来一百次相似任务。</p>
+<p>我最初把 <a href="https://github.com/Ninthless/agent-skills">agent-skills</a> 当作个人工作方法的集合。到 2026 年 7 月，我已经整理出 9 个面向不同场景的技能：需求规范化、领域调研、高约束编码、无代码注释、Git 检查点、自由职业订单判断、PowerShell 安全命令、Xposed 模块开发和用户界面构建。</p>
+<p>外观看起来，它们仍然是 Markdown 文件。但我真正投入精力的部分发生在 Markdown 之外：触发边界、评估样例、参考资料、辅助脚本和可验证的质量门槛。</p>
+<h2 id="agent-skill-与普通提示词的差别">Agent Skill 与普通提示词的差别</h2>
+<p><a href="https://agentskills.io/specification">Agent Skills 开放规范</a> 把 Skill 定义为一个以 <code>SKILL.md</code> 为入口的目录，并允许附带脚本、参考资料和资产。这个目录结构很重要，因为它把四种不同职责分开了：</p>
+<table>
+<thead>
+<tr>
+<th>层次</th>
+<th>负责回答的问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>描述与触发</td>
+<td>什么时候应该使用，什么时候不应该使用</td>
+</tr>
+<tr>
+<td>主工作流</td>
+<td>Agent 应按什么顺序行动</td>
+</tr>
+<tr>
+<td>参考资料</td>
+<td>哪些细节只在相关任务中加载</td>
+</tr>
+<tr>
+<td>评估与脚本</td>
+<td>如何证明触发正确、结果达标</td>
+</tr>
+</tbody>
+</table>
+<p>普通提示词往往只描述“做什么”。技能还必须描述“不做什么”“什么时候停”“证据不足时如何降低结论”。一旦缺少这些边界，所谓复用只是在稳定地重复同一种偏差。</p>
+<h2 id="仓库演进时间线">仓库演进时间线</h2>
+<h3 id="2026-05-15先把个人规则写下来">2026-05-15：先把个人规则写下来</h3>
+<p>第一次提交时，我先建立技能目录，把脑中的偏好变成可阅读文件，让另一个 Agent 或未来的我能够复用。</p>
+<p>但这时的技能仍然接近长提示词。它们能提醒模型，却还不能证明自己在正确场景触发，也无法防止描述越来越宽。</p>
+<h3 id="2026-05-22-至-05-31建立先读再改的纪律">2026-05-22 至 05-31：建立“先读再改”的纪律</h3>
+<p>我逐步给 <code>high-constraint-coding</code> 加入强制阅读现有代码、根因诊断、局部风格匹配和修改前的一句话行为说明，也让 <code>git-checkpoint-push</code> 在提交前检查状态、远端、分支差异和无关修改。</p>
+<p>这个阶段形成了一条关键原则：<strong>高质量不是在输出结尾补一句“已测试”，而是在行动顺序里提前安排证据。</strong></p>
+<h3 id="2026-06开始处理触发与环境差异">2026-06：开始处理触发与环境差异</h3>
+<p>6 月，我把提交重点放在元数据、触发描述、平台兼容和 PowerShell 命令安全上。我开始明确承认运行环境不是背景噪音：同一句命令在 Bash 与 PowerShell 中可能有不同语义，未引用路径、换行和转义都可能改变结果。</p>
+<p>这也是技能工程与“万能系统提示”的分界。越想覆盖所有场景，越需要明确平台条件和反例。</p>
+<h3 id="2026-07-14触发边界成为测试对象">2026-07-14：触发边界成为测试对象</h3>
+<p>我为多个技能扩展了 trigger eval。测试不只问“应该触发时是否触发”，还要问“相似但不适用的请求会不会误触发”。</p>
+<p>这是维护技能时最容易忽略的一面。召回率过低会漏掉方法，召回率过高则会让每个任务都背上不必要的流程。技能描述不是宣传文案，而是一个分类器的输入。</p>
+<h3 id="2026-07-19ui-技能从审美建议升级为证据门">2026-07-19：UI 技能从审美建议升级为证据门</h3>
+<p>我在一天内连续为 <code>build-user-facing-ui</code> 加入证据型质量门、样式多样性评估、完整界面转换模式，以及“保留产品契约但不继承旧视觉结构”的重构规则，也加入了视觉指纹比较和证据校验脚本。</p>
+<p>这次演进说明：对视觉任务，仅靠“高级、现代、好看”无法形成稳定标准。需要可检查的视口、状态、可访问性和渲染结果，才能把审美判断变成工程流程。</p>
+<h2 id="一个可维护技能至少需要四个边界">一个可维护技能至少需要四个边界</h2>
+<h3 id="触发边界">触发边界</h3>
+<p>描述必须同时包含正向和负向条件。例如“构建用户界面”不应该覆盖纯后端 API；“高约束编码”不应该把概念解释变成冗长的代码审计。</p>
+<h3 id="权限边界">权限边界</h3>
+<p>读代码、修改文件、创建提交、推送远端和部署是不同权限。技能不能因为用户说“完成它”就自动扩大到发布或外部通信。</p>
+<h3 id="证据边界">证据边界</h3>
+<p>没有运行测试，就不能写“已验证”；只检查一个症状，也不能声称共享逻辑没有回归。结论强度必须和证据强度相同。</p>
+<h3 id="上下文边界">上下文边界</h3>
+<p>参考资料不应全部塞进主文件。Agent 需要先看到短而清晰的路由，再按任务加载细节。否则技能越完善，反而越占用上下文并稀释关键约束。</p>
+<h2 id="为什么技能需要回归测试">为什么技能需要回归测试</h2>
+<p>技能文件本质上也是程序：输入是用户请求与环境上下文，输出是行动顺序和约束。修改描述可能修复一个场景，同时破坏另一个场景。</p>
+<p>最小测试集应该包含：</p>
+<ul>
+<li>明确应触发的请求。</li>
+<li>明确不应触发的请求。</li>
+<li>容易混淆的边界请求。</li>
+<li>会诱导 Agent 扩大权限的请求。</li>
+<li>缺少证据但容易过度宣称的请求。</li>
+</ul>
+<p>这与传统单元测试不完全相同，因为模型输出具有变化。但评估仍能检查结构性事实：是否先读文件、是否询问真正阻塞的问题、是否运行验证、是否避免无关重构。</p>
+<h2 id="从个人规则到公共资产">从个人规则到公共资产</h2>
+<p>个人技能可以非常有偏好，但公共技能还要解决可移植性。2026 年，Agent Skills 已经被多个编辑器和编码 Agent 接受；例如 <a href="https://code.visualstudio.com/docs/agent-customization/agent-skills">VS Code 也使用同一开放格式</a>。这让技能有机会跨工具复用，也放大了模糊指令的风险。</p>
+<p>一个值得发布的技能，至少应该让使用者回答这些问题：</p>
+<ol>
+<li>它在哪些任务上比默认 Agent 更好？</li>
+<li>它会读取或执行什么？</li>
+<li>它可能在哪里失败？</li>
+<li>更新后如何确认旧场景没有退化？</li>
+</ol>
+<p>如果这些问题没有答案，技能仍然只是个人备忘录。备忘录没有问题，但不应该被包装成可靠协议。</p>
+<h2 id="最后一个判断">最后一个判断</h2>
+<p>Agent 能力越来越强时，人更不应该把所有规则写成“永远这样做”。好的技能不是把 Agent 锁死，而是在高风险节点增加检查，在低风险节点保持流动。</p>
+<p>真正值得维护的不是提示词长度，而是决策质量：何时触发、读什么证据、允许做什么、如何验证、何时承认未知。</p>
+<h2 id="延伸阅读">延伸阅读</h2>
+<ul>
+<li><a href="https://agentskills.io/specification">Agent Skills Specification</a></li>
+<li><a href="https://github.com/Ninthless/agent-skills">agent-skills 仓库</a></li>
+<li><a href="/posts/vibe-coding-delivery-loop/">Vibe Coding 不是一句提示词，而是一条交付闭环</a></li>
+<li><a href="/posts/tau-gui-agent-desktop-context/">Tau：为什么编码 Agent 需要一层桌面工作台</a></li>
+</ul>
+</div><aside class="table-of-contents" aria-label="文章目录"><strong>目录</strong><nav><a href="#agent-skill-与普通提示词的差别">Agent Skill 与普通提示词的差别</a><a href="#仓库演进时间线">仓库演进时间线</a><a class="nested" href="#2026-05-15先把个人规则写下来">2026-05-15：先把个人规则写下来</a><a class="nested" href="#2026-05-22-至-05-31建立先读再改的纪律">2026-05-22 至 05-31：建立“先读再改”的纪律</a><a class="nested" href="#2026-06开始处理触发与环境差异">2026-06：开始处理触发与环境差异</a><a class="nested" href="#2026-07-14触发边界成为测试对象">2026-07-14：触发边界成为测试对象</a><a class="nested" href="#2026-07-19ui-技能从审美建议升级为证据门">2026-07-19：UI 技能从审美建议升级为证据门</a><a href="#一个可维护技能至少需要四个边界">一个可维护技能至少需要四个边界</a><a class="nested" href="#触发边界">触发边界</a><a class="nested" href="#权限边界">权限边界</a><a class="nested" href="#证据边界">证据边界</a><a class="nested" href="#上下文边界">上下文边界</a><a href="#为什么技能需要回归测试">为什么技能需要回归测试</a><a href="#从个人规则到公共资产">从个人规则到公共资产</a><a href="#最后一个判断">最后一个判断</a><a href="#延伸阅读">延伸阅读</a></nav></aside></div><footer class="post-footer"><p>写到这里，继续去看看其他笔记。</p><a class="text-link" href="/posts/">浏览全部文章 <span aria-hidden="true">→</span></a></footer></article></main><footer class="site-footer"><div class="shell footer-inner"><div><strong>Ninthless</strong><p>代码、工具与随手实验。</p></div><div class="footer-links"><a href="https://ninthless.github.io/vibe-coding-tutorial/">Vibe Coding 教程<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="https://github.com/Ninthless" target="_blank" rel="noreferrer">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/rss.xml">RSS</a></div><p class="copyright">© 2026 Ninthless</p></div></footer></body></html>
