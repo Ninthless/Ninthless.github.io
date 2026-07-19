@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ninthless — 代码、工具与随手实验</title><description>关于 AI 工具、系统实用程序与一切值得折腾之物的个人笔记。</description><link>https://ninthless.github.io/</link><item><title>Hello, world.</title><link>https://ninthless.github.io/posts/hello-world/</link><guid isPermaLink="true">https://ninthless.github.io/posts/hello-world/</guid><description>Ninthless 的个人博客从这里开始，一处用来保存思考、过程和结果的公开工作台。</description><pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate><content:encoded>新的站点，第一篇文章仍然从 `Hello, world.` 开始。
+
+这里不会只放已经完成的答案。更多时候，它会记录一个想法怎样被拆开、一个工具为什么这样设计，以及一次尝试最后留下了什么。
+
+## 这个博客会写什么
+
+内容大致会沿着三个方向展开：AI 工具、系统实用程序，以及所有暂时还无法归类但足够有趣的实验。
+
+有些文章会很短，只保存一个判断或一段配置；有些文章会完整记录从问题、约束到验证结果的过程。重要的不是篇幅，而是下次回来时仍然能够看懂。
+
+## 为什么现在开始
+
+代码仓库适合保存结果，但不总能解释选择。博客可以把缺失的上下文补回来，也让零散的实践慢慢形成一条连续的线。
+
+先写，持续整理，然后让真正有用的内容自然浮现。
+
+## 下一步
+
+接下来会把近期项目里的经验逐步整理成文章。站点本身也会继续迭代，但阅读和写作始终是优先级最高的两件事。</content:encoded></item><item><title>为什么这个博客选择静态优先</title><link>https://ninthless.github.io/posts/static-first/</link><guid isPermaLink="true">https://ninthless.github.io/posts/static-first/</guid><description>对个人博客而言，少一点运行时依赖，通常意味着更多内容所有权和更低的长期维护成本。</description><pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate><content:encoded>个人博客最重要的能力不是后台功能，而是多年以后仍然能够打开、迁移和继续写。
+
+## 内容先于系统
+
+文章保存在 Markdown 文件中。每篇内容都有标题、摘要、日期和标签，但正文不依赖数据库，也不被某个在线编辑器锁定。
+
+这意味着内容可以被 Git 追踪，可以离线编辑，也可以随时迁移到其他生成器。
+
+## 构建时完成复杂工作
+
+Astro 在构建阶段生成 HTML。浏览器拿到的是可以直接阅读的页面，只有主题切换和站内搜索使用少量 JavaScript。
+
+```text
+Markdown → 内容校验 → 静态 HTML → CDN
+```
+
+路径简单，故障面也更小。没有常驻数据库、登录系统和服务端渲染进程，就少了升级、备份与安全维护的长期负担。
+
+## 什么时候不该静态优先
+
+如果站点需要多人实时协作、会员权限、付费内容或高度动态的数据，CMS 和服务端能力会更合适。
+
+现在还没有这些需求，所以不提前为它们支付复杂度。</content:encoded></item><item><title>工作台上的三个方向</title><link>https://ninthless.github.io/posts/three-directions/</link><guid isPermaLink="true">https://ninthless.github.io/posts/three-directions/</guid><description>AI 工作流、Windows 实用程序和开发者工具，是近期最常回到的三个问题域。</description><pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate><content:encoded>把近期仓库放在一起看，会出现三个反复回到的方向。
+
+## 让 AI 工作流更稳定
+
+提示词只能解决一次问题，稳定的流程才能重复解决同一类问题。`agent-skills` 用明确的边界、步骤和验证方法，把容易漂移的工作方式保存下来。
+
+重点不是让规则变多，而是让每条规则都对应一个真实的失败模式。
+
+## 修掉系统里的摩擦
+
+`ACEOptimizer` 来自一个具体问题：某些 ACE 反作弊进程会持续占用 CPU。工具直接检测相关进程，并通过优先级和 CPU 亲和性降低影响。
+
+系统工具的价值通常很朴素。它不需要覆盖所有情况，只需要把一个持续发生的摩擦可靠地移走。
+
+## 让开发工具更顺手
+
+`Postman-Web-i18n` 和 `vibe-coding-tutorial` 分别处理界面语言和知识组织。一个降低使用门槛，一个让方法更容易复用。
+
+这些方向看起来不同，但背后是同一个偏好：找到重复出现的不顺手之处，然后把它变成可以长期使用的工具。</content:encoded></item></channel></rss>
