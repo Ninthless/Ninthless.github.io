@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v7.1.1"><meta name="description" content="工具章节：项目规则文件。面向真实项目交付的 Vibe Coding 教程。"><meta name="theme-color" content="#f4f6f3" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#111412" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/images/ninthless.png"><link rel="canonical" href="https://ninthless.github.io/tutorial/tools/cursor-rules/"><link rel="alternate" type="application/rss+xml" title="Ninthless RSS" href="/rss.xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Ninthless"><meta property="og:title" content="项目规则文件 — Vibe Coding 教程"><meta property="og:description" content="工具章节：项目规则文件。面向真实项目交付的 Vibe Coding 教程。"><meta property="og:url" content="https://ninthless.github.io/tutorial/tools/cursor-rules/"><meta property="og:image" content="https://ninthless.github.io/images/ninthless.png"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="项目规则文件 — Vibe Coding 教程"><meta name="twitter:description" content="工具章节：项目规则文件。面向真实项目交付的 Vibe Coding 教程。"><meta name="twitter:image" content="https://ninthless.github.io/images/ninthless.png"><title>项目规则文件 — Vibe Coding 教程</title><script>
+	const storedTheme = localStorage.getItem('theme');
+	const preferredTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	document.documentElement.dataset.theme = storedTheme || preferredTheme;
+</script><link rel="stylesheet" href="/_astro/tutorial.C8VXcDjp.css"><link rel="stylesheet" href="/_astro/BaseLayout.BjJxL8Uv.css"></head><body class="tutorial-page"><a class="skip-link" href="#main-content">跳到主要内容</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Ninthless 首页"><span class="brand-mark" aria-hidden="true">N/</span><span>Ninthless</span></a><nav class="primary-nav" aria-label="主要导航"><a href="/posts/">文章</a><a class="active" href="/tutorial/" aria-current="page">教程</a><a href="/projects/">项目</a><a href="/about/">关于</a></nav><div class="header-actions"><a class="icon-button" href="/search/" aria-label="搜索站点内容" title="搜索"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></a><a class="icon-button" href="/rss.xml" aria-label="订阅 RSS" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a><a class="icon-button" href="https://github.com/Ninthless" aria-label="访问 Ninthless 的 GitHub" title="GitHub" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle></svg></a><button class="icon-button theme-toggle" type="button" aria-label="切换为深色主题" title="切换主题"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-sun theme-icon theme-icon--light"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-moon theme-icon theme-icon--dark"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><script type="module">var e=document.querySelector(`.theme-toggle`);function t(){if(!e)return;let t=document.documentElement.dataset.theme===`dark`;e.setAttribute(`aria-label`,t?`切换为浅色主题`:`切换为深色主题`)}e?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme===`dark`?`light`:`dark`;document.documentElement.dataset.theme=e,localStorage.setItem(`theme`,e),window.dispatchEvent(new CustomEvent(`themechange`,{detail:{theme:e}})),t()}),t();</script></div></div></header><main id="main-content"><div class="tutorial-context-bar"><div class="shell tutorial-context-bar__inner"><nav class="tutorial-breadcrumb" aria-label="面包屑"><a href="/tutorial/">教程</a><span aria-hidden="true">/</span><a href="/tutorial/tools/">工具</a><span aria-hidden="true">/</span><span aria-current="page">项目规则文件</span></nav><a class="tutorial-source-link" href="https://github.com/Ninthless/vibe-coding-tutorial/blob/main/docs/tools/cursor-rules.md" target="_blank" rel="noreferrer">查看源文件<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="tutorial-mobile-directory shell"><details><summary><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-list-tree"><path d="M8 5h13"></path><path d="M13 12h8"></path><path d="M13 19h8"></path><path d="M3 10a2 2 0 0 0 2 2h3"></path><path d="M3 5v12a2 2 0 0 0 2 2h3"></path></svg> 教程目录 <span>工具</span></summary><nav class="tutorial-nav" aria-label="教程章节"><a class="tutorial-nav__home" href="/tutorial/"><span>00</span><strong>教程首页</strong></a><div class="tutorial-nav__sections"><details><summary><span>01</span><strong>入门</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/get-started/">章节概览</a></li><li><a href="/tutorial/get-started/environment/">环境准备</a></li><li><a href="/tutorial/get-started/concepts/">核心概念</a></li><li><a href="/tutorial/get-started/quickstart/">快速上手</a></li></ul></details><details><summary><span>02</span><strong>基础理论</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/basics/">章节概览</a></li><li><a href="/tutorial/basics/what-is-vibe-coding/">Vibe Coding 是什么</a></li><li><a href="/tutorial/basics/history/">起源与发展</a></li><li><a href="/tutorial/basics/principles/">核心设计理念</a></li><li><a href="/tutorial/basics/vs-traditional/">与传统开发的差异</a></li></ul></details><details><summary><span>03</span><strong>工作流</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/workflow/">章节概览</a></li><li><a href="/tutorial/workflow/spec-first/">规格先行</a></li><li><a href="/tutorial/workflow/task-breakdown/">任务拆分</a></li><li><a href="/tutorial/workflow/context-management/">上下文管理</a></li><li><a href="/tutorial/workflow/verification/">验证闭环</a></li><li><a href="/tutorial/workflow/retrospective/">复盘沉淀</a></li></ul></details><details><summary><span>04</span><strong>提示词工程</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/prompting/">章节概览</a></li><li><a href="/tutorial/prompting/task-brief/">任务简报模板</a></li><li><a href="/tutorial/prompting/design-principles/">提示词设计原则</a></li><li><a href="/tutorial/prompting/library/">常用提示词库</a></li></ul></details><details><summary><span>05</span><strong>领域应用</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/domains/">章节概览</a></li><li><a href="/tutorial/domains/frontend/">前端开发</a></li><li><a href="/tutorial/domains/backend/">后端服务</a></li><li><a href="/tutorial/domains/mobile/">移动端开发</a></li><li><a href="/tutorial/domains/data/">数据工程</a></li><li><a href="/tutorial/domains/ai-integration/">AI 集成</a></li><li><a href="/tutorial/domains/devops/">DevOps 流程</a></li></ul></details><details><summary><span>06</span><strong>进阶</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/advanced/">章节概览</a></li><li><a href="/tutorial/advanced/workflows/">高级工作流</a></li><li><a href="/tutorial/advanced/performance/">性能优化</a></li><li><a href="/tutorial/advanced/architecture/">大型项目架构</a></li><li><a href="/tutorial/advanced/team-collaboration/">团队协作规范</a></li><li><a href="/tutorial/advanced/troubleshooting/">常见问题排查</a></li><li><a href="/tutorial/advanced/future/">未来趋势</a></li></ul></details><details open><summary><span>07</span><strong>工具</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/tools/">章节概览</a></li><li><a href="/tutorial/tools/mcp/">MCP 扩展</a></li><li><a href="/tutorial/tools/skills/">Skills 与自动化</a></li><li><a class="active" href="/tutorial/tools/cursor-rules/" aria-current="page">项目规则文件</a></li><li><a href="/tutorial/tools/github-pages/">GitHub Pages 部署</a></li><li><a href="/tutorial/tools/toolchain/">推荐工具链</a></li></ul></details><details><summary><span>08</span><strong>实战案例</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/cases/">章节概览</a></li><li><a href="/tutorial/cases/comment-feature/">用户评论功能</a></li></ul></details><details><summary><span>09</span><strong>质量</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/quality/">章节概览</a></li><li><a href="/tutorial/quality/checklist/">验收清单</a></li></ul></details><details><summary><span>10</span><strong>学习路线图</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/roadmap/">章节概览</a></li></ul></details></div></nav></details></div><div class="tutorial-reading-shell shell"><aside class="tutorial-sidebar"><nav class="tutorial-nav" aria-label="教程章节"><a class="tutorial-nav__home" href="/tutorial/"><span>00</span><strong>教程首页</strong></a><div class="tutorial-nav__sections"><details><summary><span>01</span><strong>入门</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/get-started/">章节概览</a></li><li><a href="/tutorial/get-started/environment/">环境准备</a></li><li><a href="/tutorial/get-started/concepts/">核心概念</a></li><li><a href="/tutorial/get-started/quickstart/">快速上手</a></li></ul></details><details><summary><span>02</span><strong>基础理论</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/basics/">章节概览</a></li><li><a href="/tutorial/basics/what-is-vibe-coding/">Vibe Coding 是什么</a></li><li><a href="/tutorial/basics/history/">起源与发展</a></li><li><a href="/tutorial/basics/principles/">核心设计理念</a></li><li><a href="/tutorial/basics/vs-traditional/">与传统开发的差异</a></li></ul></details><details><summary><span>03</span><strong>工作流</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/workflow/">章节概览</a></li><li><a href="/tutorial/workflow/spec-first/">规格先行</a></li><li><a href="/tutorial/workflow/task-breakdown/">任务拆分</a></li><li><a href="/tutorial/workflow/context-management/">上下文管理</a></li><li><a href="/tutorial/workflow/verification/">验证闭环</a></li><li><a href="/tutorial/workflow/retrospective/">复盘沉淀</a></li></ul></details><details><summary><span>04</span><strong>提示词工程</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/prompting/">章节概览</a></li><li><a href="/tutorial/prompting/task-brief/">任务简报模板</a></li><li><a href="/tutorial/prompting/design-principles/">提示词设计原则</a></li><li><a href="/tutorial/prompting/library/">常用提示词库</a></li></ul></details><details><summary><span>05</span><strong>领域应用</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/domains/">章节概览</a></li><li><a href="/tutorial/domains/frontend/">前端开发</a></li><li><a href="/tutorial/domains/backend/">后端服务</a></li><li><a href="/tutorial/domains/mobile/">移动端开发</a></li><li><a href="/tutorial/domains/data/">数据工程</a></li><li><a href="/tutorial/domains/ai-integration/">AI 集成</a></li><li><a href="/tutorial/domains/devops/">DevOps 流程</a></li></ul></details><details><summary><span>06</span><strong>进阶</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/advanced/">章节概览</a></li><li><a href="/tutorial/advanced/workflows/">高级工作流</a></li><li><a href="/tutorial/advanced/performance/">性能优化</a></li><li><a href="/tutorial/advanced/architecture/">大型项目架构</a></li><li><a href="/tutorial/advanced/team-collaboration/">团队协作规范</a></li><li><a href="/tutorial/advanced/troubleshooting/">常见问题排查</a></li><li><a href="/tutorial/advanced/future/">未来趋势</a></li></ul></details><details open><summary><span>07</span><strong>工具</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/tools/">章节概览</a></li><li><a href="/tutorial/tools/mcp/">MCP 扩展</a></li><li><a href="/tutorial/tools/skills/">Skills 与自动化</a></li><li><a class="active" href="/tutorial/tools/cursor-rules/" aria-current="page">项目规则文件</a></li><li><a href="/tutorial/tools/github-pages/">GitHub Pages 部署</a></li><li><a href="/tutorial/tools/toolchain/">推荐工具链</a></li></ul></details><details><summary><span>08</span><strong>实战案例</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/cases/">章节概览</a></li><li><a href="/tutorial/cases/comment-feature/">用户评论功能</a></li></ul></details><details><summary><span>09</span><strong>质量</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/quality/">章节概览</a></li><li><a href="/tutorial/quality/checklist/">验收清单</a></li></ul></details><details><summary><span>10</span><strong>学习路线图</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/roadmap/">章节概览</a></li></ul></details></div></nav></aside><article class="tutorial-article"><div class="tutorial-article__index"><span>07.04</span><span>工具</span></div><details class="tutorial-inline-toc"><summary>本页目录 <span>09</span></summary><nav aria-label="本页目录"><a href="#各工具的规则文件位置">各工具的规则文件位置</a><a href="#cursor-rulescursorrules">Cursor Rules（.cursor/rules/）</a><a class="nested" href="#文件格式">文件格式</a><a class="nested" href="#三种触发模式">三种触发模式</a><a class="nested" href="#推荐的规则文件结构">推荐的规则文件结构</a><a class="nested" href="#实际示例全栈项目的-projectmdc">实际示例：全栈项目的 project.mdc</a><a href="#claude-codeclaudemd">Claude Code（CLAUDE.md）</a><a href="#规则文件的维护节奏">规则文件的维护节奏</a><a href="#常见问题">常见问题</a></nav></details><div class="tutorial-prose prose"><h1 id="项目规则文件">项目规则文件</h1>
+<p>项目规则文件是 Vibe Coding 中“让 AI 持续遵守项目约定”的核心机制。写一次，之后每次对话都自动生效，不需要重复说明。</p>
+<h2 id="各工具的规则文件位置">各工具的规则文件位置</h2>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>文件位置</th>
+<th>加载方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cursor</strong></td>
+<td><code>.cursor/rules/*.mdc</code></td>
+<td>按条件自动注入</td>
+</tr>
+<tr>
+<td><strong>Claude Code</strong></td>
+<td><code>CLAUDE.md</code>（项目根）或 <code>~/.claude/CLAUDE.md</code>（全局）</td>
+<td>每次对话自动加载</td>
+</tr>
+<tr>
+<td><strong>Kiro</strong></td>
+<td><code>.kiro/steering/*.md</code></td>
+<td>每次对话自动加载</td>
+</tr>
+<tr>
+<td><strong>Windsurf</strong></td>
+<td><code>.windsurfrules</code></td>
+<td>每次对话自动加载</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="cursor-rulescursorrules">Cursor Rules（<code>.cursor/rules/</code>）</h2>
+<p>Cursor 的规则系统最灵活，支持按文件类型、目录、场景条件触发不同规则。</p>
+<h3 id="文件格式">文件格式</h3>
+<p>每个规则是一个 <code>.mdc</code> 文件，包含 frontmatter 和正文：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"><span style="color:#E1E4E8">description: 规则描述（Agent 用这个判断何时应用）</span></span>
+<span class="line"><span style="color:#E1E4E8">globs: src/*</span><span style="color:#E1E4E8;font-style:italic">*/*</span><span style="color:#E1E4E8">.tsx</span></span>
+<span class="line"><span style="color:#E1E4E8">alwaysApply: false</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">规则正文（Markdown 格式）</span></span></code></pre>
+<h3 id="三种触发模式">三种触发模式</h3>
+<p><strong><code>alwaysApply: true</code></strong> — 每次对话都加载，适合全局约定：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"><span style="color:#E1E4E8">description: 项目全局约定</span></span>
+<span class="line"><span style="color:#E1E4E8">alwaysApply: true</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 技术栈</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Next.js 14 App Router + TypeScript 严格模式</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 样式：Tailwind CSS，禁止内联样式</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 状态：Zustand，禁止引入 Redux</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 禁止事项</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不引入新的 UI 组件库</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不直接修改 src/lib/auth/</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不使用 any 类型</span></span></code></pre>
+<p><strong><code>globs</code></strong> — 匹配特定文件时自动注入，适合领域约定：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"><span style="color:#E1E4E8">description: React 组件开发规范</span></span>
+<span class="line"><span style="color:#E1E4E8">globs: src/components/*</span><span style="color:#E1E4E8;font-style:italic">*/*</span><span style="color:#E1E4E8">.tsx</span></span>
+<span class="line"><span style="color:#E1E4E8">alwaysApply: false</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 组件约定</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 使用函数组件 + hooks，不使用 class 组件</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Props 类型用 interface 定义，不用 type</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 组件文件只导出一个组件</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 测试文件放在同目录下，命名为 ComponentName.test.tsx</span></span></code></pre>
+<p><strong><code>description</code> 触发</strong> — Agent 根据描述判断是否应用，适合场景规则：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"><span style="color:#E1E4E8">description: 数据库迁移规范。当任务涉及数据库 Schema 变更时应用。</span></span>
+<span class="line"><span style="color:#E1E4E8">alwaysApply: false</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 迁移规范</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 所有迁移必须可回滚（提供 down 方法）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 大表变更（超过 100 万行）需要在规格中说明执行策略</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 迁移文件命名：YYYYMMDDHHMMSS_描述.ts</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不在迁移文件中写业务逻辑</span></span></code></pre>
+<h3 id="推荐的规则文件结构">推荐的规则文件结构</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>.cursor/rules/</span></span>
+<span class="line"><span>  project.mdc          ← 全局约定（alwaysApply: true）</span></span>
+<span class="line"><span>  frontend.mdc         ← 前端组件规范（globs: src/**/*.tsx）</span></span>
+<span class="line"><span>  backend.mdc          ← 后端 API 规范（globs: src/api/**/*.ts）</span></span>
+<span class="line"><span>  database.mdc         ← 数据库迁移规范（description 触发）</span></span>
+<span class="line"><span>  testing.mdc          ← 测试编写规范（globs: **/*.test.ts）</span></span></code></pre>
+<h3 id="实际示例全栈项目的-projectmdc">实际示例：全栈项目的 project.mdc</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"><span style="color:#E1E4E8">description: 项目全局约定</span></span>
+<span class="line"><span style="color:#E1E4E8">alwaysApply: true</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 项目概述</span></span>
+<span class="line"><span style="color:#E1E4E8">电商平台后台管理系统，Next.js 14 + FastAPI + PostgreSQL。</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 技术栈</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 前端：Next.js 14 App Router，TypeScript 严格模式</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 样式：Tailwind CSS + shadcn/ui，禁止内联样式</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 状态：Zustand（客户端），React Query（服务端状态）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 后端：FastAPI，Pydantic v2，SQLAlchemy 2.0</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 数据库：PostgreSQL 16，Alembic 迁移</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 代码约定</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 组件：PascalCase（UserCard.tsx）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 工具函数：camelCase（formatDate.ts）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> API 路由：kebab-case（/api/user-orders）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 数据库表：snake_case（user_orders）</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 禁止事项</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不引入新的 npm 包（需要先讨论）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不直接修改 src/lib/auth/（安全敏感）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不在前端代码中硬编码 API URL</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不使用 any 类型</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不在迁移文件中写业务逻辑</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 验证命令</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 前端类型检查：</span><span style="color:#79B8FF">`pnpm tsc --noEmit`</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 前端测试：</span><span style="color:#79B8FF">`pnpm vitest run`</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 后端测试：</span><span style="color:#79B8FF">`pytest`</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 构建检查：</span><span style="color:#79B8FF">`pnpm build`</span></span></code></pre>
+<hr>
+<h2 id="claude-codeclaudemd">Claude Code（<code>CLAUDE.md</code>）</h2>
+<p><code>CLAUDE.md</code> 是纯 Markdown 文件，每次对话自动加载。支持项目级（项目根目录）和全局级（<code>~/.claude/CLAUDE.md</code>）。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># 项目约定</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 技术栈</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Python 3.11 + FastAPI + SQLAlchemy 2.0</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 测试：pytest + pytest-asyncio</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 代码格式：Ruff（lint + format）</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 运行命令</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 启动：</span><span style="color:#79B8FF">`uvicorn main:app --reload`</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 测试：</span><span style="color:#79B8FF">`pytest -x`</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 格式化：</span><span style="color:#79B8FF">`ruff format . &amp;&amp; ruff check --fix .`</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 禁止事项</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不修改 src/auth/（需要安全审查）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不引入新依赖（先在 requirements.txt 中确认）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不在代码中硬编码密钥或 URL</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 项目结构</span></span>
+<span class="line"><span style="color:#E1E4E8">src/</span></span>
+<span class="line"><span style="color:#E1E4E8">  api/        ← 路由层，只做参数验证和响应格式化</span></span>
+<span class="line"><span style="color:#E1E4E8">  services/   ← 业务逻辑层</span></span>
+<span class="line"><span style="color:#E1E4E8">  models/     ← SQLAlchemy 模型</span></span>
+<span class="line"><span style="color:#E1E4E8">  schemas/    ← Pydantic 模型</span></span></code></pre>
+<hr>
+<h2 id="规则文件的维护节奏">规则文件的维护节奏</h2>
+<p>规则文件不是一次性配置，而是随项目演进持续更新的活文档。</p>
+<p><strong>什么时候更新</strong>：</p>
+<ul>
+<li>AI 生成了与项目风格不一致的代码 → 把正确约定补进规则文件</li>
+<li>某个禁止事项被 AI 反复违反 → 措辞改得更明确</li>
+<li>引入了新的技术栈或约定 → 及时同步到规则文件</li>
+<li>复盘时发现某个提示词模式很有效 → 提炼成规则</li>
+</ul>
+<p><strong>团队协作</strong>：规则文件提交到 Git，团队共享。新成员加入时，规则文件也是项目约定的文档。</p>
+<hr>
+<h2 id="常见问题">常见问题</h2>
+<blockquote>
+<p><strong>注意 · 规则文件太长导致 AI 忽略部分内容</strong></p>
+<p>把规则拆分成多个文件，按触发条件分类。全局规则保持简洁（20 行以内），领域规则按需加载。</p>
+<p><strong>注意 · 规则和任务简报冲突</strong></p>
+<p>任务简报中的约束优先级高于规则文件。如果某次任务需要临时突破规则，在任务简报中明确说明。</p>
+<p><strong>提示 · 验证规则是否生效</strong></p>
+<p>在对话开始时问 AI：“你了解这个项目的哪些约定？“根据回答判断规则文件是否被正确加载。</p>
+</blockquote>
+</div><nav class="tutorial-pagination" aria-label="教程翻页"><a href="/tutorial/tools/skills/"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg><span><small>上一篇</small><strong>Skills 与自动化</strong></span></a><a class="tutorial-pagination__next" href="/tutorial/tools/github-pages/"><span><small>下一篇</small><strong>GitHub Pages 部署</strong></span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></nav></article><aside class="tutorial-toc"><strong>本页目录</strong><nav aria-label="本页目录"><a href="#各工具的规则文件位置">各工具的规则文件位置</a><a href="#cursor-rulescursorrules">Cursor Rules（.cursor/rules/）</a><a class="nested" href="#文件格式">文件格式</a><a class="nested" href="#三种触发模式">三种触发模式</a><a class="nested" href="#推荐的规则文件结构">推荐的规则文件结构</a><a class="nested" href="#实际示例全栈项目的-projectmdc">实际示例：全栈项目的 project.mdc</a><a href="#claude-codeclaudemd">Claude Code（CLAUDE.md）</a><a href="#规则文件的维护节奏">规则文件的维护节奏</a><a href="#常见问题">常见问题</a></nav></aside></div><script type="module" src="/_astro/TutorialLayout.astro_astro_type_script_index_0_lang.Dl7FfqaG.js"></script></main><footer class="site-footer"><div class="shell footer-inner"><div><strong>Ninthless</strong><p>代码、工具与随手实验。</p></div><div class="footer-links"><a href="/tutorial/">Vibe Coding 教程<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a href="https://github.com/Ninthless" target="_blank" rel="noreferrer">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/rss.xml">RSS</a></div><p class="copyright">© 2026 Ninthless</p></div></footer></body></html>

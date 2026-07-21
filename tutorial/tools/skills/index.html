@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v7.1.1"><meta name="description" content="工具章节：Skills 与自动化。面向真实项目交付的 Vibe Coding 教程。"><meta name="theme-color" content="#f4f6f3" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#111412" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/images/ninthless.png"><link rel="canonical" href="https://ninthless.github.io/tutorial/tools/skills/"><link rel="alternate" type="application/rss+xml" title="Ninthless RSS" href="/rss.xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Ninthless"><meta property="og:title" content="Skills 与自动化 — Vibe Coding 教程"><meta property="og:description" content="工具章节：Skills 与自动化。面向真实项目交付的 Vibe Coding 教程。"><meta property="og:url" content="https://ninthless.github.io/tutorial/tools/skills/"><meta property="og:image" content="https://ninthless.github.io/images/ninthless.png"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Skills 与自动化 — Vibe Coding 教程"><meta name="twitter:description" content="工具章节：Skills 与自动化。面向真实项目交付的 Vibe Coding 教程。"><meta name="twitter:image" content="https://ninthless.github.io/images/ninthless.png"><title>Skills 与自动化 — Vibe Coding 教程</title><script>
+	const storedTheme = localStorage.getItem('theme');
+	const preferredTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	document.documentElement.dataset.theme = storedTheme || preferredTheme;
+</script><link rel="stylesheet" href="/_astro/tutorial.C8VXcDjp.css"><link rel="stylesheet" href="/_astro/BaseLayout.BjJxL8Uv.css"></head><body class="tutorial-page"><a class="skip-link" href="#main-content">跳到主要内容</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Ninthless 首页"><span class="brand-mark" aria-hidden="true">N/</span><span>Ninthless</span></a><nav class="primary-nav" aria-label="主要导航"><a href="/posts/">文章</a><a class="active" href="/tutorial/" aria-current="page">教程</a><a href="/projects/">项目</a><a href="/about/">关于</a></nav><div class="header-actions"><a class="icon-button" href="/search/" aria-label="搜索站点内容" title="搜索"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></a><a class="icon-button" href="/rss.xml" aria-label="订阅 RSS" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a><a class="icon-button" href="https://github.com/Ninthless" aria-label="访问 Ninthless 的 GitHub" title="GitHub" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle></svg></a><button class="icon-button theme-toggle" type="button" aria-label="切换为深色主题" title="切换主题"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-sun theme-icon theme-icon--light"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-moon theme-icon theme-icon--dark"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><script type="module">var e=document.querySelector(`.theme-toggle`);function t(){if(!e)return;let t=document.documentElement.dataset.theme===`dark`;e.setAttribute(`aria-label`,t?`切换为浅色主题`:`切换为深色主题`)}e?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme===`dark`?`light`:`dark`;document.documentElement.dataset.theme=e,localStorage.setItem(`theme`,e),window.dispatchEvent(new CustomEvent(`themechange`,{detail:{theme:e}})),t()}),t();</script></div></div></header><main id="main-content"><div class="tutorial-context-bar"><div class="shell tutorial-context-bar__inner"><nav class="tutorial-breadcrumb" aria-label="面包屑"><a href="/tutorial/">教程</a><span aria-hidden="true">/</span><a href="/tutorial/tools/">工具</a><span aria-hidden="true">/</span><span aria-current="page">Skills 与自动化</span></nav><a class="tutorial-source-link" href="https://github.com/Ninthless/vibe-coding-tutorial/blob/main/docs/tools/skills.md" target="_blank" rel="noreferrer">查看源文件<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="tutorial-mobile-directory shell"><details><summary><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-list-tree"><path d="M8 5h13"></path><path d="M13 12h8"></path><path d="M13 19h8"></path><path d="M3 10a2 2 0 0 0 2 2h3"></path><path d="M3 5v12a2 2 0 0 0 2 2h3"></path></svg> 教程目录 <span>工具</span></summary><nav class="tutorial-nav" aria-label="教程章节"><a class="tutorial-nav__home" href="/tutorial/"><span>00</span><strong>教程首页</strong></a><div class="tutorial-nav__sections"><details><summary><span>01</span><strong>入门</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/get-started/">章节概览</a></li><li><a href="/tutorial/get-started/environment/">环境准备</a></li><li><a href="/tutorial/get-started/concepts/">核心概念</a></li><li><a href="/tutorial/get-started/quickstart/">快速上手</a></li></ul></details><details><summary><span>02</span><strong>基础理论</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/basics/">章节概览</a></li><li><a href="/tutorial/basics/what-is-vibe-coding/">Vibe Coding 是什么</a></li><li><a href="/tutorial/basics/history/">起源与发展</a></li><li><a href="/tutorial/basics/principles/">核心设计理念</a></li><li><a href="/tutorial/basics/vs-traditional/">与传统开发的差异</a></li></ul></details><details><summary><span>03</span><strong>工作流</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/workflow/">章节概览</a></li><li><a href="/tutorial/workflow/spec-first/">规格先行</a></li><li><a href="/tutorial/workflow/task-breakdown/">任务拆分</a></li><li><a href="/tutorial/workflow/context-management/">上下文管理</a></li><li><a href="/tutorial/workflow/verification/">验证闭环</a></li><li><a href="/tutorial/workflow/retrospective/">复盘沉淀</a></li></ul></details><details><summary><span>04</span><strong>提示词工程</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/prompting/">章节概览</a></li><li><a href="/tutorial/prompting/task-brief/">任务简报模板</a></li><li><a href="/tutorial/prompting/design-principles/">提示词设计原则</a></li><li><a href="/tutorial/prompting/library/">常用提示词库</a></li></ul></details><details><summary><span>05</span><strong>领域应用</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/domains/">章节概览</a></li><li><a href="/tutorial/domains/frontend/">前端开发</a></li><li><a href="/tutorial/domains/backend/">后端服务</a></li><li><a href="/tutorial/domains/mobile/">移动端开发</a></li><li><a href="/tutorial/domains/data/">数据工程</a></li><li><a href="/tutorial/domains/ai-integration/">AI 集成</a></li><li><a href="/tutorial/domains/devops/">DevOps 流程</a></li></ul></details><details><summary><span>06</span><strong>进阶</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/advanced/">章节概览</a></li><li><a href="/tutorial/advanced/workflows/">高级工作流</a></li><li><a href="/tutorial/advanced/performance/">性能优化</a></li><li><a href="/tutorial/advanced/architecture/">大型项目架构</a></li><li><a href="/tutorial/advanced/team-collaboration/">团队协作规范</a></li><li><a href="/tutorial/advanced/troubleshooting/">常见问题排查</a></li><li><a href="/tutorial/advanced/future/">未来趋势</a></li></ul></details><details open><summary><span>07</span><strong>工具</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/tools/">章节概览</a></li><li><a href="/tutorial/tools/mcp/">MCP 扩展</a></li><li><a class="active" href="/tutorial/tools/skills/" aria-current="page">Skills 与自动化</a></li><li><a href="/tutorial/tools/cursor-rules/">项目规则文件</a></li><li><a href="/tutorial/tools/github-pages/">GitHub Pages 部署</a></li><li><a href="/tutorial/tools/toolchain/">推荐工具链</a></li></ul></details><details><summary><span>08</span><strong>实战案例</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/cases/">章节概览</a></li><li><a href="/tutorial/cases/comment-feature/">用户评论功能</a></li></ul></details><details><summary><span>09</span><strong>质量</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/quality/">章节概览</a></li><li><a href="/tutorial/quality/checklist/">验收清单</a></li></ul></details><details><summary><span>10</span><strong>学习路线图</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/roadmap/">章节概览</a></li></ul></details></div></nav></details></div><div class="tutorial-reading-shell shell"><aside class="tutorial-sidebar"><nav class="tutorial-nav" aria-label="教程章节"><a class="tutorial-nav__home" href="/tutorial/"><span>00</span><strong>教程首页</strong></a><div class="tutorial-nav__sections"><details><summary><span>01</span><strong>入门</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/get-started/">章节概览</a></li><li><a href="/tutorial/get-started/environment/">环境准备</a></li><li><a href="/tutorial/get-started/concepts/">核心概念</a></li><li><a href="/tutorial/get-started/quickstart/">快速上手</a></li></ul></details><details><summary><span>02</span><strong>基础理论</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/basics/">章节概览</a></li><li><a href="/tutorial/basics/what-is-vibe-coding/">Vibe Coding 是什么</a></li><li><a href="/tutorial/basics/history/">起源与发展</a></li><li><a href="/tutorial/basics/principles/">核心设计理念</a></li><li><a href="/tutorial/basics/vs-traditional/">与传统开发的差异</a></li></ul></details><details><summary><span>03</span><strong>工作流</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/workflow/">章节概览</a></li><li><a href="/tutorial/workflow/spec-first/">规格先行</a></li><li><a href="/tutorial/workflow/task-breakdown/">任务拆分</a></li><li><a href="/tutorial/workflow/context-management/">上下文管理</a></li><li><a href="/tutorial/workflow/verification/">验证闭环</a></li><li><a href="/tutorial/workflow/retrospective/">复盘沉淀</a></li></ul></details><details><summary><span>04</span><strong>提示词工程</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/prompting/">章节概览</a></li><li><a href="/tutorial/prompting/task-brief/">任务简报模板</a></li><li><a href="/tutorial/prompting/design-principles/">提示词设计原则</a></li><li><a href="/tutorial/prompting/library/">常用提示词库</a></li></ul></details><details><summary><span>05</span><strong>领域应用</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/domains/">章节概览</a></li><li><a href="/tutorial/domains/frontend/">前端开发</a></li><li><a href="/tutorial/domains/backend/">后端服务</a></li><li><a href="/tutorial/domains/mobile/">移动端开发</a></li><li><a href="/tutorial/domains/data/">数据工程</a></li><li><a href="/tutorial/domains/ai-integration/">AI 集成</a></li><li><a href="/tutorial/domains/devops/">DevOps 流程</a></li></ul></details><details><summary><span>06</span><strong>进阶</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/advanced/">章节概览</a></li><li><a href="/tutorial/advanced/workflows/">高级工作流</a></li><li><a href="/tutorial/advanced/performance/">性能优化</a></li><li><a href="/tutorial/advanced/architecture/">大型项目架构</a></li><li><a href="/tutorial/advanced/team-collaboration/">团队协作规范</a></li><li><a href="/tutorial/advanced/troubleshooting/">常见问题排查</a></li><li><a href="/tutorial/advanced/future/">未来趋势</a></li></ul></details><details open><summary><span>07</span><strong>工具</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/tools/">章节概览</a></li><li><a href="/tutorial/tools/mcp/">MCP 扩展</a></li><li><a class="active" href="/tutorial/tools/skills/" aria-current="page">Skills 与自动化</a></li><li><a href="/tutorial/tools/cursor-rules/">项目规则文件</a></li><li><a href="/tutorial/tools/github-pages/">GitHub Pages 部署</a></li><li><a href="/tutorial/tools/toolchain/">推荐工具链</a></li></ul></details><details><summary><span>08</span><strong>实战案例</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/cases/">章节概览</a></li><li><a href="/tutorial/cases/comment-feature/">用户评论功能</a></li></ul></details><details><summary><span>09</span><strong>质量</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/quality/">章节概览</a></li><li><a href="/tutorial/quality/checklist/">验收清单</a></li></ul></details><details><summary><span>10</span><strong>学习路线图</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/roadmap/">章节概览</a></li></ul></details></div></nav></aside><article class="tutorial-article"><div class="tutorial-article__index"><span>07.03</span><span>工具</span></div><details class="tutorial-inline-toc"><summary>本页目录 <span>12</span></summary><nav aria-label="本页目录"><a href="#claude-code-skills">Claude Code Skills</a><a class="nested" href="#skills-vs-claudemd">Skills vs CLAUDE.md</a><a class="nested" href="#创建第一个-skill">创建第一个 Skill</a><a class="nested" href="#frontmatter-关键字段">Frontmatter 关键字段</a><a class="nested" href="#动态上下文注入">动态上下文注入</a><a class="nested" href="#内置-skills">内置 Skills</a><a href="#kiro-hooks">Kiro Hooks</a><a class="nested" href="#hook-类型">Hook 类型</a><a class="nested" href="#配置示例">配置示例</a><a class="nested" href="#kiro-steering-文件">Kiro Steering 文件</a><a href="#claude-code-hooks">Claude Code Hooks</a><a href="#推荐的自动化组合">推荐的自动化组合</a></nav></details><div class="tutorial-prose prose"><h1 id="skills-与自动化">Skills 与自动化</h1>
+<p>Skills 和 Hooks 是把重复工作流固化成可复用自动化的核心机制。写一次，之后每次都能一键触发或自动执行。</p>
+<h2 id="claude-code-skills">Claude Code Skills</h2>
+<p>Skills 是 Claude Code 的可复用指令包。把你经常重复粘贴的操作步骤、检查清单、或多步流程写成 Skill，之后用 <code>/skill-name</code> 直接调用，或者让 Claude 在相关场景下自动触发。</p>
+<h3 id="skills-vs-claudemd">Skills vs CLAUDE.md</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>CLAUDE.md</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>加载时机</strong></td>
+<td>每次对话都加载</td>
+<td>只在被调用时加载</td>
+</tr>
+<tr>
+<td><strong>适合内容</strong></td>
+<td>项目约定、背景知识</td>
+<td>可执行的操作流程</td>
+</tr>
+<tr>
+<td><strong>Token 消耗</strong></td>
+<td>每次都消耗</td>
+<td>按需消耗</td>
+</tr>
+<tr>
+<td><strong>调用方式</strong></td>
+<td>自动生效</td>
+<td><code>/skill-name</code> 或自动触发</td>
+</tr>
+</tbody>
+</table>
+<h3 id="创建第一个-skill">创建第一个 Skill</h3>
+<p>Skill 是一个目录，核心文件是 <code>SKILL.md</code>：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>~/.claude/skills/          ← 个人 Skill（所有项目可用）</span></span>
+<span class="line"><span>  commit-check/</span></span>
+<span class="line"><span>    SKILL.md</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>.claude/skills/            ← 项目 Skill（仅当前项目）</span></span>
+<span class="line"><span>  deploy/</span></span>
+<span class="line"><span>    SKILL.md</span></span></code></pre>
+<p><strong>示例：提交前检查 Skill</strong></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">mkdir</span><span style="color:#79B8FF"> -p</span><span style="color:#9ECBFF"> ~/.claude/skills/pre-commit-check</span></span></code></pre>
+<p><code>.claude/skills/pre-commit-check/SKILL.md</code>：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"><span style="color:#E1E4E8">description: 提交前检查代码质量。当用户说"准备提交"、"检查代码"或"commit 前"时触发。</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 当前改动</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">!</span><span style="color:#79B8FF">`git diff HEAD --stat`</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 检查步骤</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#FFAB70">1.</span><span style="color:#E1E4E8"> 运行类型检查：!</span><span style="color:#79B8FF">`npx tsc --noEmit 2&gt;&amp;1 | head -20`</span></span>
+<span class="line"><span style="color:#FFAB70">2.</span><span style="color:#E1E4E8"> 运行 Lint：!</span><span style="color:#79B8FF">`npx eslint . --max-warnings 0 2&gt;&amp;1 | tail -20`</span></span>
+<span class="line"><span style="color:#FFAB70">3.</span><span style="color:#E1E4E8"> 运行测试：!</span><span style="color:#79B8FF">`npx vitest run 2&gt;&amp;1 | tail -30`</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">根据以上结果，报告：</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 是否可以安全提交</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 如果有问题，列出需要修复的内容（按严重程度排序）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 建议的提交信息</span></span></code></pre>
+<p><strong>示例：PR 描述生成 Skill</strong></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"><span style="color:#E1E4E8">description: 根据当前分支的改动生成 PR 描述。</span></span>
+<span class="line"><span style="color:#E1E4E8">disable-model-invocation: true</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 改动内容</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">!</span><span style="color:#79B8FF">`git log main..HEAD --oneline`</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">!</span><span style="color:#79B8FF">`git diff main...HEAD --stat`</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">请生成一份 PR 描述，包含：</span></span>
+<span class="line"><span style="color:#FFAB70">1.</span><span style="color:#E1E4E8;font-weight:bold"> **Summary**</span><span style="color:#E1E4E8">：2-3 句话说明这个 PR 做了什么</span></span>
+<span class="line"><span style="color:#FFAB70">2.</span><span style="color:#E1E4E8;font-weight:bold"> **Changes**</span><span style="color:#E1E4E8">：按文件或模块分组的改动列表</span></span>
+<span class="line"><span style="color:#FFAB70">3.</span><span style="color:#E1E4E8;font-weight:bold"> **Test plan**</span><span style="color:#E1E4E8">：验证这些改动的步骤</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">输出 Markdown 格式，可以直接粘贴到 GitHub PR 描述框。</span></span></code></pre>
+<h3 id="frontmatter-关键字段">Frontmatter 关键字段</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="yaml"><code><span class="line"><span style="color:#B392F0">---</span></span>
+<span class="line"><span style="color:#85E89D">description</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">技能描述（Claude 用这个判断何时自动触发）</span></span>
+<span class="line"><span style="color:#85E89D">disable-model-invocation</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">true</span><span style="color:#6A737D">   # 只允许手动 /调用，不自动触发</span></span>
+<span class="line"><span style="color:#85E89D">user-invocable</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">false</span><span style="color:#6A737D">            # 只允许 Claude 自动触发，不显示在 / 菜单</span></span>
+<span class="line"><span style="color:#85E89D">allowed-tools</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">Read Grep Bash</span><span style="color:#6A737D">    # 该 Skill 可以使用的工具</span></span>
+<span class="line"><span style="color:#85E89D">context</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">fork</span><span style="color:#6A737D">                    # 在独立子 Agent 中运行</span></span>
+<span class="line"><span style="color:#B392F0">---</span></span></code></pre>
+<h3 id="动态上下文注入">动态上下文注入</h3>
+<p>用 <code>!`command`</code> 在 Skill 加载时执行命令并注入结果：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold">## 当前 Git 状态</span></span>
+<span class="line"><span style="color:#E1E4E8">!</span><span style="color:#79B8FF">`git status --short`</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 最近提交</span></span>
+<span class="line"><span style="color:#E1E4E8">!</span><span style="color:#79B8FF">`git log --oneline -5`</span></span></code></pre>
+<p>Claude 看到的是命令的实际输出，而不是命令本身。</p>
+<h3 id="内置-skills">内置 Skills</h3>
+<p>Claude Code 自带一批开箱即用的 Skills：</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/code-review</code></td>
+<td>审查当前改动，按严重程度列出问题</td>
+</tr>
+<tr>
+<td><code>/debug</code></td>
+<td>系统性调试当前错误</td>
+</tr>
+<tr>
+<td><code>/run</code></td>
+<td>启动项目并验证功能</td>
+</tr>
+<tr>
+<td><code>/verify</code></td>
+<td>确认代码改动实际生效</td>
+</tr>
+<tr>
+<td><code>/batch</code></td>
+<td>批量处理多个文件</td>
+</tr>
+</tbody>
+</table>
+<h2 id="kiro-hooks">Kiro Hooks</h2>
+<p>Kiro 的 Hooks 是事件驱动的自动化——文件保存、任务完成、手动触发时，自动执行你定义的操作。</p>
+<h3 id="hook-类型">Hook 类型</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>触发时机</th>
+<th>典型用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文件事件</strong></td>
+<td>文件创建/保存/删除</td>
+<td>保存组件时自动生成测试</td>
+</tr>
+<tr>
+<td><strong>Spec 任务</strong></td>
+<td>任务完成时</td>
+<td>任务完成后自动更新文档</td>
+</tr>
+<tr>
+<td><strong>手动触发</strong></td>
+<td>你主动激活</td>
+<td>一键执行复杂操作</td>
+</tr>
+</tbody>
+</table>
+<h3 id="配置示例">配置示例</h3>
+<p>在 Kiro 面板的 Hooks 标签页，用自然语言描述触发条件和操作：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>触发条件：src/**/*.tsx 文件被保存</span></span>
+<span class="line"><span>操作：为这个组件生成或更新对应的测试文件，</span></span>
+<span class="line"><span>      测试文件放在 src/__tests__/ 目录，</span></span>
+<span class="line"><span>      使用 Vitest + Testing Library，</span></span>
+<span class="line"><span>      覆盖 Happy Path 和主要错误状态</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>触发条件：手动触发（名称：同步 API 文档）</span></span>
+<span class="line"><span>操作：扫描 src/api/ 目录下所有路由文件，</span></span>
+<span class="line"><span>      更新 docs/api.md 中的接口文档，</span></span>
+<span class="line"><span>      保持现有格式不变</span></span></code></pre>
+<h3 id="kiro-steering-文件">Kiro Steering 文件</h3>
+<p>Steering 文件放在 <code>.kiro/steering/</code>，让 Kiro 每次都了解你的项目背景：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>.kiro/steering/</span></span>
+<span class="line"><span>  product.md      ← 产品是什么、目标用户</span></span>
+<span class="line"><span>  tech-stack.md   ← 技术栈和版本</span></span>
+<span class="line"><span>  conventions.md  ← 代码约定和禁止事项</span></span></code></pre>
+<p><strong>示例 <code>.kiro/steering/conventions.md</code></strong>：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#79B8FF;font-weight:bold"># 代码约定</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 技术栈</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> Next.js 14 App Router + TypeScript（严格模式）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 样式：Tailwind CSS，禁止内联样式</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 状态：Zustand，禁止 Redux</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 文件命名</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 组件：PascalCase（UserCard.tsx）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 工具函数：camelCase（formatDate.ts）</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 常量：SCREAMING_SNAKE_CASE</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">## 禁止事项</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不引入新的 UI 组件库</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不直接修改 src/lib/auth/</span></span>
+<span class="line"><span style="color:#FFAB70">-</span><span style="color:#E1E4E8"> 不使用 any 类型</span></span></code></pre>
+<h2 id="claude-code-hooks">Claude Code Hooks</h2>
+<p>Claude Code 也支持 Hooks，在特定事件发生时执行 shell 命令：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#6A737D">// .claude/settings.json</span></span>
+<span class="line"><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#79B8FF">  "hooks"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">    "PostToolUse"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#E1E4E8">      {</span></span>
+<span class="line"><span style="color:#79B8FF">        "matcher"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"Edit|Write"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">        "hooks"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#E1E4E8">          {</span></span>
+<span class="line"><span style="color:#79B8FF">            "type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"command"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "command"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"npx tsc --noEmit 2&gt;&amp;1 | head -5"</span></span>
+<span class="line"><span style="color:#E1E4E8">          }</span></span>
+<span class="line"><span style="color:#E1E4E8">        ]</span></span>
+<span class="line"><span style="color:#E1E4E8">      }</span></span>
+<span class="line"><span style="color:#E1E4E8">    ],</span></span>
+<span class="line"><span style="color:#79B8FF">    "Stop"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#E1E4E8">      {</span></span>
+<span class="line"><span style="color:#79B8FF">        "hooks"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#E1E4E8">          {</span></span>
+<span class="line"><span style="color:#79B8FF">            "type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"command"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "command"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"echo 'Claude 完成任务'"</span></span>
+<span class="line"><span style="color:#E1E4E8">          }</span></span>
+<span class="line"><span style="color:#E1E4E8">        ]</span></span>
+<span class="line"><span style="color:#E1E4E8">      }</span></span>
+<span class="line"><span style="color:#E1E4E8">    ]</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<p>常用 Hook 事件：</p>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>触发时机</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PreToolUse</code></td>
+<td>工具调用前</td>
+</tr>
+<tr>
+<td><code>PostToolUse</code></td>
+<td>工具调用后</td>
+</tr>
+<tr>
+<td><code>Stop</code></td>
+<td>Claude 完成回复时</td>
+</tr>
+<tr>
+<td><code>Notification</code></td>
+<td>Claude 需要通知时</td>
+</tr>
+</tbody>
+</table>
+<h2 id="推荐的自动化组合">推荐的自动化组合</h2>
+<p><strong>前端项目</strong>：保存文件后自动类型检查</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#79B8FF">  "hooks"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">    "PostToolUse"</span><span style="color:#E1E4E8">: [{</span></span>
+<span class="line"><span style="color:#79B8FF">      "matcher"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"Edit|Write"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">      "hooks"</span><span style="color:#E1E4E8">: [{</span><span style="color:#79B8FF">"type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"command"</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">"command"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"npx tsc --noEmit 2&gt;&amp;1 | tail -5"</span><span style="color:#E1E4E8">}]</span></span>
+<span class="line"><span style="color:#E1E4E8">    }]</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<p><strong>全栈项目</strong>：提交前自动跑测试（Kiro Hook）</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>触发条件：手动触发（名称：提交前检查）</span></span>
+<span class="line"><span>操作：运行 pnpm test，如果失败列出失败的测试用例和原因</span></span></code></pre>
+<p><strong>文档项目</strong>：保存 Markdown 后自动检查链接</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#79B8FF">  "hooks"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">    "PostToolUse"</span><span style="color:#E1E4E8">: [{</span></span>
+<span class="line"><span style="color:#79B8FF">      "matcher"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"Write"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">      "hooks"</span><span style="color:#E1E4E8">: [{</span><span style="color:#79B8FF">"type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"command"</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">"command"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"mkdocs build --strict 2&gt;&amp;1 | tail -3"</span><span style="color:#E1E4E8">}]</span></span>
+<span class="line"><span style="color:#E1E4E8">    }]</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+</div><nav class="tutorial-pagination" aria-label="教程翻页"><a href="/tutorial/tools/mcp/"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg><span><small>上一篇</small><strong>MCP 扩展</strong></span></a><a class="tutorial-pagination__next" href="/tutorial/tools/cursor-rules/"><span><small>下一篇</small><strong>项目规则文件</strong></span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></nav></article><aside class="tutorial-toc"><strong>本页目录</strong><nav aria-label="本页目录"><a href="#claude-code-skills">Claude Code Skills</a><a class="nested" href="#skills-vs-claudemd">Skills vs CLAUDE.md</a><a class="nested" href="#创建第一个-skill">创建第一个 Skill</a><a class="nested" href="#frontmatter-关键字段">Frontmatter 关键字段</a><a class="nested" href="#动态上下文注入">动态上下文注入</a><a class="nested" href="#内置-skills">内置 Skills</a><a href="#kiro-hooks">Kiro Hooks</a><a class="nested" href="#hook-类型">Hook 类型</a><a class="nested" href="#配置示例">配置示例</a><a class="nested" href="#kiro-steering-文件">Kiro Steering 文件</a><a href="#claude-code-hooks">Claude Code Hooks</a><a href="#推荐的自动化组合">推荐的自动化组合</a></nav></aside></div><script type="module" src="/_astro/TutorialLayout.astro_astro_type_script_index_0_lang.Dl7FfqaG.js"></script></main><footer class="site-footer"><div class="shell footer-inner"><div><strong>Ninthless</strong><p>代码、工具与随手实验。</p></div><div class="footer-links"><a href="/tutorial/">Vibe Coding 教程<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a href="https://github.com/Ninthless" target="_blank" rel="noreferrer">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/rss.xml">RSS</a></div><p class="copyright">© 2026 Ninthless</p></div></footer></body></html>

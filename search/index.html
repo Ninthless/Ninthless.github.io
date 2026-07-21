@@ -2,4 +2,4150 @@
 	const storedTheme = localStorage.getItem('theme');
 	const preferredTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 	document.documentElement.dataset.theme = storedTheme || preferredTheme;
-</script><link rel="stylesheet" href="/_astro/BaseLayout.B0hnaoWk.css"></head><body class><a class="skip-link" href="#main-content">跳到主要内容</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Ninthless 首页"><span class="brand-mark" aria-hidden="true">N/</span><span>Ninthless</span></a><nav class="primary-nav" aria-label="主要导航"><a href="/posts/">文章</a><a href="https://ninthless.github.io/vibe-coding-tutorial/">教程<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right nav-external-icon"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/projects/">项目</a><a href="/about/">关于</a></nav><div class="header-actions"><a class="icon-button" href="/search/" aria-label="搜索文章" title="搜索"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></a><a class="icon-button" href="/rss.xml" aria-label="订阅 RSS" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a><a class="icon-button" href="https://github.com/Ninthless" aria-label="访问 Ninthless 的 GitHub" title="GitHub" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle></svg></a><button class="icon-button theme-toggle" type="button" aria-label="切换为深色主题" title="切换主题"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-sun theme-icon theme-icon--light"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-moon theme-icon theme-icon--dark"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><script type="module">var e=document.querySelector(`.theme-toggle`);function t(){if(!e)return;let t=document.documentElement.dataset.theme===`dark`;e.setAttribute(`aria-label`,t?`切换为浅色主题`:`切换为深色主题`)}e?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme===`dark`?`light`:`dark`;document.documentElement.dataset.theme=e,localStorage.setItem(`theme`,e),t()}),t();</script></div></div></header><main id="main-content"><section class="search-shell shell"><div class="page-intro page-intro--search"><p class="eyebrow">SEARCH / NOTES</p><h1>搜索</h1></div><div class="search-field"><label for="search-input">输入标题、摘要或标签</label><div class="search-control"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg><input id="search-input" type="search" autocomplete="off" placeholder="例如：Astro、AI、Windows"></div><p id="search-status" class="search-status" aria-live="polite">显示全部 11 篇文章</p></div><div id="search-results" class="article-list search-results"><article class="article-row accent-coral" data-search-item data-search-text="从 80 个仓库看我的工程轨迹：2023—2026 我重新审计了自己的 80 个 github 仓库，从四年的变化中寻找真正值得继续积累的方向。 github 工程复盘 作品集"><div class="article-index" aria-hidden="true">01</div><div class="article-date"><time datetime="2026-07-19T14:00:00.000Z">Jul 19</time><span>8 min</span></div><div class="article-summary"><h2><a href="/posts/github-80-repositories-timeline/">从 80 个仓库看我的工程轨迹：2023—2026</a></h2><p>我重新审计了自己的 80 个 GitHub 仓库，从四年的变化中寻找真正值得继续积累的方向。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/GitHub/">#GitHub</a></li><li><a href="/tags/%E5%B7%A5%E7%A8%8B%E5%A4%8D%E7%9B%98/">#工程复盘</a></li><li><a href="/tags/%E4%BD%9C%E5%93%81%E9%9B%86/">#作品集</a></li></ul></div><a class="row-arrow" href="/posts/github-80-repositories-timeline/" aria-label="阅读《从 80 个仓库看我的工程轨迹：2023—2026》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-teal" data-search-item data-search-text="为什么这个博客选择静态优先 我选择静态优先，是为了获得更多内容所有权和更低的长期维护成本。 astro 架构 web"><div class="article-index" aria-hidden="true">02</div><div class="article-date"><time datetime="2026-07-18T00:00:00.000Z">Jul 18</time><span>2 min</span></div><div class="article-summary"><h2><a href="/posts/static-first/">为什么这个博客选择静态优先</a></h2><p>我选择静态优先，是为了获得更多内容所有权和更低的长期维护成本。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/Astro/">#Astro</a></li><li><a href="/tags/%E6%9E%B6%E6%9E%84/">#架构</a></li><li><a href="/tags/Web/">#Web</a></li></ul></div><a class="row-arrow" href="/posts/static-first/" aria-label="阅读《为什么这个博客选择静态优先》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-yellow" data-search-item data-search-text="工作台上的三个方向 ai 工作流、windows 实用程序和开发者工具，是我近期最常回到的三个问题域。 ai windows tooling"><div class="article-index" aria-hidden="true">03</div><div class="article-date"><time datetime="2026-07-16T00:00:00.000Z">Jul 16</time><span>2 min</span></div><div class="article-summary"><h2><a href="/posts/three-directions/">工作台上的三个方向</a></h2><p>AI 工作流、Windows 实用程序和开发者工具，是我近期最常回到的三个问题域。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/AI/">#AI</a></li><li><a href="/tags/Windows/">#Windows</a></li><li><a href="/tags/Tooling/">#Tooling</a></li></ul></div><a class="row-arrow" href="/posts/three-directions/" aria-label="阅读《工作台上的三个方向》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-teal" data-search-item data-search-text="vibe coding 不是一句提示词，而是一条交付闭环 我如何把规格、任务拆解、上下文、验证与复盘整理成一条可交付的 vibe coding 闭环。 vibe coding ai 工程 教程"><div class="article-index" aria-hidden="true">04</div><div class="article-date"><time datetime="2026-05-26T00:00:00.000Z">May 26</time><span>8 min</span></div><div class="article-summary"><h2><a href="/posts/vibe-coding-delivery-loop/">Vibe Coding 不是一句提示词，而是一条交付闭环</a></h2><p>我如何把规格、任务拆解、上下文、验证与复盘整理成一条可交付的 Vibe Coding 闭环。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/Vibe%20Coding/">#Vibe Coding</a></li><li><a href="/tags/AI%20%E5%B7%A5%E7%A8%8B/">#AI 工程</a></li><li><a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a></li></ul></div><a class="row-arrow" href="/posts/vibe-coding-delivery-loop/" aria-label="阅读《Vibe Coding 不是一句提示词，而是一条交付闭环》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-yellow" data-search-item data-search-text="tau：为什么编码 agent 需要一层桌面工作台 我没有在 tau-gui 中重写 pi，而是在 rpc 与 sdk 之上处理会话、上下文和桌面交互。 编码 agent electron 桌面应用"><div class="article-index" aria-hidden="true">05</div><div class="article-date"><time datetime="2026-05-19T00:00:00.000Z">May 19</time><span>6 min</span></div><div class="article-summary"><h2><a href="/posts/tau-gui-agent-desktop-context/">Tau：为什么编码 Agent 需要一层桌面工作台</a></h2><p>我没有在 Tau-gui 中重写 Pi，而是在 RPC 与 SDK 之上处理会话、上下文和桌面交互。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/%E7%BC%96%E7%A0%81%20Agent/">#编码 Agent</a></li><li><a href="/tags/Electron/">#Electron</a></li><li><a href="/tags/%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8/">#桌面应用</a></li></ul></div><a class="row-arrow" href="/posts/tau-gui-agent-desktop-context/" aria-label="阅读《Tau：为什么编码 Agent 需要一层桌面工作台》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-yellow" data-search-item data-search-text="把提示词变成可维护的 agent 操作协议 我如何把反复使用的提示词整理成可维护、可触发、可验证的 agent 操作协议。 agent skills ai 工程 工作流"><div class="article-index" aria-hidden="true">06</div><div class="article-date"><time datetime="2026-05-15T00:00:00.000Z">May 15</time><span>8 min</span></div><div class="article-summary"><h2><a href="/posts/agent-skills-as-operating-protocols/">把提示词变成可维护的 Agent 操作协议</a></h2><p>我如何把反复使用的提示词整理成可维护、可触发、可验证的 Agent 操作协议。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/Agent%20Skills/">#Agent Skills</a></li><li><a href="/tags/AI%20%E5%B7%A5%E7%A8%8B/">#AI 工程</a></li><li><a href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">#工作流</a></li></ul></div><a class="row-arrow" href="/posts/agent-skills-as-operating-protocols/" aria-label="阅读《把提示词变成可维护的 Agent 操作协议》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-teal" data-search-item data-search-text="改系统字体之前，先把恢复路径设计出来 我在 hybridfont 中从实验性重定向转向 systemless 覆盖，并把恢复路径放到字体替换之前。 android 字体 可恢复设计"><div class="article-index" aria-hidden="true">07</div><div class="article-date"><time datetime="2026-04-27T00:00:00.000Z">Apr 27</time><span>6 min</span></div><div class="article-summary"><h2><a href="/posts/hybridfont-recovery-first/">改系统字体之前，先把恢复路径设计出来</a></h2><p>我在 HybridFont 中从实验性重定向转向 systemless 覆盖，并把恢复路径放到字体替换之前。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/Android/">#Android</a></li><li><a href="/tags/%E5%AD%97%E4%BD%93/">#字体</a></li><li><a href="/tags/%E5%8F%AF%E6%81%A2%E5%A4%8D%E8%AE%BE%E8%AE%A1/">#可恢复设计</a></li></ul></div><a class="row-arrow" href="/posts/hybridfont-recovery-first/" aria-label="阅读《改系统字体之前，先把恢复路径设计出来》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-coral" data-search-item data-search-text="windows 小工具最先要设计的不是功能，而是边界 我从 aceoptimizer 与 emergency-stop 中总结，windows 工具如何用最小权限、明确非目标和可恢复更新建立信任。 windows csharp 安全边界"><div class="article-index" aria-hidden="true">08</div><div class="article-date"><time datetime="2026-03-30T00:00:00.000Z">Mar 30</time><span>7 min</span></div><div class="article-summary"><h2><a href="/posts/windows-utilities-boundaries/">Windows 小工具最先要设计的不是功能，而是边界</a></h2><p>我从 ACEOptimizer 与 Emergency-Stop 中总结，Windows 工具如何用最小权限、明确非目标和可恢复更新建立信任。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/Windows/">#Windows</a></li><li><a href="/tags/CSharp/">#CSharp</a></li><li><a href="/tags/%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C/">#安全边界</a></li></ul></div><a class="row-arrow" href="/posts/windows-utilities-boundaries/" aria-label="阅读《Windows 小工具最先要设计的不是功能，而是边界》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-yellow" data-search-item data-search-text="给不断变化的 web 应用做汉化，难点不是翻译 我在维护 postman-web-i18n 时发现，动态 dom、状态原子性、规则安全和扩展权限比翻译字典更难。 浏览器扩展 国际化 安全"><div class="article-index" aria-hidden="true">09</div><div class="article-date"><time datetime="2025-10-17T00:00:00.000Z">Oct 17</time><span>7 min</span></div><div class="article-summary"><h2><a href="/posts/resilient-web-localization/">给不断变化的 Web 应用做汉化，难点不是翻译</a></h2><p>我在维护 Postman-Web-i18n 时发现，动态 DOM、状态原子性、规则安全和扩展权限比翻译字典更难。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95/">#浏览器扩展</a></li><li><a href="/tags/%E5%9B%BD%E9%99%85%E5%8C%96/">#国际化</a></li><li><a href="/tags/%E5%AE%89%E5%85%A8/">#安全</a></li></ul></div><a class="row-arrow" href="/posts/resilient-web-localization/" aria-label="阅读《给不断变化的 Web 应用做汉化，难点不是翻译》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-coral" data-search-item data-search-text="科研代码不是结果文件夹，而是一条证据链 我从自己的图像复原、微电网、负荷预测、eta 与信号估计项目中，整理出一条可追溯的研究证据链。 科研复现 机器学习 证据"><div class="article-index" aria-hidden="true">10</div><div class="article-date"><time datetime="2025-06-08T00:00:00.000Z">Jun 08</time><span>8 min</span></div><div class="article-summary"><h2><a href="/posts/research-repositories-evidence-chain/">科研代码不是结果文件夹，而是一条证据链</a></h2><p>我从自己的图像复原、微电网、负荷预测、ETA 与信号估计项目中，整理出一条可追溯的研究证据链。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/%E7%A7%91%E7%A0%94%E5%A4%8D%E7%8E%B0/">#科研复现</a></li><li><a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">#机器学习</a></li><li><a href="/tags/%E8%AF%81%E6%8D%AE/">#证据</a></li></ul></div><a class="row-arrow" href="/posts/research-repositories-evidence-chain/" aria-label="阅读《科研代码不是结果文件夹，而是一条证据链》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-teal" data-search-item data-search-text="课程项目什么时候才算工程资产 我回看 taskflow、tradinghelper、carbon-admin 与 configurate，判断旧作业何时值得继续维护，何时应该归档。 课程项目 作品集 工程复盘"><div class="article-index" aria-hidden="true">11</div><div class="article-date"><time datetime="2024-12-19T00:00:00.000Z">Dec 19</time><span>7 min</span></div><div class="article-summary"><h2><a href="/posts/course-projects-to-assets/">课程项目什么时候才算工程资产</a></h2><p>我回看 TaskFlow、Tradinghelper、carbon-admin 与 Configurate，判断旧作业何时值得继续维护，何时应该归档。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/%E8%AF%BE%E7%A8%8B%E9%A1%B9%E7%9B%AE/">#课程项目</a></li><li><a href="/tags/%E4%BD%9C%E5%93%81%E9%9B%86/">#作品集</a></li><li><a href="/tags/%E5%B7%A5%E7%A8%8B%E5%A4%8D%E7%9B%98/">#工程复盘</a></li></ul></div><a class="row-arrow" href="/posts/course-projects-to-assets/" aria-label="阅读《课程项目什么时候才算工程资产》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article></div><div id="search-empty" class="empty-state" hidden><strong>没有找到匹配的文章。</strong><p>换一个更短的关键词，或者返回全部文章继续浏览。</p><a class="text-link" href="/posts/">浏览全部文章 <span aria-hidden="true">→</span></a></div></section><script type="module">var e=document.querySelector(`#search-input`),t=[...document.querySelectorAll(`[data-search-item]`)],n=document.querySelector(`#search-status`),r=document.querySelector(`#search-empty`);function i(e){let i=e.trim().toLocaleLowerCase(`zh-CN`),a=0;for(let e of t){let t=!i||e.dataset.searchText?.includes(i);e.hidden=!t,t&&(a+=1)}n&&(n.textContent=i?`找到 ${a} 篇文章`:`显示全部 ${a} 篇文章`),r&&(r.hidden=a>0);let o=new URL(window.location.href);i?o.searchParams.set(`q`,e.trim()):o.searchParams.delete(`q`),history.replaceState({},``,o)}var a=new URLSearchParams(window.location.search).get(`q`)??``;e&&(e.value=a,e.addEventListener(`input`,()=>i(e.value))),i(a);</script></main><footer class="site-footer"><div class="shell footer-inner"><div><strong>Ninthless</strong><p>代码、工具与随手实验。</p></div><div class="footer-links"><a href="https://ninthless.github.io/vibe-coding-tutorial/">Vibe Coding 教程<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="https://github.com/Ninthless" target="_blank" rel="noreferrer">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/rss.xml">RSS</a></div><p class="copyright">© 2026 Ninthless</p></div></footer></body></html>
+</script><style>.tutorial-search-row[data-astro-cid-62u2qymq]{border-top:1px solid var(--line);grid-template-columns:48px minmax(0,1fr) 44px;align-items:center;gap:22px;padding:26px 10px 26px 0;display:grid}.tutorial-search-row[data-astro-cid-62u2qymq]:hover{background:var(--surface)}.tutorial-search-row__icon[data-astro-cid-62u2qymq]{width:36px;height:36px;color:var(--accent);border:1px solid var(--line);border-radius:3px;place-items:center;display:grid}.tutorial-search-row[data-astro-cid-62u2qymq] p[data-astro-cid-62u2qymq]{color:var(--muted);font-family:var(--font-mono);text-transform:uppercase;margin:0 0 5px;font-size:11px;font-weight:650}.tutorial-search-row[data-astro-cid-62u2qymq] h2[data-astro-cid-62u2qymq]{letter-spacing:0;margin:0;font-size:23px;line-height:1.25}.tutorial-search-row[data-astro-cid-62u2qymq] h2[data-astro-cid-62u2qymq] a[data-astro-cid-62u2qymq]{text-decoration:none}.tutorial-search-row[data-astro-cid-62u2qymq] h2[data-astro-cid-62u2qymq] a[data-astro-cid-62u2qymq]:hover{color:var(--coral)}@media (width<=720px){.tutorial-search-row[data-astro-cid-62u2qymq]{grid-template-columns:38px minmax(0,1fr) 40px;gap:12px;padding-block:22px}.tutorial-search-row[data-astro-cid-62u2qymq] h2[data-astro-cid-62u2qymq]{font-size:20px}}
+</style><link rel="stylesheet" href="/_astro/BaseLayout.BjJxL8Uv.css"></head><body class><a class="skip-link" href="#main-content">跳到主要内容</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Ninthless 首页"><span class="brand-mark" aria-hidden="true">N/</span><span>Ninthless</span></a><nav class="primary-nav" aria-label="主要导航"><a href="/posts/">文章</a><a href="/tutorial/">教程</a><a href="/projects/">项目</a><a href="/about/">关于</a></nav><div class="header-actions"><a class="icon-button" href="/search/" aria-label="搜索站点内容" title="搜索"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></a><a class="icon-button" href="/rss.xml" aria-label="订阅 RSS" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a><a class="icon-button" href="https://github.com/Ninthless" aria-label="访问 Ninthless 的 GitHub" title="GitHub" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle></svg></a><button class="icon-button theme-toggle" type="button" aria-label="切换为深色主题" title="切换主题"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-sun theme-icon theme-icon--light"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-moon theme-icon theme-icon--dark"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><script type="module">var e=document.querySelector(`.theme-toggle`);function t(){if(!e)return;let t=document.documentElement.dataset.theme===`dark`;e.setAttribute(`aria-label`,t?`切换为浅色主题`:`切换为深色主题`)}e?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme===`dark`?`light`:`dark`;document.documentElement.dataset.theme=e,localStorage.setItem(`theme`,e),window.dispatchEvent(new CustomEvent(`themechange`,{detail:{theme:e}})),t()}),t();</script></div></div></header><main id="main-content"><section class="search-shell shell"><div class="page-intro page-intro--search"><p class="eyebrow">SEARCH / NOTES</p><h1>搜索</h1></div><div class="search-field"><label for="search-input">搜索文章与教程</label><div class="search-control"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg><input id="search-input" type="search" autocomplete="off" placeholder="例如：规格、Astro、验证闭环"></div><p id="search-status" class="search-status" aria-live="polite">显示全部 55 个结果</p></div><div id="search-results" class="search-results"><section class="search-result-group" data-search-group aria-labelledby="search-posts-title"><h2 id="search-posts-title" class="search-result-group__heading">文章 <span>11</span></h2><div class="article-list"><article class="article-row accent-coral" data-search-item data-search-text="从 80 个仓库看我的工程轨迹：2023—2026 我重新审计了自己的 80 个 github 仓库，从四年的变化中寻找真正值得继续积累的方向。 github 工程复盘 作品集"><div class="article-index" aria-hidden="true">01</div><div class="article-date"><time datetime="2026-07-19T14:00:00.000Z">Jul 19</time><span>8 min</span></div><div class="article-summary"><h3><a href="/posts/github-80-repositories-timeline/">从 80 个仓库看我的工程轨迹：2023—2026</a></h3><p>我重新审计了自己的 80 个 GitHub 仓库，从四年的变化中寻找真正值得继续积累的方向。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/GitHub/">#GitHub</a></li><li><a href="/tags/%E5%B7%A5%E7%A8%8B%E5%A4%8D%E7%9B%98/">#工程复盘</a></li><li><a href="/tags/%E4%BD%9C%E5%93%81%E9%9B%86/">#作品集</a></li></ul></div><a class="row-arrow" href="/posts/github-80-repositories-timeline/" aria-label="阅读《从 80 个仓库看我的工程轨迹：2023—2026》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-teal" data-search-item data-search-text="为什么这个博客选择静态优先 我选择静态优先，是为了获得更多内容所有权和更低的长期维护成本。 astro 架构 web"><div class="article-index" aria-hidden="true">02</div><div class="article-date"><time datetime="2026-07-18T00:00:00.000Z">Jul 18</time><span>2 min</span></div><div class="article-summary"><h3><a href="/posts/static-first/">为什么这个博客选择静态优先</a></h3><p>我选择静态优先，是为了获得更多内容所有权和更低的长期维护成本。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/Astro/">#Astro</a></li><li><a href="/tags/%E6%9E%B6%E6%9E%84/">#架构</a></li><li><a href="/tags/Web/">#Web</a></li></ul></div><a class="row-arrow" href="/posts/static-first/" aria-label="阅读《为什么这个博客选择静态优先》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-yellow" data-search-item data-search-text="工作台上的三个方向 ai 工作流、windows 实用程序和开发者工具，是我近期最常回到的三个问题域。 ai windows tooling"><div class="article-index" aria-hidden="true">03</div><div class="article-date"><time datetime="2026-07-16T00:00:00.000Z">Jul 16</time><span>2 min</span></div><div class="article-summary"><h3><a href="/posts/three-directions/">工作台上的三个方向</a></h3><p>AI 工作流、Windows 实用程序和开发者工具，是我近期最常回到的三个问题域。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/AI/">#AI</a></li><li><a href="/tags/Windows/">#Windows</a></li><li><a href="/tags/Tooling/">#Tooling</a></li></ul></div><a class="row-arrow" href="/posts/three-directions/" aria-label="阅读《工作台上的三个方向》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-teal" data-search-item data-search-text="vibe coding 不是一句提示词，而是一条交付闭环 我如何把规格、任务拆解、上下文、验证与复盘整理成一条可交付的 vibe coding 闭环。 vibe coding ai 工程 教程"><div class="article-index" aria-hidden="true">04</div><div class="article-date"><time datetime="2026-05-26T00:00:00.000Z">May 26</time><span>8 min</span></div><div class="article-summary"><h3><a href="/posts/vibe-coding-delivery-loop/">Vibe Coding 不是一句提示词，而是一条交付闭环</a></h3><p>我如何把规格、任务拆解、上下文、验证与复盘整理成一条可交付的 Vibe Coding 闭环。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/Vibe%20Coding/">#Vibe Coding</a></li><li><a href="/tags/AI%20%E5%B7%A5%E7%A8%8B/">#AI 工程</a></li><li><a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a></li></ul></div><a class="row-arrow" href="/posts/vibe-coding-delivery-loop/" aria-label="阅读《Vibe Coding 不是一句提示词，而是一条交付闭环》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-yellow" data-search-item data-search-text="tau：为什么编码 agent 需要一层桌面工作台 我没有在 tau-gui 中重写 pi，而是在 rpc 与 sdk 之上处理会话、上下文和桌面交互。 编码 agent electron 桌面应用"><div class="article-index" aria-hidden="true">05</div><div class="article-date"><time datetime="2026-05-19T00:00:00.000Z">May 19</time><span>6 min</span></div><div class="article-summary"><h3><a href="/posts/tau-gui-agent-desktop-context/">Tau：为什么编码 Agent 需要一层桌面工作台</a></h3><p>我没有在 Tau-gui 中重写 Pi，而是在 RPC 与 SDK 之上处理会话、上下文和桌面交互。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/%E7%BC%96%E7%A0%81%20Agent/">#编码 Agent</a></li><li><a href="/tags/Electron/">#Electron</a></li><li><a href="/tags/%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8/">#桌面应用</a></li></ul></div><a class="row-arrow" href="/posts/tau-gui-agent-desktop-context/" aria-label="阅读《Tau：为什么编码 Agent 需要一层桌面工作台》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-yellow" data-search-item data-search-text="把提示词变成可维护的 agent 操作协议 我如何把反复使用的提示词整理成可维护、可触发、可验证的 agent 操作协议。 agent skills ai 工程 工作流"><div class="article-index" aria-hidden="true">06</div><div class="article-date"><time datetime="2026-05-15T00:00:00.000Z">May 15</time><span>8 min</span></div><div class="article-summary"><h3><a href="/posts/agent-skills-as-operating-protocols/">把提示词变成可维护的 Agent 操作协议</a></h3><p>我如何把反复使用的提示词整理成可维护、可触发、可验证的 Agent 操作协议。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/Agent%20Skills/">#Agent Skills</a></li><li><a href="/tags/AI%20%E5%B7%A5%E7%A8%8B/">#AI 工程</a></li><li><a href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/">#工作流</a></li></ul></div><a class="row-arrow" href="/posts/agent-skills-as-operating-protocols/" aria-label="阅读《把提示词变成可维护的 Agent 操作协议》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-teal" data-search-item data-search-text="改系统字体之前，先把恢复路径设计出来 我在 hybridfont 中从实验性重定向转向 systemless 覆盖，并把恢复路径放到字体替换之前。 android 字体 可恢复设计"><div class="article-index" aria-hidden="true">07</div><div class="article-date"><time datetime="2026-04-27T00:00:00.000Z">Apr 27</time><span>6 min</span></div><div class="article-summary"><h3><a href="/posts/hybridfont-recovery-first/">改系统字体之前，先把恢复路径设计出来</a></h3><p>我在 HybridFont 中从实验性重定向转向 systemless 覆盖，并把恢复路径放到字体替换之前。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/Android/">#Android</a></li><li><a href="/tags/%E5%AD%97%E4%BD%93/">#字体</a></li><li><a href="/tags/%E5%8F%AF%E6%81%A2%E5%A4%8D%E8%AE%BE%E8%AE%A1/">#可恢复设计</a></li></ul></div><a class="row-arrow" href="/posts/hybridfont-recovery-first/" aria-label="阅读《改系统字体之前，先把恢复路径设计出来》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-coral" data-search-item data-search-text="windows 小工具最先要设计的不是功能，而是边界 我从 aceoptimizer 与 emergency-stop 中总结，windows 工具如何用最小权限、明确非目标和可恢复更新建立信任。 windows csharp 安全边界"><div class="article-index" aria-hidden="true">08</div><div class="article-date"><time datetime="2026-03-30T00:00:00.000Z">Mar 30</time><span>7 min</span></div><div class="article-summary"><h3><a href="/posts/windows-utilities-boundaries/">Windows 小工具最先要设计的不是功能，而是边界</a></h3><p>我从 ACEOptimizer 与 Emergency-Stop 中总结，Windows 工具如何用最小权限、明确非目标和可恢复更新建立信任。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/Windows/">#Windows</a></li><li><a href="/tags/CSharp/">#CSharp</a></li><li><a href="/tags/%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C/">#安全边界</a></li></ul></div><a class="row-arrow" href="/posts/windows-utilities-boundaries/" aria-label="阅读《Windows 小工具最先要设计的不是功能，而是边界》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-yellow" data-search-item data-search-text="给不断变化的 web 应用做汉化，难点不是翻译 我在维护 postman-web-i18n 时发现，动态 dom、状态原子性、规则安全和扩展权限比翻译字典更难。 浏览器扩展 国际化 安全"><div class="article-index" aria-hidden="true">09</div><div class="article-date"><time datetime="2025-10-17T00:00:00.000Z">Oct 17</time><span>7 min</span></div><div class="article-summary"><h3><a href="/posts/resilient-web-localization/">给不断变化的 Web 应用做汉化，难点不是翻译</a></h3><p>我在维护 Postman-Web-i18n 时发现，动态 DOM、状态原子性、规则安全和扩展权限比翻译字典更难。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95/">#浏览器扩展</a></li><li><a href="/tags/%E5%9B%BD%E9%99%85%E5%8C%96/">#国际化</a></li><li><a href="/tags/%E5%AE%89%E5%85%A8/">#安全</a></li></ul></div><a class="row-arrow" href="/posts/resilient-web-localization/" aria-label="阅读《给不断变化的 Web 应用做汉化，难点不是翻译》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-coral" data-search-item data-search-text="科研代码不是结果文件夹，而是一条证据链 我从自己的图像复原、微电网、负荷预测、eta 与信号估计项目中，整理出一条可追溯的研究证据链。 科研复现 机器学习 证据"><div class="article-index" aria-hidden="true">10</div><div class="article-date"><time datetime="2025-06-08T00:00:00.000Z">Jun 08</time><span>8 min</span></div><div class="article-summary"><h3><a href="/posts/research-repositories-evidence-chain/">科研代码不是结果文件夹，而是一条证据链</a></h3><p>我从自己的图像复原、微电网、负荷预测、ETA 与信号估计项目中，整理出一条可追溯的研究证据链。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/%E7%A7%91%E7%A0%94%E5%A4%8D%E7%8E%B0/">#科研复现</a></li><li><a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">#机器学习</a></li><li><a href="/tags/%E8%AF%81%E6%8D%AE/">#证据</a></li></ul></div><a class="row-arrow" href="/posts/research-repositories-evidence-chain/" aria-label="阅读《科研代码不是结果文件夹，而是一条证据链》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="article-row accent-teal" data-search-item data-search-text="课程项目什么时候才算工程资产 我回看 taskflow、tradinghelper、carbon-admin 与 configurate，判断旧作业何时值得继续维护，何时应该归档。 课程项目 作品集 工程复盘"><div class="article-index" aria-hidden="true">11</div><div class="article-date"><time datetime="2024-12-19T00:00:00.000Z">Dec 19</time><span>7 min</span></div><div class="article-summary"><h3><a href="/posts/course-projects-to-assets/">课程项目什么时候才算工程资产</a></h3><p>我回看 TaskFlow、Tradinghelper、carbon-admin 与 Configurate，判断旧作业何时值得继续维护，何时应该归档。</p><ul class="tag-list" aria-label="文章标签"><li><a href="/tags/%E8%AF%BE%E7%A8%8B%E9%A1%B9%E7%9B%AE/">#课程项目</a></li><li><a href="/tags/%E4%BD%9C%E5%93%81%E9%9B%86/">#作品集</a></li><li><a href="/tags/%E5%B7%A5%E7%A8%8B%E5%A4%8D%E7%9B%98/">#工程复盘</a></li></ul></div><a class="row-arrow" href="/posts/course-projects-to-assets/" aria-label="阅读《课程项目什么时候才算工程资产》"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article></div></section><section class="search-result-group" data-search-group aria-labelledby="search-tutorial-title"><h2 id="search-tutorial-title" class="search-result-group__heading">教程 <span>44</span></h2><div class="article-list"><article class="tutorial-search-row" data-search-item data-search-text="入门 入门 # 入门
+
+欢迎来到 vibe coding 教程。本章帮你在最短时间内搭好环境、理解核心概念，并完成第一个真实任务。
+
+## 本章内容
+
+| 章节 | 内容 |
+| --- | --- |
+| [环境准备](/tutorial/get-started/environment/) | 安装必备工具，配置本地开发环境 |
+| [核心概念](/tutorial/get-started/concepts/) | 理解 vibe coding 的关键术语和思维模型 |
+| [快速上手](/tutorial/get-started/quickstart/) | 完成第一个端到端的 vibe coding 任务 |
+
+## 前置要求
+
+- 有基本的编程经验（任意语言）
+- 能使用命令行终端
+- 有 github 账号（用于版本控制和发布）" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 入门</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/get-started/" data-astro-cid-62u2qymq>入门</a></h2></div><a class="row-arrow" href="/tutorial/get-started/" aria-label="阅读教程《入门》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="环境准备 入门 # 环境准备
+
+vibe coding 的工具链分两层：**ai 工具**（ide 和模型）和**基础工具**（版本控制、运行时）。本页帮你把两层都搭好。
+
+## 选择你的 ai ide
+
+以下四款工具是 2026 年主流选择，按上手难度排列：
+
+### kiro（推荐）
+
+
+aws 出品，规格驱动开发，内置 agent 模式和任务管理。适合复杂项目和团队协作。
+
+1. 下载：[kiro.dev](https://kiro.dev)
+2. 安装后用 github 或 aws 账号登录
+3. 打开项目文件夹，kiro 会自动检测项目类型
+
+**免费额度**：每月有免费 token 额度，个人项目够用。
+
+### cursor
+
+
+代码库理解能力强，多文件编辑流畅，日常开发首选。
+
+1. 下载：[cursor.com](https://cursor.com)
+2. 安装后导入 vs code 配置（可选）
+3. 在 settings → models 选择模型（推荐 claude sonnet 4.6）
+
+**免费额度**：每月 500 次快速请求，超出后按量计费。
+
+### claude code
+
+
+anthropic 官方 cli，终端驱动，mcp 扩展生态丰富。适合喜欢命令行的开发者。
+
+```bash
+npm install -g @anthropic-ai/claude-code
+claude
+```
+
+需要 anthropic api key：[console.anthropic.com](https://console.anthropic.com)
+
+### windsurf
+
+
+cascade agent 体验流畅，个人项目和全栈开发体验好。
+
+1. 下载：[codeium.com/windsurf](https://codeium.com/windsurf)
+2. 安装后用 google 或 github 账号登录
+3. 在 cascade 面板选择模型
+
+## 基础工具
+
+| 工具 | 安装方式 | 用途 |
+| --- | --- | --- |
+| **git** | [git-scm.com](https://git-scm.com) | 版本控制和回滚 |
+| **github cli** | `winget install github.cli` / `brew install gh` | 管理仓库和工作流 |
+| **node.js lts** | [nodejs.org](https://nodejs.org) | 前端项目和工具链 |
+| **python 3.11+** | [python.org](https://python.org) | 脚本和文档工具 |
+
+验证安装：
+
+```bash
+git --version
+gh --version
+node --version
+python --version
+```
+
+## 配置项目规则文件
+
+项目规则文件让 ai 每次自动了解你的项目约定，不需要每次重复说明。
+
+**kiro**（`.kiro/steering/`）：
+
+```bash
+mkdir -p .kiro/steering
+```
+
+创建 `.kiro/steering/project.md`：
+
+```markdown
+# 项目约定
+
+## 技术栈
+- [框架和版本]
+- [样式方案]
+- [测试框架]
+
+## 代码约定
+- [命名规范]
+- [文件结构]
+
+## 禁止事项
+- 不引入 [某类依赖]
+- 不修改 [某个目录]
+```
+
+**cursor**（`.cursorrules`）和 **claude code**（`claude.md`）格式相同，放在项目根目录。
+
+## 本站本地启动
+
+如果你想在本地预览本教程：
+
+```bash
+python -m venv .venv
+
+# windows
+.\.venv\scripts\activate.ps1
+
+# macos / linux
+source .venv/bin/activate
+
+pip install -r requirements.txt
+mkdocs serve
+```
+
+浏览器打开 `http://127.0.0.1:8000`。
+
+构建检查（发布前运行）：
+
+```bash
+mkdocs build --strict
+```" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 入门</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/get-started/environment/" data-astro-cid-62u2qymq>环境准备</a></h2></div><a class="row-arrow" href="/tutorial/get-started/environment/" aria-label="阅读教程《环境准备》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="核心概念 入门 # 核心概念
+
+在开始实践之前，先建立一套统一的术语体系。这些概念贯穿整个教程。
+
+## 关键术语
+
+**vibe coding**
+: 一种以 ai 为核心协作者的软件开发方式。开发者负责定义问题边界、提供上下文、验证结果；ai 负责生成实现。两者形成闭环迭代。
+
+**规格（spec）**
+: 在让 ai 写代码之前，用自然语言固定下来的问题边界。包含目标行为、不做什么、输入输出、影响范围和验证方式。
+
+**任务简报（task brief）**
+: 一次编码请求的完整上下文包。包含背景、目标、范围、约束、验收标准和交付格式。
+
+**上下文窗口（context window）**
+: ai 模型在单次对话中能处理的信息量上限。有效的 vibe coding 需要精心管理上下文，确保关键信息在窗口内。
+
+**验证闭环（verification loop）**
+: 每次 ai 生成结果后的检查流程：运行测试 → 类型检查 → 构建 → 手动验收。不经过验证的结果不算完成。
+
+**复盘沉淀（retrospective）**
+: 任务完成后记录有效提示词、失败模式和改进点，形成可复用的团队知识库。
+
+## 思维模型
+
+vibe coding 的核心是**问题优先，实现其次**。
+
+```
+模糊想法
+    ↓ 规格化
+可执行规格
+    ↓ 任务简报
+ai 生成实现
+    ↓ 验证闭环
+可交付结果
+    ↓ 复盘沉淀
+可复用知识
+```
+
+传统开发中，开发者同时承担&quot;想清楚问题&quot;和&quot;写出代码&quot;两件事。vibe coding 把这两件事分开：你专注于前者，ai 专注于后者。
+
+## 常见误区
+
+常见误解的完整说明见[vibe coding 是什么](/tutorial/basics/what-is-vibe-coding/)。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 入门</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/get-started/concepts/" data-astro-cid-62u2qymq>核心概念</a></h2></div><a class="row-arrow" href="/tutorial/get-started/concepts/" aria-label="阅读教程《核心概念》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="快速上手 入门 # 快速上手
+
+通过一个完整的端到端示例，体验 vibe coding 的完整流程。
+
+## 目标
+
+为一个 python flask 应用添加健康检查接口 `get /health`，返回 `{&quot;status&quot;: &quot;ok&quot;, &quot;version&quot;: &quot;1.0.0&quot;}`。
+
+## 第一步：写规格
+
+在发出任何请求之前，先把问题固定下来：
+
+```text
+目标：为 flask 应用添加 get /health 接口
+范围：只修改 app.py，不改动其他文件
+约束：返回格式固定为 json，http 状态码 200
+验证：运行 pytest tests/test_health.py
+```
+
+## 第二步：填任务简报
+
+```text
+背景：
+这是一个 flask rest api 项目，入口文件是 app.py，
+已有 /users 和 /products 两个路由，使用 blueprint 组织。
+
+目标：
+添加 get /health 接口，返回 {&quot;status&quot;: &quot;ok&quot;, &quot;version&quot;: &quot;1.0.0&quot;}
+
+范围：
+只修改 app.py 中的路由注册部分，不新增文件，不改动现有路由。
+
+约束：
+- 沿用项目现有的 jsonify 返回风格
+- 不引入新依赖
+- 版本号从 config.py 的 version 常量读取
+
+验收：
+运行 pytest tests/test_health.py，所有用例通过。
+curl http://localhost:5000/health 返回正确 json。
+
+交付：
+改动摘要 + 验证结果 + 残余风险。
+```
+
+## 第三步：发出请求
+
+把任务简报发给 ai，附上 `app.py` 和 `config.py` 的内容。
+
+## 第四步：验证结果
+
+### 运行测试
+
+
+```bash
+pytest tests/test_health.py -v
+```
+
+### 手动验收
+
+
+```bash
+flask run &amp;
+curl http://localhost:5000/health
+# 期望输出：{&quot;status&quot;: &quot;ok&quot;, &quot;version&quot;: &quot;1.0.0&quot;}
+```
+
+### 类型检查
+
+
+```bash
+mypy app.py
+```
+
+## 第五步：复盘
+
+记录三件事：
+
+- [ ] 这次任务简报哪里写得好，下次复用
+- [ ] ai 哪里跑偏了，根因是什么
+- [ ] 还有哪些边界情况没有覆盖
+
+---
+
+> **完成 · 恭喜**
+>
+> 你已经完成了第一个 vibe coding 任务。接下来读[基础理论](/tutorial/basics/)，深入理解背后的设计逻辑。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 入门</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/get-started/quickstart/" data-astro-cid-62u2qymq>快速上手</a></h2></div><a class="row-arrow" href="/tutorial/get-started/quickstart/" aria-label="阅读教程《快速上手》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="基础理论 基础理论 # 基础理论
+
+本章系统讲解 vibe coding 的理论基础，帮你建立完整的认知框架。
+
+## 本章内容
+
+| 章节 | 内容 |
+| --- | --- |
+| [vibe coding 是什么](/tutorial/basics/what-is-vibe-coding/) | 定义、核心主张、适用场景 |
+| [起源与发展](/tutorial/basics/history/) | 从 copilot 到 agent 的演进历程 |
+| [核心设计理念](/tutorial/basics/principles/) | 六大设计原则及其背后的逻辑 |
+| [与传统开发的差异](/tutorial/basics/vs-traditional/) | 角色分工、工作节奏、质量保障的对比 |
+
+## 为什么要学理论
+
+实践中遇到的大多数问题——ai 跑偏、结果不稳定、难以复现——都源于对 vibe coding 本质的误解。理论章节不是装饰，它直接决定你能否在复杂项目中稳定交付。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 基础理论</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/basics/" data-astro-cid-62u2qymq>基础理论</a></h2></div><a class="row-arrow" href="/tutorial/basics/" aria-label="阅读教程《基础理论》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="vibe coding 是什么 基础理论 # vibe coding 是什么
+
+## 定义
+
+**vibe coding** 是一种以 ai 为核心协作者的软件开发范式。在这种范式中：
+
+- **开发者**负责：定义问题边界、提供上下文、判断质量、验证结果、沉淀知识
+- **ai**负责：生成实现、解释代码、提出方案、执行重复性工作
+
+两者形成持续的闭环迭代，而不是&quot;开发者提问、ai 回答&quot;的单向问答。
+
+> **注释 · 名称来源**
+>
+> &quot;vibe&quot; 指的是一种工作状态——开发者和 ai 处于同一频道，协作流畅、节奏一致。这个词由 andrej karpathy 在 2025 年初推广，迅速成为 ai 辅助开发领域的标志性术语。
+>
+## 核心主张
+
+### 1. 问题定义比代码生成更重要
+
+ai 能生成代码，但它无法替你定义&quot;什么是正确的&quot;。vibe coding 把开发者的核心价值从&quot;写代码&quot;转移到&quot;定义问题&quot;。
+
+### 2. 验证是交付的一部分
+
+生成的代码不等于可交付的代码。没有经过测试、类型检查和手动验收的结果，只是草稿。
+
+### 3. 上下文决定质量
+
+ai 的输出质量直接取决于你提供的上下文质量。模糊的请求得到模糊的结果，精准的规格得到精准的实现。
+
+### 4. 可重复性优于一次性技巧
+
+一个能稳定复现的工作流，比一个偶尔奏效的&quot;魔法提示词&quot;更有价值。
+
+## 一个具体的例子
+
+**传统方式**：
+
+> 开发者打开编辑器，一行一行写 `get /health` 接口，写完再写测试，遇到问题查文档。
+
+**vibe coding 方式**：
+
+> 开发者先写规格（目标、范围、验证方式），把规格和相关代码一起给 ai，ai 生成实现，开发者运行测试验证，30 秒内完成。
+
+开发者的时间从&quot;写代码&quot;转移到了&quot;定义问题&quot;和&quot;验证结果&quot;——这两件事 ai 做不了，也是真正需要人类判断的地方。
+
+## 适用场景
+
+vibe coding 在以下场景中效果最显著：
+
+| 场景 | 原因 |
+| --- | --- |
+| 新功能开发 | 边界清晰，ai 可以快速生成骨架 |
+| 重构与迁移 | 模式重复，ai 擅长批量转换 |
+| 测试编写 | 规律性强，ai 能覆盖大量用例 |
+| 文档生成 | 从代码到文档，ai 效率极高 |
+| 原型验证 | 快速出结果，人工再打磨 |
+| bug 修复 | 提供复现路径，ai 定位根因 |
+
+## 不适用场景
+
+- 需要深度领域知识的算法设计（如密码学、实时系统）
+- 安全敏感的核心逻辑（需要人工深度审查）
+- 高度不确定的探索性研究
+- 需要对业务背景有深刻理解的架构决策
+
+## 常见误解
+
+> **注意 · 误解一：vibe coding 就是让 ai 帮我写代码**
+>
+> 这只是表面。真正的 vibe coding 要求你对问题有清晰认知，能判断 ai 输出的质量，并在验证失败时定位根因。没有这些能力，ai 生成的代码只是技术债。
+>
+> **注意 · 误解二：用了 ai 就不需要懂技术**
+>
+> 恰恰相反。你需要足够的技术判断力来识别 ai 的错误、评估方案的合理性、在 ai 跑偏时及时纠正。技术能力决定了你能从 ai 那里得到多少价值。
+>
+> **注意 · 误解三：提示词越长越好**
+>
+> 精准的上下文比大量的上下文更有效。无关信息会稀释关键信息，导致 ai 跑偏。
+>
+---
+
+下一步：了解 [vibe coding 的起源与发展](/tutorial/basics/history/)。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 基础理论</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/basics/what-is-vibe-coding/" data-astro-cid-62u2qymq>Vibe Coding 是什么</a></h2></div><a class="row-arrow" href="/tutorial/basics/what-is-vibe-coding/" aria-label="阅读教程《Vibe Coding 是什么》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="起源与发展 基础理论 # 起源与发展
+
+## 演进时间线
+
+```mermaid
+graph td
+    y2021[&quot;2021<br/>github copilot 发布<br/>行级代码补全成为主流&quot;] --> y2022[&quot;2022<br/>chatgpt 发布<br/>自然语言编程对话兴起&quot;]
+    y2022 --> y2023[&quot;2023<br/>gpt-4 / claude 发布<br/>多文件上下文理解成为可能&quot;]
+    y2023 --> y2024[&quot;2024<br/>cursor / windsurf 兴起<br/>ide 深度集成 ai&quot;]
+    y2024 --> y2025[&quot;2025<br/>vibe coding 概念成型<br/>agent 模式、自主执行工具链&quot;]
+    y2025 --> y2026[&quot;2026<br/>kiro / claude code 成熟<br/>规格驱动开发、多 agent 协作&quot;]
+```
+
+## 三个阶段
+
+### 阶段一：代码补全（2021–2022）
+
+github copilot 的出现标志着 ai 进入开发者日常工具链。核心能力是**行级和函数级补全**，开发者仍然主导全部逻辑，ai 只是&quot;更聪明的 tab 键&quot;。
+
+局限性：上下文窗口极小，无法理解跨文件的设计意图。
+
+### 阶段二：对话编程（2022–2024）
+
+chatgpt、claude 等对话模型让开发者可以用自然语言描述需求、解释错误、重构代码。上下文窗口扩展到数万 token，多文件理解成为可能。
+
+这个阶段的典型工作流：写代码遇到问题 → 贴给 chatgpt → 复制结果回来。
+
+局限性：来回切换工具，上下文丢失严重，验证全靠人工。
+
+### 阶段三：vibe coding（2025 至今）
+
+andrej karpathy 在 2025 年 2 月的推文中首次系统描述了这种模式：
+
+> &quot;there's a new kind of coding i call 'vibe coding', where you fully give in to the vibes, embrace exponentials, and forget that the code even exists.&quot;
+
+但真正成熟的 vibe coding 并非&quot;完全放手&quot;，而是**精确分工**：开发者掌控问题定义和质量判断，ai 掌控实现生成和重复性工作。
+
+这个阶段的核心变化：
+- ide 深度集成（cursor、kiro、windsurf）
+- agent 模式：ai 可以自主调用工具、读写文件、运行命令
+- 上下文窗口达到 100k–1m token
+- 模型理解代码库整体结构的能力大幅提升
+
+## 当前生态
+
+| 工具类别 | 代表产品 |
+| --- | --- |
+| ai ide | cursor, kiro, windsurf, claude code |
+| ai 模型 | claude sonnet 4.6/opus 4.7, gpt-5.5, gemini 3.5 flash, deepseek v4 |
+| 代码审查 | github copilot pr review |
+| ci/cd 集成 | devin, swe-agent, openhands |
+| 本地模型 | ollama + qwen/deepseek v4 |
+
+## 发展趋势
+
+vibe coding 正在从个人技巧演变为团队工程实践。下一个重要节点是**工作流标准化**：把经过验证的 vibe coding 流程固化为团队规范，形成可传递的能力资产。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 基础理论</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/basics/history/" data-astro-cid-62u2qymq>起源与发展</a></h2></div><a class="row-arrow" href="/tutorial/basics/history/" aria-label="阅读教程《起源与发展》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="核心设计理念 基础理论 # 核心设计理念
+
+vibe coding 的六大设计原则，每一条都有可操作的实践含义。
+
+## 原则一：规格优先于实现
+
+**理念**：先固定&quot;做什么&quot;，再让 ai 决定&quot;怎么做&quot;。
+
+**实践含义**：每次任务开始前，写一个包含目标、范围、约束和验证方式的规格文档，哪怕只有 5 行。没有规格的请求会导致 ai 过度发挥或缺乏约束。
+
+```text
+错误方式：帮我优化这段代码
+正确方式：把这个函数的时间复杂度从 o(n²) 降到 o(n log n)，
+          只改算法逻辑，不改 api 接口，保持现有测试全部通过
+```
+
+## 原则二：最小上下文原则
+
+**理念**：只提供当前任务真正需要的上下文，不多也不少。
+
+**实践含义**：不要把整个代码库都扔给 ai。识别出当前任务的最小相关文件集，精准提供。
+
+| 类型 | 做法 |
+| --- | --- |
+| 修改单个函数 | 只提供该函数及其直接依赖 |
+| 修改接口 | 提供接口定义 + 一个实现示例 |
+| 修复 bug | 提供复现路径 + 相关模块 |
+
+## 原则三：验证闭环不可省略
+
+**理念**：ai 生成的代码是假设，验证是证明。
+
+**实践含义**：每次任务完成后，必须经过测试、类型检查、构建和手动验收中的至少一项才算交付。完整的验证流程见[验证闭环](/tutorial/workflow/verification/)。
+
+## 原则四：增量交付优于大批次
+
+**理念**：小步迭代比大改一次更容易验证和回滚。
+
+**实践含义**：把大任务拆成 3–5 个独立的小任务，每个小任务都能独立验证。避免一次性让 ai 改动超过 3 个文件。
+
+## 原则五：失败是信息
+
+**理念**：ai 生成错误结果时，不要重试同样的请求。
+
+**实践含义**：当 ai 第一次失败，分析失败原因再重试。当 ai 两次失败，停下来复盘，根因可能在规格或上下文，而不在 ai 本身。
+
+## 原则六：知识可复用
+
+**理念**：个人经验应该变成团队资产。
+
+**实践含义**：每次任务后记录有效的提示词模式、失败模式、项目特定约定。这些沉淀会让团队每次协作都比上次更高效。
+
+---
+
+> **提示 · 原则之间的关系**
+>
+> 这六条原则相互加强：规格优先让上下文更精准；最小上下文让验证更聚焦；验证闭环让增量交付更安全；每次失败都是改进规格的机会；所有经验最终沉淀为可复用知识。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 基础理论</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/basics/principles/" data-astro-cid-62u2qymq>核心设计理念</a></h2></div><a class="row-arrow" href="/tutorial/basics/principles/" aria-label="阅读教程《核心设计理念》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="与传统开发的差异 基础理论 # 与传统开发的差异
+
+## 角色分工对比
+
+| 维度 | 传统开发 | vibe coding |
+| --- | --- | --- |
+| 代码生成 | 开发者手写 | ai 生成，开发者审查 |
+| 问题定义 | 开发者 + 产品经理 | 开发者（更重要） |
+| 质量保障 | code review + 测试 | 验证闭环 + code review |
+| 知识沉淀 | wiki、注释、文档 | 提示词库、规格模板、复盘记录 |
+| 迭代速度 | 受限于手写速度 | 受限于验证速度 |
+| 技能瓶颈 | 语法、api 记忆 | 问题分解、上下文管理 |
+
+## 工作节奏对比
+
+### 传统开发节奏
+
+
+```
+理解需求（30 分钟）
+    ↓
+设计方案（1 小时）
+    ↓
+编写代码（3 小时）
+    ↓
+调试修复（1 小时）
+    ↓
+code review（30 分钟）
+    ↓
+合并上线
+```
+
+### vibe coding 节奏
+
+
+```
+理解需求 + 写规格（45 分钟）
+    ↓
+填任务简报（15 分钟）
+    ↓
+ai 生成实现（5 分钟）
+    ↓
+验证闭环（30 分钟）
+    ↓
+code review（30 分钟）
+    ↓
+合并上线
+```
+
+时间分布发生了根本变化：**前期思考时间增加，后期实现时间大幅压缩**。
+
+## 质量保障对比
+
+传统开发的质量来自：
+- 开发者的经验和技能
+- code review 的覆盖率
+- 测试的完整性
+
+vibe coding 的质量来自：
+- 规格的精确性（垃圾进，垃圾出）
+- 验证闭环的严格程度
+- 开发者对 ai 输出的判断能力
+
+> **注意 · 关键差异**
+>
+> vibe coding 不会自动提升代码质量。如果你跳过验证闭环，质量会比传统开发更差，因为 ai 生成的错误往往更隐蔽。
+>
+## 技能要求对比
+
+传统开发的核心技能：
+- 语言语法和标准库熟练度
+- 算法和数据结构
+- 框架 api 记忆
+
+vibe coding 的核心技能：
+- **问题分解能力**：把模糊需求变成可执行规格
+- **上下文管理**：识别最小相关信息集
+- **质量判断**：快速评估 ai 输出是否正确
+- **失败诊断**：当 ai 跑偏时定位根因
+
+> **信息 · 技能迁移**
+>
+> 传统开发的技能不会作废。深厚的技术背景让你能更准确地判断 ai 输出的质量，更快地定位问题根因。vibe coding 是在原有技能上叠加新能力，而不是替换。
+>
+## 团队协作对比
+
+| 场景 | 传统开发 | vibe coding |
+| --- | --- | --- |
+| 知识共享 | 文档、代码注释 | 提示词库、规格模板 |
+| 新人上手 | 读代码、问同事 | 读规格、用模板 |
+| 技术债 | 重构 | 重写规格 + ai 重构 |
+| 跨团队协作 | api 文档 | 规格文档 + 接口约定 |" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 基础理论</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/basics/vs-traditional/" data-astro-cid-62u2qymq>与传统开发的差异</a></h2></div><a class="row-arrow" href="/tutorial/basics/vs-traditional/" aria-label="阅读教程《与传统开发的差异》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="工作流 工作流 # 工作流
+
+可重复的交付流程是 vibe coding 的核心竞争力。本章把每个环节拆解为可操作的步骤。
+
+## 完整工作流
+
+```mermaid
+graph td
+    a[模糊需求] --> b[规格先行]
+    b --> c[任务拆分]
+    c --> d[上下文管理]
+    d --> e[ai 生成实现]
+    e --> f[验证闭环]
+    f -->|通过| g[复盘沉淀]
+    f -->|失败| h[定位根因]
+    h --> b
+    g --> i[下一个任务]
+```
+
+## 本章内容
+
+| 章节 | 核心问题 |
+| --- | --- |
+| [规格先行](/tutorial/workflow/spec-first/) | 如何把模糊想法变成可执行规格 |
+| [任务拆分](/tutorial/workflow/task-breakdown/) | 如何把大任务切成可独立验证的小任务 |
+| [上下文管理](/tutorial/workflow/context-management/) | 如何精准提供上下文，避免信息过载 |
+| [验证闭环](/tutorial/workflow/verification/) | 如何系统验证 ai 生成的结果 |
+| [复盘沉淀](/tutorial/workflow/retrospective/) | 如何把经验转化为可复用资产 |
+
+## 工作流的核心价值
+
+工作流的价值不在于速度，而在于**可预测性**。一个遵循工作流的团队，能在任何项目、任何规模下稳定交付，而不依赖某个人的个人技巧。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工作流</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/workflow/" data-astro-cid-62u2qymq>工作流</a></h2></div><a class="row-arrow" href="/tutorial/workflow/" aria-label="阅读教程《工作流》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="规格先行 工作流 # 规格先行
+
+> 先固定问题，再讨论实现。
+
+规格先行（spec first）是 vibe coding 最重要的习惯。在让 ai 写任何代码之前，先用自然语言把问题边界写清楚。这一步通常只需要 5 分钟，却能避免 80% 的跑偏和返工。
+
+## 为什么需要规格
+
+ai 模型非常擅长&quot;完成任务&quot;，但它不知道你真正想要什么——除非你告诉它。
+
+没有规格时，ai 会做出合理但错误的假设：
+
+- 你说&quot;加个搜索功能&quot;，它可能实现了全文搜索，但你只需要按名称过滤
+- 你说&quot;优化这个函数&quot;，它可能重写了整个模块，但你只想改一个算法
+- 你说&quot;修复这个 bug&quot;，它可能改了症状，但没有修复根因
+
+规格的作用是**提前约束改动边界**，让 ai 的&quot;合理假设&quot;和你的预期对齐。
+
+## 一个可执行规格应包含
+
+| 字段 | 说明 | 示例 |
+| --- | --- | --- |
+| **目标行为** | 完成后系统应该做什么 | 用户点击&quot;用 github 登录&quot;后跳转到 oauth 授权页 |
+| **不做什么** | 明确排除的内容 | 不新增后端接口，不修改现有用户表结构 |
+| **输入和输出** | 数据流的起点和终点 | 输入：github oauth token；输出：session cookie |
+| **影响范围** | 可以修改哪些文件 | 只改 `src/auth/` 和登录页组件 |
+| **验证方式** | 怎么确认完成了 | 运行 `pnpm test auth` 和手动走一遍登录流程 |
+| **已知风险** | 可能出问题的地方 | github oauth 回调 url 需要在开发环境配置 |
+
+不是每个规格都需要填满所有字段。简单任务可以只写前三项；复杂任务或安全敏感改动需要全部填写。
+
+## 示例对比
+
+**模糊请求（容易跑偏）：**
+
+```text
+帮我加个 github 登录
+```
+
+**可执行规格（边界清晰）：**
+
+```text
+目标：为登录页增加 github 登录按钮，点击后走 oauth 流程，成功后写入 session。
+范围：只改 src/auth/providers.ts 和 src/pages/login.tsx，不新增后端接口。
+约束：沿用现有按钮样式（button 组件）和 loading 状态逻辑。
+验证：运行类型检查和登录页组件测试，手动验证 oauth 回调正常。
+风险：本地开发需要在 .env.local 配置 github_client_id。
+```
+
+第二个版本让 ai 知道：改哪里、不改哪里、用什么风格、怎么验证。
+
+## 规格的粒度
+
+规格不需要写成需求文档。**一段话就够**，关键是覆盖边界。
+
+- **太粗**：没有约束，ai 自由发挥
+- **刚好**：覆盖目标、范围、验证，ai 有足够信息做决策
+- **太细**：变成伪代码，失去 ai 的价值
+
+判断标准：读完规格后，你能预测 ai 会改哪些文件吗？如果能，规格就够了。
+
+## 规格先行的时机
+
+不是所有任务都需要完整规格。以下情况必须先写规格：
+
+- 改动涉及多个文件或模块
+- 任务有明确的&quot;不做什么&quot;
+- 安全、权限、数据库相关改动
+- 团队协作时需要对齐理解
+
+以下情况可以简化：
+
+- 单文件的小改动（修个拼写、调个样式）
+- 探索性的原型（先跑起来再说）" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工作流</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/workflow/spec-first/" data-astro-cid-62u2qymq>规格先行</a></h2></div><a class="row-arrow" href="/tutorial/workflow/spec-first/" aria-label="阅读教程《规格先行》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="任务拆分 工作流 # 任务拆分
+
+大任务是 vibe coding 失败的主要原因之一。本章讲解如何把复杂需求切成可独立验证的小任务。
+
+## 为什么要拆分
+
+- ai 的注意力随上下文增长而分散，小任务的输出质量更高
+- 小任务失败时，回滚成本低
+- 每个小任务都能独立验证，问题更容易定位
+- 并行执行多个小任务，整体效率更高
+
+## 拆分原则
+
+### 原则一：每个任务只改一件事
+
+```text
+错误：添加用户登录功能（包含前端表单、后端接口、数据库表、邮件验证）
+
+正确：
+任务 1：创建 users 数据库表（迁移文件）
+任务 2：实现 post /auth/login 接口
+任务 3：实现前端登录表单组件
+任务 4：集成前后端登录流程
+任务 5：添加邮件验证逻辑
+```
+
+### 原则二：每个任务都有独立的验证方式
+
+每个任务完成后，必须能独立运行验证，不依赖其他任务的完成。
+
+### 原则三：按依赖顺序排列
+
+识别任务之间的依赖关系，确保前置任务先完成。
+
+```mermaid
+graph lr
+    a[数据库表] --> b[后端接口]
+    b --> c[前端集成]
+    a --> d[数据迁移脚本]
+```
+
+## 拆分方法
+
+### 按技术层拆分
+
+适合全栈功能：
+
+1. 数据层（schema、迁移）
+2. 服务层（业务逻辑）
+3. api 层（接口定义）
+4. 前端层（ui 组件）
+5. 集成层（端到端联调）
+
+### 按功能边界拆分
+
+适合复杂业务逻辑：
+
+1. 核心路径（happy path）
+2. 错误处理
+3. 边界情况
+4. 性能优化
+
+### 按文件范围拆分
+
+适合重构任务：
+
+- 每次只改动 1–3 个文件
+- 改动超过 5 个文件时，重新评估拆分粒度
+
+## 任务卡模板
+
+```text
+任务编号：#3
+标题：实现 post /auth/login 接口
+前置：任务 #1（users 表已创建）
+范围：只修改 src/routes/auth.py
+输入：{ email, password }
+输出：{ token, user_id } 或 401 错误
+验证：pytest tests/test_auth.py::test_login
+估计：1 个 ai 对话轮次
+```
+
+## 常见拆分错误
+
+> **风险 · 反模式：一次性大任务**
+>
+> &quot;帮我实现完整的用户认证系统&quot; 这类请求会导致 ai 做出大量假设，生成难以验证的大量代码。
+>
+> **风险 · 反模式：过度拆分**
+>
+> 把一个 3 行的函数修改拆成 5 个任务，会增加不必要的协调成本。拆分粒度以&quot;一个 ai 对话轮次能完成&quot;为基准。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工作流</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/workflow/task-breakdown/" data-astro-cid-62u2qymq>任务拆分</a></h2></div><a class="row-arrow" href="/tutorial/workflow/task-breakdown/" aria-label="阅读教程《任务拆分》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="上下文管理 工作流 # 上下文管理
+
+上下文质量直接决定 ai 输出质量。本章讲解如何精准提供上下文，避免信息过载和信息缺失。
+
+## 上下文的三个维度
+
+### 1. 项目上下文
+
+让 ai 理解项目的整体结构和约定：
+
+```text
+项目类型：next.js 14 app router + typescript
+状态管理：zustand
+样式：tailwind css + shadcn/ui
+测试：vitest + testing library
+api：trpc
+数据库：postgresql + prisma
+```
+
+这类信息适合放在项目规则文件（如 `.cursor/rules/`、`claude.md`、`.kiro/steering/`）中，每次自动注入。详见[项目规则文件](/tutorial/tools/cursor-rules/)。
+
+### 2. 任务上下文
+
+当前任务直接相关的代码和信息：
+
+- 要修改的文件内容
+- 相关的类型定义
+- 依赖的接口或函数签名
+- 现有的测试用例
+
+### 3. 约束上下文
+
+告诉 ai 不能做什么：
+
+```text
+- 不引入新的 npm 依赖
+- 不修改 auth/ 目录下的文件
+- 保持现有 api 接口不变
+- 不改动数据库 schema
+```
+
+## 上下文选择策略
+
+### 最小相关集原则
+
+```mermaid
+graph lr
+    a[所有相关文件] --> b{是否直接影响任务?}
+    b -->|是| c[包含]
+    b -->|否| d{是否提供必要约定?}
+    d -->|是| e[摘要包含]
+    d -->|否| f[排除]
+```
+
+### 按任务类型选择
+
+#### 新增功能
+
+
+必须包含：
+- 相邻的同类功能实现（作为风格参考）
+- 相关的类型定义文件
+- 测试文件模板
+
+#### 修复 bug
+
+
+必须包含：
+- 复现步骤
+- 出错的完整堆栈
+- 相关模块代码
+- 最近的相关改动（git diff）
+
+#### 重构
+
+
+必须包含：
+- 当前实现
+- 重构目标（接口保持不变 or 允许改变）
+- 现有测试用例
+
+## 上下文过载的信号
+
+当你发现以下情况，说明上下文过多：
+
+- ai 开始修改你没有提到的文件
+- ai 的回复开始讨论与任务无关的优化
+- ai 忘记了你在同一对话中设置的约束
+
+**解决方案**：开启新对话，只带入当前任务必需的上下文。
+
+## 上下文不足的信号
+
+- ai 生成的代码风格与项目不一致
+- ai 引入了项目中已有的功能的重复实现
+- ai 做出了与项目约定冲突的假设
+
+**解决方案**：补充项目约定和相邻代码示例。
+
+## 上下文模板
+
+```text
+【项目约定】
+- 语言：typescript，严格模式
+- 框架：next.js 14 app router
+- 样式：tailwind css，不使用内联样式
+- 错误处理：统一使用 result<t, e> 类型
+
+【相关文件】
+// src/types/user.ts（类型定义）
+[文件内容]
+
+// src/lib/api.ts（api 工具函数）
+[文件内容]
+
+【任务】
+[具体任务描述]
+```" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工作流</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/workflow/context-management/" data-astro-cid-62u2qymq>上下文管理</a></h2></div><a class="row-arrow" href="/tutorial/workflow/context-management/" aria-label="阅读教程《上下文管理》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="验证闭环 工作流 # 验证闭环
+
+> vibe coding 的质量来自验证，而不是来自模型的自信。
+
+ai 生成的代码看起来正确，并不代表它真的正确。验证闭环是每次 ai 完成任务后的标准检查流程，确保结果真正可交付。
+
+## 为什么必须验证
+
+ai 模型有几个典型的失败模式：
+
+- **过度自信**：给出错误的实现，但解释得头头是道
+- **范围蔓延**：顺手修改了规格之外的代码
+- **测试幻觉**：声称测试通过，但实际上没有运行
+- **局部正确**：改动在当前上下文正确，但破坏了其他模块
+
+验证闭环的作用是：**用客观结果替代主观判断**。
+
+## 推荐验证顺序
+
+```
+1. 目标测试  →  确认新功能工作
+2. 回归测试  →  确认没有破坏已有功能
+3. 静态检查  →  确认代码质量
+4. 手动验收  →  确认真实场景可用
+```
+
+### 第一步：目标测试
+
+运行与本次改动直接相关的测试：
+
+```bash
+# 只跑改动涉及的模块
+pnpm test src/auth/
+pytest tests/test_auth.py
+go test ./auth/...
+```
+
+目标测试失败时，**不要继续下一步**。先让 ai 修复，再继续。
+
+### 第二步：回归测试
+
+运行相邻模块的测试，确认没有意外破坏：
+
+```bash
+# 全量测试或相关模块测试
+pnpm test
+pytest --tb=short
+cargo test
+```
+
+### 第三步：静态检查
+
+```bash
+# typescript
+npx tsc --noemit
+pnpm lint
+
+# python
+mypy src/
+ruff check .
+
+# 构建验证
+pnpm build
+```
+
+### 第四步：手动验收
+
+走一遍关键路径，确认在真实环境中工作：
+
+- 打开浏览器，操作目标功能
+- 检查控制台是否有错误
+- 验证边界情况（空值、错误状态）
+
+## 验证记录
+
+每次任务完成后，记录三件事：
+
+```text
+运行了什么：pnpm test auth &amp;&amp; pnpm build
+结果：测试 12/12 通过，构建成功
+残余风险：oauth 回调 url 仅在本地验证，生产环境需要配置
+```
+
+这个记录直接写进 pr 描述或复盘文档，让团队协作更可靠。
+
+## 快速验证 vs 完整验证
+
+| 场景 | 验证级别 |
+| --- | --- |
+| 单文件小改动 | 目标测试 + 类型检查 |
+| 新功能开发 | 全部四步 |
+| 重构 | 回归测试 + 手动验收 |
+| 安全相关改动 | 全部四步 + 人工代码审查 |
+
+> **注意 · 不要跳过验证**
+>
+> ai 说&quot;应该没问题&quot;不算验证。只有命令行输出&quot;0 errors&quot;才算验证。
+>
+## 验证失败时的处理
+
+验证失败不是坏事，这正是验证闭环存在的价值。
+
+1. **把失败信息完整贴给 ai**：不要只说&quot;出错了&quot;，要贴完整的错误输出
+2. **确认修复范围**：ai 修复时可能引入新问题，修复后重新从第一步开始
+3. **两次失败换思路**：同一问题失败两次，说明当前方向有问题，需要重新分析根因" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工作流</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/workflow/verification/" data-astro-cid-62u2qymq>验证闭环</a></h2></div><a class="row-arrow" href="/tutorial/workflow/verification/" aria-label="阅读教程《验证闭环》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="复盘沉淀 工作流 # 复盘沉淀
+
+复盘是把一次性经验转化为可复用资产的关键步骤。跳过复盘的团队，每次都在重新发明轮子。
+
+## 复盘的三个层次
+
+### 层次一：任务级复盘（每次任务后，5 分钟）
+
+记录三件事：
+
+```markdown
+## 任务复盘 - 2025-05-26
+
+**任务**：为登录页添加 github oauth 按钮
+
+**有效的**：
+- 提供了现有按钮组件作为风格参考，ai 输出风格一致
+- 明确约束&quot;不改动 auth/ 目录&quot;，ai 没有越界
+
+**失败的**：
+- 第一次没有说明 oauth callback url 的格式，ai 生成了错误的路由
+- 修复：在规格中补充了 callback url 约定
+
+**沉淀**：
+- oauth 集成任务需要在规格中包含 callback url 格式
+- 提示词模板更新：添加&quot;oauth 约定&quot;字段
+```
+
+### 层次二：项目级复盘（每个里程碑后，30 分钟）
+
+- 哪些提示词模式在这个项目中效果最好
+- 哪些约定需要写入项目规则文件
+- 哪些任务类型 ai 处理得不好，需要人工介入
+
+### 层次三：团队级复盘（每个季度，1 小时）
+
+- 跨项目的通用提示词模式
+- 团队成员的最佳实践分享
+- 工具链和工作流的改进方向
+
+## 沉淀的形式
+
+### 提示词库
+
+把有效的提示词模式整理成可复用模板：
+
+```markdown
+## 模板：api 接口实现
+
+背景：[项目名] 使用 [框架]，接口统一返回 { data, error } 格式。
+
+目标：实现 [http 方法] [路径] 接口。
+
+范围：只修改 [文件路径]，不改动其他文件。
+
+约束：
+- 沿用现有的错误处理中间件
+- 参数验证使用 zod schema
+- 不引入新依赖
+
+验收：运行 [测试命令]，所有用例通过。
+```
+
+### 项目规则文件
+
+把项目特定约定写入规则文件（`.cursor/rules/`、`claude.md`、`.kiro/steering/` 等），让 ai 每次自动遵守。初始配置方式见[项目规则文件](/tutorial/tools/cursor-rules/)，团队维护规范见[团队协作规范](/tutorial/advanced/team-collaboration/)。
+
+### 失败模式库
+
+记录 ai 容易犯的错误，在任务简报中主动规避：
+
+| 失败模式 | 触发条件 | 规避方式 |
+| --- | --- | --- |
+| 引入不存在的依赖 | 没有提供 package.json | 在约束中列出已有依赖 |
+| 改动范围超出预期 | 规格范围不明确 | 明确列出&quot;不改动&quot;的文件 |
+| 风格不一致 | 没有提供参考实现 | 附上同类功能的现有实现 |
+
+## 失败案例：ai 跑偏长什么样
+
+理论上知道&quot;要写清楚规格&quot;，但不知道跑偏时实际发生什么。下面是三个真实场景。
+
+### 场景一：ai 修改了不该改的文件
+
+**任务**：为登录页添加 github oauth 按钮。
+
+**发生了什么**：ai 生成了正确的按钮组件，但同时修改了 `src/lib/auth.ts`，添加了一个它认为&quot;缺少的&quot; session 字段。代码能跑，但破坏了现有的 google 登录流程。
+
+**怎么发现的**：任务完成后运行 `git diff --stat`，看到了规格范围外的文件被修改。
+
+**根因**：规格里写了&quot;session 中有 user.id&quot;，但没有附上实际的 auth 配置。ai 猜测 session 结构并做了&quot;修复&quot;。
+
+**修复**：回退 `src/lib/auth.ts`，重新请求时附上 auth 配置文件，约束中加&quot;不修改 src/lib/auth.ts&quot;。
+
+**沉淀**：涉及认证的任务，必须附上 auth 配置，并在约束中明确禁止修改。
+
+---
+
+### 场景二：ai 引入了项目中不存在的依赖
+
+**任务**：为表单添加日期选择器。
+
+**发生了什么**：ai 生成了使用 `react-datepicker` 的代码，但项目实际上用的是 `@radix-ui/react-popover` 自己封装的日期选择器。代码无法运行，因为依赖不存在。
+
+**怎么发现的**：运行 `pnpm install` 时没有报错（因为 ai 没有修改 package.json），但运行时报&quot;找不到模块&quot;。
+
+**根因**：没有提供 `package.json` 或现有的日期选择器组件作为参考，ai 使用了它认为&quot;最常见&quot;的方案。
+
+**修复**：重新请求，附上现有的日期选择器组件代码，约束中加&quot;只使用 package.json 中已有的依赖&quot;。
+
+**沉淀**：ui 组件任务必须附上同类现有组件，约束中明确禁止引入新依赖。
+
+---
+
+### 场景三：ai 修复了症状而不是根因
+
+**任务**：修复用户列表页面偶发的空白问题。
+
+**发生了什么**：ai 在数据加载函数外层加了 `try-catch`，捕获错误后返回空数组，页面不再空白了——但实际上是因为 api 请求偶发超时，根本问题没有解决。
+
+**怎么发现的**：一周后用户反馈&quot;列表有时候加载不出来&quot;，排查时发现错误被静默吞掉了。
+
+**根因**：bug 描述只说了&quot;页面空白&quot;，没有提供错误堆栈和复现步骤，ai 选择了最简单的修复方式。
+
+**修复**：提供完整的错误堆栈和网络请求日志，重新定位根因（api 超时），实现了正确的重试逻辑。
+
+**沉淀**：bug 修复任务必须提供完整错误堆栈和复现步骤，约束中加&quot;修复根因，不只是处理症状&quot;。
+
+---
+
+## 复盘工具
+
+- **git 提交信息**：每次提交写清楚&quot;做了什么&quot;和&quot;为什么&quot;
+- **任务日志**：在任务管理工具中记录 ai 对话的关键决策
+- **团队 wiki**：定期把个人复盘整理成团队可读的文档" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工作流</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/workflow/retrospective/" data-astro-cid-62u2qymq>复盘沉淀</a></h2></div><a class="row-arrow" href="/tutorial/workflow/retrospective/" aria-label="阅读教程《复盘沉淀》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="提示词工程 提示词工程 # 提示词工程
+
+提示词是你和 ai 之间的合约。本章讲解如何设计高质量的提示词，以及可直接使用的模板库。
+
+## 本章内容
+
+| 章节 | 内容 |
+| --- | --- |
+| [任务简报模板](/tutorial/prompting/task-brief/) | 完整的任务简报格式和填写指南 |
+| [提示词设计原则](/tutorial/prompting/design-principles/) | 让提示词更精准的六个原则 |
+| [常用提示词库](/tutorial/prompting/library/) | 按场景分类的可复用提示词模板 |
+
+## 提示词质量的衡量标准
+
+一个好的提示词应该让 ai：
+
+1. **不需要猜测**任何关键信息
+2. **不能越界**修改不该改的地方
+3. **能自我验证**结果是否符合要求
+4. **输出格式可预期**，便于后续处理" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 提示词工程</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/prompting/" data-astro-cid-62u2qymq>提示词工程</a></h2></div><a class="row-arrow" href="/tutorial/prompting/" aria-label="阅读教程《提示词工程》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="任务简报模板 提示词工程 # 任务简报模板
+
+任务简报（task brief）是一次编码请求的完整上下文包。把它填完整后再让 ai 开始工作，能显著减少跑偏、过度重构和漏验证。
+
+## 模板
+
+```text
+背景：
+当前项目在做什么，相关模块在哪里。
+
+目标：
+这次要实现或修复的具体行为。
+
+范围：
+可以修改哪些文件，哪些地方不要碰。
+
+约束：
+风格、兼容性、性能、安全、依赖和发布限制。
+
+验收：
+需要运行的命令、需要看到的结果、人工检查点。
+
+交付：
+最终回复要包含改动摘要、验证结果和残余风险。
+```
+
+## 填写示例
+
+### 示例一：新功能
+
+```text
+背景：
+这是一个 next.js 14 + prisma 的 saas 项目。用户管理模块在 src/features/users/，
+数据库 schema 在 prisma/schema.prisma。
+
+目标：
+为用户列表页添加按邮箱搜索的功能。输入框在列表上方，实时过滤（debounce 300ms），
+不需要后端接口，直接在前端过滤已加载的数据。
+
+范围：
+只改 src/features/users/userlist.tsx 和相关的 hook。
+不改后端接口、不改数据库查询、不改其他页面。
+
+约束：
+使用项目现有的 input 组件（src/components/ui/input.tsx）。
+不引入新依赖。搜索不区分大小写。
+
+验收：
+1. pnpm tsc --noemit 无错误
+2. pnpm test users 全部通过
+3. 手动验证：输入邮箱片段后列表实时过滤，清空后恢复全部
+
+交付：
+改动摘要 + 测试结果截图 + 残余风险说明
+```
+
+### 示例二：bug 修复
+
+```text
+背景：
+src/lib/date.ts 的 formatrelativetime() 函数在时区偏移为负数时返回错误结果。
+复现：在 utc-5 时区调用 formatrelativetime(new date()) 返回 &quot;6 hours ago&quot;。
+
+目标：
+修复时区处理逻辑，确保在任意时区返回正确的相对时间。
+
+范围：
+只改 src/lib/date.ts 中的 formatrelativetime 函数。
+不改调用方，不改其他日期工具函数。
+
+约束：
+不引入新的日期库（项目已有 date-fns，可以使用）。
+保持函数签名不变。
+
+验收：
+1. 运行 pnpm test lib/date
+2. 新增测试用例覆盖 utc-5、utc+8、utc+0 三个时区
+3. 确认现有测试全部通过
+
+交付：
+改动的函数代码 + 新增测试用例 + 验证结果
+```
+
+## 简报的长度
+
+简报不需要很长。**覆盖边界比覆盖细节更重要**。
+
+- 简单任务：背景 + 目标 + 验收，三段就够
+- 复杂任务：全部六段，每段 2-4 句话
+- 安全敏感：全部六段，约束部分要详细
+
+判断标准：读完简报，你能预测 ai 会改哪些文件、不改哪些文件吗？如果能，简报就够了。
+
+> **提示 · 先写简报，再开对话**
+>
+> 把简报作为对话的第一条消息发出去，而不是在来回几轮后才补充约束。
+> 越早约束边界，ai 越少做无效工作。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 提示词工程</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/prompting/task-brief/" data-astro-cid-62u2qymq>任务简报模板</a></h2></div><a class="row-arrow" href="/tutorial/prompting/task-brief/" aria-label="阅读教程《任务简报模板》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="提示词设计原则 提示词工程 # 提示词设计原则
+
+六个让提示词更精准、更稳定的设计原则。
+
+## 原则一：角色定位明确
+
+在提示词开头明确 ai 的角色和工作模式：
+
+```text
+你是一个 typescript 专家，正在为一个 next.js 14 项目工作。
+你只修改我明确指定的文件，不做额外的&quot;优化&quot;或&quot;改进&quot;。
+```
+
+## 原则二：正向约束 + 负向约束并用
+
+只说&quot;做什么&quot;不够，还要说&quot;不做什么&quot;：
+
+```text
+正向：实现 post /api/users 接口，返回创建的用户对象
+负向：不修改现有的 get /api/users 接口，不改动数据库 schema
+```
+
+## 原则三：提供具体的验收标准
+
+模糊的验收标准会导致 ai 自行判断&quot;完成&quot;：
+
+```text
+模糊：确保代码正确
+具体：运行 npm test -- --testpathpattern=users 后所有测试通过，
+      且 npm run typecheck 无错误
+```
+
+## 原则四：用示例代替描述
+
+当风格要求难以用语言描述时，直接提供示例：
+
+```text
+按照以下风格实现错误处理（不要用 try/catch）：
+
+// 现有示例
+const result = await safeasync(fetchuser(id))
+if (result.error) return { error: result.error }
+return { data: result.data }
+```
+
+## 原则五：分步骤而非一次性
+
+对于复杂任务，要求 ai 分步骤输出，每步确认后再继续：
+
+```text
+请分三步完成这个任务：
+第一步：只输出修改方案，不写代码，等我确认
+第二步：我确认后，只输出修改后的文件内容
+第三步：列出验证步骤
+```
+
+## 原则六：明确输出格式
+
+告诉 ai 你期望的输出格式，减少解析成本：
+
+```text
+输出格式要求：
+1. 先输出改动摘要（3 行以内）
+2. 再输出完整的修改后文件内容（用代码块包裹）
+3. 最后列出验证命令
+不需要解释每行代码的含义。
+```
+
+## 原则组合示例
+
+把六个原则组合成一个完整的提示词：
+
+```text
+你是一个 python 后端专家，正在为 fastapi 项目工作。
+只修改我指定的文件，不做额外改动。
+
+任务：为 /api/products 接口添加分页支持。
+
+范围：只修改 src/routers/products.py
+不改动：src/models/、src/database.py
+
+验收：pytest tests/test_products.py::test_pagination 通过
+
+参考现有分页实现（src/routers/users.py 第 45-60 行）：
+[代码内容]
+
+输出格式：
+1. 改动摘要（2 行）
+2. 修改后的完整文件
+3. 验证命令
+```
+
+---
+
+> **提示 · 原则的优先级**
+>
+> 如果只能选一个原则，选**负向约束**。明确告诉 ai 不能做什么，是防止跑偏最有效的手段。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 提示词工程</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/prompting/design-principles/" data-astro-cid-62u2qymq>提示词设计原则</a></h2></div><a class="row-arrow" href="/tutorial/prompting/design-principles/" aria-label="阅读教程《提示词设计原则》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="常用提示词库 提示词工程 # 常用提示词库
+
+按场景分类的可复用提示词模板，直接复制使用，按需填写 `[占位符]`。
+
+## 功能开发类
+
+### 新增 api 接口
+
+```text
+背景：[项目名] 使用 [框架]，接口统一返回 { data, error, code } 格式。
+相关文件：[附上现有接口文件]
+
+目标：实现 [http 方法] [路径] 接口。
+输入参数：[参数列表和类型]
+返回格式：[成功响应] / [错误响应]
+
+范围：只修改 [文件路径]
+不改动：[禁止修改的文件或目录]
+
+约束：
+- 参数验证使用 [验证库]
+- 错误处理沿用现有中间件
+- 不引入新依赖
+
+验收：[测试命令] 通过
+```
+
+### 新增前端组件
+
+```text
+背景：项目使用 [框架] + [样式方案]，组件库为 [组件库名]。
+参考组件：[附上同类组件代码]
+
+目标：创建 [组件名] 组件。
+props：[props 类型定义]
+行为：[交互描述]
+样式：[样式要求]
+
+范围：创建 src/components/[组件名].tsx，不修改其他文件
+约束：不引入新的 npm 包，沿用现有设计 token
+
+验收：组件在 [页面] 中正常渲染，无 typescript 错误
+```
+
+### 数据库迁移
+
+```text
+背景：项目使用 [orm]，数据库为 [数据库类型]。
+现有 schema：[附上相关 schema 文件]
+
+目标：[迁移描述，如&quot;为 users 表添加 avatar_url 字段&quot;]
+字段定义：[字段名、类型、约束、默认值]
+
+范围：只创建迁移文件，不修改现有 schema 文件
+约束：迁移必须可回滚
+
+验收：[迁移命令] 执行成功，[回滚命令] 执行成功
+```
+
+## 重构类
+
+### 函数重构
+
+```text
+背景：以下函数需要重构，接口保持不变。
+现有实现：[附上函数代码]
+现有测试：[附上测试代码]
+
+目标：[重构目标，如&quot;提取重复逻辑&quot;、&quot;降低圈复杂度&quot;]
+约束：
+- 函数签名不变
+- 所有现有测试必须继续通过
+- 不改动调用方
+
+验收：[测试命令] 通过，[类型检查命令] 无错误
+```
+
+### 依赖升级
+
+```text
+背景：项目当前使用 [依赖名] v[旧版本]，需要升级到 v[新版本]。
+变更日志关键点：[附上 breaking changes]
+
+目标：完成升级并修复所有 breaking changes。
+范围：只修改受影响的文件，不做额外重构
+
+验收：[构建命令] 成功，[测试命令] 通过
+```
+
+## 调试类
+
+### bug 修复
+
+```text
+背景：[项目名]，相关模块：[模块路径]
+
+问题描述：[具体现象]
+复现步骤：
+1. [步骤 1]
+2. [步骤 2]
+期望行为：[期望]
+实际行为：[实际]
+
+错误信息：
+[完整错误堆栈]
+
+相关代码：[附上相关文件]
+
+约束：
+- 只修改导致 bug 的根因，不做额外改动
+- 修复后添加防回归测试
+
+验收：复现步骤不再触发错误，新增测试通过
+```
+
+### 性能问题排查
+
+```text
+背景：[接口/页面] 响应时间过长，当前 p99 为 [时间]，目标 [时间]。
+
+性能数据：[附上 profiling 结果或慢查询日志]
+相关代码：[附上相关文件]
+
+目标：定位性能瓶颈并提出优化方案（先不实现，等确认后再改）
+约束：不改变接口行为，不引入新依赖
+
+输出格式：
+1. 瓶颈定位（2-3 个候选原因）
+2. 推荐优化方案
+3. 预期效果
+```
+
+## 文档类
+
+### 生成 api 文档
+
+```text
+以下是 [接口名] 的实现代码，请生成 openapi 3.0 格式的接口文档。
+
+代码：[附上接口代码]
+
+要求：
+- 包含所有参数的类型和描述
+- 包含成功和错误响应示例
+- 使用中文描述
+- 输出 yaml 格式
+```
+
+### 生成测试用例
+
+```text
+以下是 [函数/接口] 的实现，请生成完整的测试用例。
+
+实现代码：[附上代码]
+测试框架：[框架名]
+
+要求：
+- 覆盖 happy path
+- 覆盖所有错误分支
+- 覆盖边界情况（空值、最大值、并发等）
+- 每个测试用例有清晰的描述
+```
+
+## 代码审查类
+
+### pr 代码审查
+
+```text
+请审查以下代码改动，重点关注正确性问题（不是风格问题）。
+
+改动内容：[附上 diff 或改动文件]
+背景：[这个 pr 要解决什么问题]
+测试覆盖：[已有哪些测试]
+
+审查重点：
+1. 逻辑错误或边界情况遗漏
+2. 安全隐患（注入、越权、敏感数据泄露）
+3. 并发或竞态条件
+4. 性能问题（n+1 查询、不必要的循环）
+
+输出格式：
+- 按严重程度分级（阻塞/建议/可选）
+- 每条问题说明位置、原因和修复建议
+- 不超过 10 条，只列真正重要的
+```
+
+### 安全审查
+
+```text
+请对以下代码进行安全审查，重点检查 owasp top 10 相关风险。
+
+代码：[附上相关文件]
+功能描述：[这段代码做什么]
+数据敏感性：[处理哪类数据，如用户密码、支付信息]
+
+检查项：
+- sql 注入 / nosql 注入
+- xss（跨站脚本）
+- 身份验证和授权缺陷
+- 敏感数据暴露（日志、响应体）
+- 输入验证缺失
+
+输出格式：
+- 发现的风险（高/中/低）
+- 具体位置和触发条件
+- 修复建议（附代码示例）
+```
+
+### 架构评审
+
+```text
+请评审以下设计方案，从可维护性和扩展性角度给出意见。
+
+方案描述：[设计文档或伪代码]
+当前规模：[用户量、数据量、团队规模]
+未来 6 个月预期变化：[可能的需求变化]
+
+评审维度：
+1. 模块边界是否清晰
+2. 是否存在过度设计或设计不足
+3. 数据流是否合理
+4. 潜在的扩展瓶颈
+
+输出：优点 2-3 条，风险 2-3 条，改进建议 1-2 条
+```
+
+## 上下文注入类
+
+### 项目约定注入
+
+在每次新对话开始时使用，让 ai 快速了解项目背景：
+
+```text
+【项目背景】
+项目：[项目名和简介]
+技术栈：[框架、语言、主要依赖]
+代码规范：[命名约定、文件结构]
+测试框架：[测试工具和运行命令]
+
+【禁止事项】
+- 不引入 [某类依赖]
+- 不修改 [某个目录或文件]
+- 不改变 [某个接口的签名]
+
+【当前任务】
+[任务描述]
+```
+
+### 错误上下文注入
+
+遇到报错时，提供完整上下文让 ai 精准定位：
+
+```text
+【环境】
+运行命令：[命令]
+node/python/go 版本：[版本]
+操作系统：[os]
+
+【错误信息】
+[完整错误堆栈，不要截断]
+
+【相关代码】
+[出错的文件内容]
+
+【已尝试的方法】
+1. [尝试 1] → [结果]
+2. [尝试 2] → [结果]
+
+请定位根因并给出修复方案。
+```" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 提示词工程</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/prompting/library/" data-astro-cid-62u2qymq>常用提示词库</a></h2></div><a class="row-arrow" href="/tutorial/prompting/library/" aria-label="阅读教程《常用提示词库》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="领域应用 领域应用 # 领域应用
+
+vibe coding 在不同技术领域有不同的应用模式。本章为每个领域提供具体的落地指南。
+
+## 本章内容
+
+- [前端开发](/tutorial/domains/frontend/)：组件生成、样式调整、状态管理、性能优化。
+- [后端服务](/tutorial/domains/backend/)：api 设计、业务逻辑、数据库操作、认证授权。
+- [移动端开发](/tutorial/domains/mobile/)：react native、flutter、原生适配、跨平台策略。
+- [数据工程](/tutorial/domains/data/)：数据管道、etl、分析查询、数据质量。
+- [ai 集成](/tutorial/domains/ai-integration/)：llm 接入、rag 系统、agent 构建、评估体系。
+- [devops 流程](/tutorial/domains/devops/)：ci/cd、容器化、基础设施即代码、监控告警。
+
+## 跨领域通用原则
+
+无论哪个领域，以下原则始终适用：
+
+1. **先读现有代码**，再让 ai 生成新代码
+2. **提供领域特定约束**（如安全要求、性能指标）
+3. **验证方式因领域而异**，但验证本身不可省略" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 领域应用</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/domains/" data-astro-cid-62u2qymq>领域应用</a></h2></div><a class="row-arrow" href="/tutorial/domains/" aria-label="阅读教程《领域应用》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="前端开发 领域应用 # 前端开发
+
+前端是 vibe coding 效果最显著的领域之一。组件生成、样式调整、状态管理——这些任务有清晰的输入输出，非常适合 ai 协作。
+
+## 高效场景
+
+### 组件生成
+
+**最佳实践**：提供设计稿描述 + 现有同类组件作为风格参考。
+
+```text
+背景：项目使用 react + tailwind css + shadcn/ui，
+      参考现有的 usercard 组件（附代码）。
+
+目标：创建 productcard 组件。
+props：
+  - product: { id, name, price, imageurl, instock }
+  - onaddtocart: (id: string) => void
+
+行为：
+  - 缺货时显示&quot;已售罄&quot;标签，禁用加入购物车按钮
+  - 价格超过 1000 显示红色
+
+范围：创建 src/components/productcard.tsx
+约束：不引入新依赖，沿用现有 shadcn/ui 组件
+
+验收：typescript 无错误，在 storybook 中正常渲染
+```
+
+### 状态管理
+
+**最佳实践**：提供现有 store 结构作为参考，明确 action 的副作用范围。
+
+```typescript
+// 提供现有 store 结构
+interface cartstore {
+  items: cartitem[]
+  additem: (product: product) => void
+  removeitem: (id: string) => void
+  total: number
+}
+
+// 任务：添加优惠码功能
+// 约束：不改动现有 additem/removeitem 逻辑
+// 新增：applycoupon(code: string) => promise<void>
+```
+
+### 性能优化
+
+**最佳实践**：提供 lighthouse 报告或 react devtools profiler 截图，让 ai 基于数据优化。
+
+```text
+问题：productlist 组件在列表超过 100 项时渲染卡顿
+性能数据：react profiler 显示每次父组件更新都触发全量重渲染
+相关代码：[附上 productlist.tsx]
+
+目标：消除不必要的重渲染
+约束：不改变组件 props 接口，不引入新依赖
+验收：react profiler 显示父组件更新时 productlist 不重渲染
+```
+
+## 前端特有的上下文要素
+
+| 要素 | 说明 |
+| --- | --- |
+| 设计系统 | 颜色、间距、字体的 token 定义 |
+| 组件库版本 | shadcn/ui、ant design 等的具体版本 |
+| 路由结构 | 页面路径和参数格式 |
+| 状态管理方案 | zustand、redux、jotai 等的使用约定 |
+| 构建工具 | vite、next.js、webpack 的配置约定 |
+
+## 验证清单
+
+### 组件开发
+
+
+- [ ] typescript 类型检查通过
+- [ ] 组件在目标页面正常渲染
+- [ ] 响应式布局在移动端正常
+- [ ] 无障碍属性（aria-label 等）正确
+- [ ] storybook 故事文件更新
+
+### 状态管理
+
+
+- [ ] 单元测试覆盖所有 action
+- [ ] 状态变更不影响无关组件
+- [ ] 持久化逻辑（如 localstorage）正确
+
+### 性能优化
+
+
+- [ ] lighthouse 分数提升
+- [ ] react profiler 验证重渲染减少
+- [ ] 现有功能测试全部通过
+
+## 常见陷阱
+
+> **注意 · 陷阱：让 ai 选择样式方案**
+>
+> 不要说&quot;帮我美化这个组件&quot;。ai 会引入与项目不一致的样式。始终提供现有组件作为风格参考。
+>
+> **注意 · 陷阱：忽略无障碍要求**
+>
+> 在约束中明确要求 wcag 2.1 aa 合规，否则 ai 不会主动添加无障碍属性。
+>
+> **注意 · 陷阱：一次性生成整个页面**
+>
+> 把页面拆成独立组件，逐个生成和验证。整页生成的结果难以调试。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 领域应用</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/domains/frontend/" data-astro-cid-62u2qymq>前端开发</a></h2></div><a class="row-arrow" href="/tutorial/domains/frontend/" aria-label="阅读教程《前端开发》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="后端服务 领域应用 # 后端服务
+
+后端开发中，vibe coding 在 api 实现、业务逻辑和数据库操作上效果突出，但安全敏感逻辑需要额外审查。
+
+## 高效场景
+
+### rest api 实现
+
+```text
+背景：fastapi 项目，统一响应格式 { data, error, code }，
+      参数验证使用 pydantic v2，认证使用 jwt bearer token。
+
+目标：实现 get /api/v1/orders 接口（订单列表）
+参数：
+  - page: int = 1（页码）
+  - page_size: int = 20（每页数量，最大 100）
+  - status: optional[str]（过滤状态）
+  - user_id 从 jwt token 中读取
+
+返回：{ data: { items: order[], total: int, page: int } }
+
+范围：只修改 src/routers/orders.py
+不改动：src/models/、src/auth/
+
+约束：
+  - 只返回当前用户的订单（user_id 过滤）
+  - page_size 超过 100 时返回 400 错误
+  - 使用现有的 get_db() 依赖注入
+
+验收：pytest tests/test_orders.py -v 全部通过
+```
+
+### 数据库查询优化
+
+```text
+问题：以下查询在数据量超过 10 万时响应超过 3 秒
+慢查询日志：[附上 explain analyze 结果]
+当前实现：[附上 orm 代码]
+
+目标：将 p99 响应时间降到 200ms 以内
+约束：
+  - 不改变接口返回格式
+  - 不引入缓存层（本次只优化查询）
+  - 索引变更需要提供迁移文件
+
+验收：在测试数据集（10 万条）上 p99 < 200ms
+```
+
+### 认证授权
+
+> **风险 · 安全敏感区域**
+>
+> 认证授权逻辑必须经过人工深度审查，不能仅依赖 ai 生成结果。
+>
+```text
+背景：项目使用 jwt + refresh token 方案，
+      现有实现在 src/auth/（附上文件）
+
+目标：为现有认证系统添加 mfa（totp）支持
+范围：只在 src/auth/mfa.py 中实现 totp 逻辑
+不改动：现有的 jwt 签发和验证逻辑
+
+约束：
+  - 使用 pyotp 库（已在 requirements.txt 中）
+  - totp 密钥必须加密存储，不能明文入库
+  - 失败尝试超过 5 次需要锁定账户
+
+验收：
+  - pytest tests/test_mfa.py 通过
+  - 人工审查：密钥存储方式、锁定逻辑
+```
+
+## 后端特有的上下文要素
+
+| 要素 | 说明 |
+| --- | --- |
+| 数据库 schema | 相关表的完整定义 |
+| 认证方案 | jwt、session、oauth 的具体实现 |
+| 错误处理约定 | 统一的错误码和响应格式 |
+| 中间件列表 | 日志、限流、认证等中间件的执行顺序 |
+| 环境变量 | 配置项的名称（不是值） |
+
+## 安全审查清单
+
+后端代码在合并前必须检查：
+
+- [ ] sql 注入：所有查询使用参数化或 orm
+- [ ] 权限检查：每个接口验证用户有权访问目标资源
+- [ ] 输入验证：所有外部输入经过类型和范围验证
+- [ ] 敏感数据：密码哈希、密钥加密、日志脱敏
+- [ ] 速率限制：公开接口有频率限制
+
+## 常见陷阱
+
+> **注意 · 陷阱：让 ai 设计数据库 schema**
+>
+> schema 设计涉及业务语义，ai 容易做出错误假设。先自己设计 schema，再让 ai 生成迁移文件。
+>
+> **注意 · 陷阱：跳过权限验证**
+>
+> 在任务简报中明确要求&quot;验证用户只能访问自己的数据&quot;，否则 ai 可能生成没有权限检查的代码。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 领域应用</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/domains/backend/" data-astro-cid-62u2qymq>后端服务</a></h2></div><a class="row-arrow" href="/tutorial/domains/backend/" aria-label="阅读教程《后端服务》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="移动端开发 领域应用 # 移动端开发
+
+移动端开发的 vibe coding 需要特别关注平台差异、原生能力调用和性能约束。
+
+## 跨平台策略
+
+### react native
+
+```text
+背景：react native 0.73 项目，使用 expo sdk 50，
+      导航使用 react navigation v6，样式使用 stylesheet api。
+参考组件：[附上现有 screen 组件]
+
+目标：创建 orderdetailscreen 屏幕
+路由参数：{ orderid: string }
+数据获取：使用现有的 useorder(id) hook
+布局：scrollview + 固定底部操作栏
+
+范围：创建 src/screens/orderdetailscreen.tsx
+约束：
+  - 不使用第三方 ui 库
+  - 适配 ios 安全区域（safeareaview）
+  - 支持深色模式（usecolorscheme）
+
+验收：ios 和 android 模拟器均正常渲染
+```
+
+### flutter
+
+```text
+背景：flutter 3.x 项目，状态管理使用 riverpod，
+      路由使用 gorouter，设计系统基于 material 3。
+
+目标：实现商品详情页 widget
+数据：通过 productprovider(id) 获取
+布局：customscrollview + sliverappbar（图片展开效果）
+
+范围：创建 lib/features/product/product_detail_page.dart
+约束：
+  - 遵循项目的 feature-first 目录结构
+  - 图片加载使用现有的 cachednetworkimage 封装
+  - 错误状态使用现有的 errorwidget
+
+验收：flutter test test/product_detail_test.dart 通过
+```
+
+## 原生能力集成
+
+### 相机和相册
+
+```text
+目标：在用户头像设置页面添加拍照/选择照片功能
+平台：react native（ios + android）
+现有实现：[附上现有图片上传逻辑]
+
+约束：
+  - 使用 react-native-image-picker（已安装）
+  - 图片上传前压缩到 1mb 以内
+  - 需要处理权限拒绝的情况
+
+验收：
+  - ios 权限弹窗正常显示
+  - android 权限请求正常
+  - 图片选择后正确上传
+```
+
+### 推送通知
+
+```text
+目标：集成 fcm 推送通知
+平台：react native
+现有后端：[附上推送接口文档]
+
+约束：
+  - 使用 @react-native-firebase/messaging（已安装）
+  - 前台/后台/killed 三种状态均需处理
+  - token 刷新时自动更新后端
+
+验收：
+  - 测试设备收到推送
+  - 点击推送跳转到正确页面
+```
+
+## 移动端特有的验证要求
+
+| 验证项 | ios | android |
+| --- | --- | --- |
+| 安全区域适配 | 刘海屏、底部 home 条 | 状态栏、导航栏 |
+| 深色模式 | 系统深色模式切换 | 系统深色模式切换 |
+| 字体缩放 | 辅助功能字体放大 | 字体大小设置 |
+| 网络状态 | 断网/弱网表现 | 断网/弱网表现 |
+| 权限处理 | 首次请求/拒绝后引导 | 首次请求/拒绝后引导 |
+
+## 常见陷阱
+
+> **注意 · 陷阱：忽略平台差异**
+>
+> 在约束中明确&quot;同时适配 ios 和 android&quot;，并提供两个平台的验证步骤。
+>
+> **注意 · 陷阱：硬编码尺寸**
+>
+> 要求 ai 使用 `dimensions.get('window')` 或 flexbox，而不是固定像素值。
+>
+> **注意 · 陷阱：忽略键盘遮挡**
+>
+> 包含输入框的页面，在约束中明确要求处理键盘弹出时的布局调整。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 领域应用</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/domains/mobile/" data-astro-cid-62u2qymq>移动端开发</a></h2></div><a class="row-arrow" href="/tutorial/domains/mobile/" aria-label="阅读教程《移动端开发》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="数据工程 领域应用 # 数据工程
+
+数据工程中，vibe coding 在 etl 脚本、分析查询和数据质量检查上效果显著。
+
+## 高效场景
+
+### etl 管道
+
+```python
+# 任务简报示例：构建订单数据 etl 管道
+
+# 背景：
+# - 源数据：postgresql orders 表，每天增量约 10 万条
+# - 目标：bigquery analytics.orders_daily 表
+# - 调度：airflow dag，每天 utc 02:00 运行
+
+# 目标：
+# 实现增量 etl，只同步前一天的新增和更新记录
+
+# 约束：
+# - 使用现有的 db_conn 和 bq_client 工具函数
+# - 幂等性：重复运行不产生重复数据
+# - 失败时发送告警到 slack（使用现有 alert() 函数）
+
+# 验收：
+# - 本地测试：python test_orders_etl.py
+# - 数据验证：源表和目标表记录数一致
+```
+
+### sql 分析查询
+
+```text
+背景：电商数据仓库，主要表：
+  - orders(id, user_id, created_at, total_amount, status)
+  - order_items(order_id, product_id, quantity, price)
+  - products(id, name, category_id)
+  - users(id, created_at, country)
+
+目标：计算过去 30 天各品类的 gmv、订单数、客单价，
+      按 gmv 降序排列，只显示 gmv > 10000 的品类
+
+约束：
+  - 使用 bigquery sql 语法
+  - 查询执行时间 < 10 秒（数据量约 1 亿行）
+  - 添加注释说明每个 cte 的用途
+
+验收：在测试数据集上结果与手工计算一致
+```
+
+### 数据质量检查
+
+```python
+# 任务：为 orders 表添加数据质量检查
+
+# 检查项：
+# 1. total_amount 不能为负数
+# 2. created_at 不能是未来时间
+# 3. user_id 必须在 users 表中存在
+# 4. 同一用户同一分钟内不能有超过 10 笔订单（防刷单）
+
+# 框架：使用 great expectations（已安装）
+# 输出：生成 html 报告，失败时发送告警
+
+# 验收：
+# pytest tests/test_data_quality.py
+# 报告生成在 reports/data_quality_yyyymmdd.html
+```
+
+## 数据工程特有的上下文要素
+
+| 要素 | 说明 |
+| --- | --- |
+| 数据字典 | 表结构、字段含义、业务规则 |
+| 数据量级 | 行数、增量速度，影响查询策略 |
+| 调度系统 | airflow、prefect 等的约定 |
+| 数据仓库方言 | bigquery、snowflake、redshift 的 sql 差异 |
+| 分区策略 | 表的分区字段和查询过滤要求 |
+
+## 验证清单
+
+- [ ] 幂等性测试：重复运行结果一致
+- [ ] 边界情况：空数据集、单条记录
+- [ ] 性能测试：在生产数据量级上的执行时间
+- [ ] 数据一致性：源和目标的记录数、关键指标对比
+- [ ] 错误处理：网络中断、源数据异常时的行为
+
+## 常见陷阱
+
+> **注意 · 陷阱：忽略数据量级**
+>
+> 在上下文中明确数据量级。在 1 万行上正确的查询，在 1 亿行上可能超时或产生内存溢出。
+>
+> **注意 · 陷阱：不考虑幂等性**
+>
+> 在约束中明确要求&quot;重复运行不产生重复数据&quot;，这是数据管道的基本要求。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 领域应用</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/domains/data/" data-astro-cid-62u2qymq>数据工程</a></h2></div><a class="row-arrow" href="/tutorial/domains/data/" aria-label="阅读教程《数据工程》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="ai 集成 领域应用 # ai 集成
+
+在应用中集成 llm、构建 rag 系统和 agent——这是 vibe coding 最具前沿性的应用场景。
+
+## llm 接入
+
+### 基础调用封装
+
+```python
+# 任务：封装 openai api 调用，统一处理重试、限流和错误
+
+# 背景：应用需要在多个地方调用 gpt-4o，
+#       目前每处都在直接调用 openai.chat.completions.create
+
+# 目标：创建统一的 llmclient 类
+# 功能：
+#   - 自动重试（最多 3 次，指数退避）
+#   - 速率限制处理（429 错误自动等待）
+#   - 请求/响应日志（脱敏处理，不记录 prompt 内容）
+#   - 用量统计（token 消耗记录到数据库）
+
+# 范围：创建 src/services/llm_client.py
+# 约束：
+#   - 使用 openai 库（已安装，v1.x）
+#   - 不缓存响应（streaming 场景下不可行）
+#   - 支持 streaming 和非 streaming 两种模式
+
+# 验收：pytest tests/test_llm_client.py（使用 mock）
+```
+
+### prompt 管理
+
+```python
+# 任务：实现 prompt 模板管理系统
+
+# 背景：系统有 20+ 个不同的 prompt，
+#       目前硬编码在各处，难以维护和 a/b 测试
+
+# 目标：
+# 1. 把 prompt 模板存储在 prompts/ 目录（yaml 格式）
+# 2. 支持变量插值：{{ user_name }}、{{ context }}
+# 3. 支持版本管理：同一 prompt 可以有多个版本
+# 4. 支持 a/b 测试：按比例随机选择版本
+
+# 范围：创建 src/prompts/ 目录和 promptmanager 类
+# 验收：pytest tests/test_prompt_manager.py
+```
+
+## rag 系统
+
+```text
+背景：需要为企业知识库构建问答系统
+文档格式：pdf、markdown、word
+向量数据库：已部署 weaviate 实例
+embedding 模型：text-embedding-3-small
+
+目标：实现文档索引和检索流程
+索引流程：
+  1. 文档解析 → 分块（512 token，20% 重叠）
+  2. 生成 embedding
+  3. 存入 weaviate，携带元数据（来源、页码、时间）
+
+检索流程：
+  1. 查询 embedding
+  2. 向量检索（top-k=5）
+  3. 重排序（按相关性）
+  4. 拼接上下文 + 调用 llm 生成答案
+
+范围：创建 src/rag/ 模块
+约束：
+  - 不使用 langchain（直接调用 api）
+  - 检索延迟 p99 < 500ms
+
+验收：
+  - 单元测试覆盖索引和检索逻辑
+  - 集成测试：10 个典型问题的准确率 > 80%
+```
+
+## agent 构建
+
+```text
+背景：构建一个代码审查 agent，
+      能自动分析 pr 并给出安全和质量建议
+
+工具列表：
+  - get_pr_diff(pr_id) → string
+  - search_docs(query) → list[document]
+  - post_comment(pr_id, comment) → void
+
+目标：实现 agent 的工具调用循环
+流程：
+  1. 获取 pr diff
+  2. 分析安全风险（sql 注入、xss 等）
+  3. 分析代码质量（复杂度、重复代码）
+  4. 搜索相关最佳实践文档
+  5. 生成结构化评审意见并发布
+
+范围：创建 src/agents/code_review_agent.py
+约束：
+  - 使用 claude claude-sonnet-4-5 模型
+  - 每个 pr 最多调用 10 轮工具
+  - 评审意见使用 markdown 格式
+
+验收：
+  - 对 5 个测试 pr 的评审质量人工验收
+  - 工具调用日志可追溯
+```
+
+## ai 特有的验证要求
+
+| 验证维度 | 说明 |
+| --- | --- |
+| 功能正确性 | 输出是否符合预期格式和内容 |
+| 一致性 | 相同输入多次运行的输出是否稳定 |
+| 边界情况 | 空输入、超长输入、特殊字符 |
+| 延迟 | p50/p99 响应时间 |
+| 成本 | token 消耗和费用估算 |
+| 安全性 | prompt injection 防护 |
+
+## 常见陷阱
+
+> **风险 · 陷阱：跳过 prompt injection 防护**
+>
+> 任何接受用户输入并插入 prompt 的系统都必须做输入过滤。在约束中明确要求。
+>
+> **注意 · 陷阱：用非确定性结果做断言测试**
+>
+> llm 输出不可完全预测。测试应该验证输出的结构和关键特征，而不是完整字符串匹配。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 领域应用</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/domains/ai-integration/" data-astro-cid-62u2qymq>AI 集成</a></h2></div><a class="row-arrow" href="/tutorial/domains/ai-integration/" aria-label="阅读教程《AI 集成》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="devops 流程 领域应用 # devops 流程
+
+devops 是 vibe coding 的高价值场景——ci/cd 配置、dockerfile、iac 代码有清晰的规范，ai 能高效生成。
+
+## ci/cd 配置
+
+### github actions 工作流
+
+```text
+背景：next.js 项目，部署到 vercel，
+      测试使用 vitest，类型检查使用 tsc。
+
+目标：创建 ci 工作流，在 pr 时自动运行
+步骤：
+  1. 安装依赖（使用 pnpm，缓存 node_modules）
+  2. 类型检查（tsc --noemit）
+  3. lint（eslint）
+  4. 单元测试（vitest run）
+  5. 构建检查（next build）
+
+触发条件：pr 到 main 分支，push 到 main 分支
+约束：
+  - 使用 pnpm（不是 npm 或 yarn）
+  - node.js 版本从 .nvmrc 读取
+  - 并行运行类型检查和 lint（节省时间）
+  - 失败时在 pr 上添加注释
+
+验收：在测试 pr 上触发工作流，所有步骤通过
+```
+
+### 容器化
+
+```text
+背景：python fastapi 应用，需要容器化部署
+
+目标：创建生产级 dockerfile
+要求：
+  - 多阶段构建（builder + runtime）
+  - 非 root 用户运行
+  - 最小化镜像体积（目标 < 200mb）
+  - 健康检查端点：get /health
+
+基础镜像：python:3.11-slim
+依赖文件：requirements.txt（已存在）
+
+约束：
+  - 不在镜像中包含测试依赖
+  - 敏感配置通过环境变量注入，不硬编码
+
+验收：
+  docker build -t app . 成功
+  docker run -p 8000:8000 app
+  curl http://localhost:8000/health 返回 200
+```
+
+## 基础设施即代码
+
+### terraform
+
+```text
+背景：aws 环境，需要为新服务创建基础设施
+现有模块：[附上现有 terraform 模块结构]
+
+目标：创建 ecs fargate 服务
+资源：
+  - ecs task definition（cpu: 256, memory: 512）
+  - ecs service（期望实例数: 2）
+  - alb target group
+  - cloudwatch log group（保留 30 天）
+
+约束：
+  - 沿用现有的 vpc 和安全组（通过 data source 引用）
+  - 使用现有的 ecr 仓库
+  - 标签规范：{ environment, project, managedby = &quot;terraform&quot; }
+
+验收：
+  terraform plan 无错误
+  terraform apply 后服务健康检查通过
+```
+
+## 监控告警
+
+```text
+背景：prometheus + grafana 监控栈，
+      应用已暴露 /metrics 端点
+
+目标：为 api 服务创建告警规则
+告警项：
+  1. 错误率 > 1%（5 分钟窗口）
+  2. p99 延迟 > 1 秒（5 分钟窗口）
+  3. 实例数 < 2（服务降级）
+  4. 内存使用 > 80%
+
+通知：发送到 pagerduty（严重）和 slack（警告）
+约束：
+  - 使用 prometheus alerting rules 格式（yaml）
+  - 告警需要有 runbook_url 注释
+  - 避免告警风暴（添加合理的 for 时间）
+
+验收：在测试环境触发告警，确认通知正常发送
+```
+
+## devops 特有的验证要求
+
+| 验证项 | 说明 |
+| --- | --- |
+| 幂等性 | 重复执行不产生副作用 |
+| 回滚方案 | 每个变更都有对应的回滚步骤 |
+| 最小权限 | iam 角色、容器用户遵循最小权限原则 |
+| 密钥管理 | 无硬编码密钥，使用 secrets manager |
+| 变更影响 | 评估对现有服务的影响范围 |
+
+## 常见陷阱
+
+> **风险 · 陷阱：直接应用到生产环境**
+>
+> 所有 iac 变更必须先在测试环境验证，再通过 pr 审查，最后才能应用到生产。
+>
+> **注意 · 陷阱：忽略回滚方案**
+>
+> 在任务简报中要求 ai 同时提供回滚步骤，而不是事后再想。
+>
+> **注意 · 陷阱：硬编码账号 id 和区域**
+>
+> 要求 ai 使用变量或 data source，而不是硬编码 aws 账号 id、区域等环境特定值。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 领域应用</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/domains/devops/" data-astro-cid-62u2qymq>DevOps 流程</a></h2></div><a class="row-arrow" href="/tutorial/domains/devops/" aria-label="阅读教程《DevOps 流程》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="进阶 进阶 # 进阶
+
+本章面向已经掌握基础工作流、希望在复杂项目中稳定交付的开发者和团队。
+
+## 本章内容
+
+| 章节 | 内容 |
+| --- | --- |
+| [高级工作流](/tutorial/advanced/workflows/) | 多 agent 协作、并行任务、长上下文管理 |
+| [性能优化](/tutorial/advanced/performance/) | 提升 ai 协作效率的系统性方法 |
+| [大型项目架构](/tutorial/advanced/architecture/) | 在 10 万行以上代码库中应用 vibe coding |
+| [团队协作规范](/tutorial/advanced/team-collaboration/) | 把个人实践升级为团队标准 |
+| [常见问题排查](/tutorial/advanced/troubleshooting/) | 系统性诊断 ai 跑偏、结果不稳定等问题 |
+| [未来趋势](/tutorial/advanced/future/) | ai 编码的下一个演进方向 |
+
+## 进阶的核心挑战
+
+基础 vibe coding 在单人、小项目中效果显著。进阶挑战来自：
+
+- **规模**：代码库增大后，上下文管理变得复杂
+- **团队**：多人协作时，如何保持工作流一致性
+- **质量**：更高的质量要求需要更严格的验证体系
+- **长期维护**：ai 生成的代码如何保持可维护性" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 进阶</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/advanced/" data-astro-cid-62u2qymq>进阶</a></h2></div><a class="row-arrow" href="/tutorial/advanced/" aria-label="阅读教程《进阶》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="高级工作流 进阶 # 高级工作流
+
+超越单任务单对话，构建更复杂的 ai 协作模式。
+
+## 并行任务执行
+
+当多个任务之间没有依赖关系时，可以并行执行：
+
+```mermaid
+graph td
+    a[需求分析] --> b[任务拆分]
+    b --> c[任务 1: 数据库迁移]
+    b --> d[任务 2: 后端接口]
+    b --> e[任务 3: 前端组件]
+    c --> f[集成测试]
+    d --> f
+    e --> f
+```
+
+**实践方式**：
+- 在不同的 ai 对话中并行处理独立任务
+- 每个任务完成后，在集成任务中合并结果
+- 集成任务的上下文包含所有子任务的输出摘要
+
+## 多轮迭代模式
+
+对于复杂功能，采用&quot;方案确认 → 实现 → 验证 → 精化&quot;的多轮模式：
+
+```text
+第一轮：只输出设计方案，不写代码
+  → 人工确认方案
+
+第二轮：实现核心逻辑（happy path）
+  → 运行测试，确认基础功能
+
+第三轮：添加错误处理和边界情况
+  → 运行完整测试套件
+
+第四轮：性能优化和代码清理
+  → 最终验收
+```
+
+## 长上下文管理
+
+当项目规模增大，单次对话无法容纳所有相关代码时：
+
+### 策略一：分层上下文
+
+```text
+层 1（始终包含）：项目约定、技术栈、核心接口定义
+层 2（按需包含）：当前任务相关的模块
+层 3（摘要形式）：其他相关模块的接口签名（不含实现）
+```
+
+### 策略二：上下文压缩
+
+把大文件压缩为接口摘要：
+
+```text
+原始文件（500 行）：
+  class userservice:
+    def create_user(self, email, password) -> user: ...
+    def get_user(self, id) -> optional[user]: ...
+    def update_user(self, id, data) -> user: ...
+    # ... 其他方法
+
+压缩摘要（10 行）：
+  userservice:
+    - create_user(email, password) -> user
+    - get_user(id) -> optional[user]
+    - update_user(id, data) -> user
+    - delete_user(id) -> bool
+    - list_users(page, size) -> page[user]
+```
+
+### 策略三：对话分段
+
+把长任务分成多个对话段，每段开始时提供前段的关键结论：
+
+```text
+对话 1：设计数据模型
+  → 结论：确定了 5 个核心表的 schema
+
+对话 2（携带结论）：实现数据访问层
+  → 结论：完成了 repository 接口定义
+
+对话 3（携带结论）：实现业务逻辑层
+  → ...
+```
+
+## 代码审查工作流
+
+把 ai 纳入 code review 流程：
+
+```text
+步骤 1：开发者完成实现
+步骤 2：ai 审查（安全、性能、可维护性）
+步骤 3：开发者处理 ai 发现的问题
+步骤 4：人工 code review（聚焦业务逻辑和架构）
+步骤 5：合并
+```
+
+ai 审查的提示词：
+
+```text
+请审查以下代码变更，重点检查：
+1. 安全漏洞（sql 注入、xss、权限绕过）
+2. 性能问题（n+1 查询、不必要的循环）
+3. 错误处理遗漏
+4. 与项目约定不一致的地方
+
+不需要评价代码风格，只报告实质性问题。
+每个问题说明：位置、问题描述、建议修复方式。
+
+代码变更：
+[git diff 内容]
+```" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 进阶</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/advanced/workflows/" data-astro-cid-62u2qymq>高级工作流</a></h2></div><a class="row-arrow" href="/tutorial/advanced/workflows/" aria-label="阅读教程《高级工作流》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="性能优化 进阶 # 性能优化
+
+提升 vibe coding 协作效率的系统性方法。
+
+## 效率瓶颈分析
+
+vibe coding 的时间分布：
+
+```
+规格编写        ████████░░  20%
+上下文准备      ████████░░  20%
+ai 生成         ██░░░░░░░░   5%
+验证            ████████████ 30%
+修复迭代        ████████░░  20%
+复盘沉淀        ██░░░░░░░░   5%
+```
+
+优化重点在**验证**和**修复迭代**，而不是 ai 生成速度。
+
+## 减少修复迭代
+
+### 投资规格质量
+
+每多花 5 分钟完善规格，平均节省 20 分钟的修复迭代。
+
+**规格质量检查清单**：
+- [ ] 目标行为是否具体可测？
+- [ ] 范围边界是否明确？
+- [ ] 约束是否包含&quot;不做什么&quot;？
+- [ ] 验收标准是否可执行？
+
+### 提供高质量参考
+
+```text
+低质量参考：
+&quot;参考项目中的其他组件&quot;
+
+高质量参考：
+&quot;参考 src/components/usercard.tsx 的以下方面：
+- props 类型定义方式
+- 错误状态的处理
+- 加载状态的展示&quot;
+```
+
+## 加速验证流程
+
+### 自动化验证脚本
+
+为常见验证场景创建脚本：
+
+```bash
+#!/bin/bash
+# verify.sh - 标准验证流程
+
+echo &quot;=== 类型检查 ===&quot;
+npm run typecheck || exit 1
+
+echo &quot;=== 单元测试 ===&quot;
+npm test -- --run || exit 1
+
+echo &quot;=== 构建检查 ===&quot;
+npm run build || exit 1
+
+echo &quot;=== 验证通过 ===&quot;
+```
+
+### 并行运行验证
+
+```bash
+# 并行运行类型检查和测试
+npm run typecheck &amp; npm test -- --run &amp; wait
+```
+
+## 上下文准备效率
+
+### 项目规则文件自动注入
+
+使用 ai ide 的规则文件功能，避免每次手动提供项目约定：
+
+```markdown
+# .trae/rules/project_rules.md
+每次任务自动包含以下约定：
+- 技术栈：[...]
+- 禁止事项：[...]
+- 验收命令：[...]
+```
+
+### 代码摘要工具
+
+对于大文件，使用脚本生成接口摘要：
+
+```python
+# 生成 python 文件的接口摘要
+import ast
+
+def extract_interface(filepath):
+    with open(filepath) as f:
+        tree = ast.parse(f.read())
+
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.functiondef, ast.classdef)):
+            print(f&quot;{node.name}: {ast.get_docstring(node) or ''}&quot;)
+```
+
+## 知识复用效率
+
+### 提示词模板热键
+
+在常用工具中设置快捷键，快速插入常用模板：
+
+| 快捷键 | 模板 |
+| --- | --- |
+| `!api` | api 接口实现模板 |
+| `!bug` | bug 修复模板 |
+| `!refactor` | 重构模板 |
+| `!review` | 代码审查模板 |
+
+### 失败模式数据库
+
+在任务简报中主动列出本项目已知的 ai 失败模式，提前规避。失败模式的记录格式和维护方式见[复盘沉淀](/tutorial/workflow/retrospective/)。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 进阶</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/advanced/performance/" data-astro-cid-62u2qymq>性能优化</a></h2></div><a class="row-arrow" href="/tutorial/advanced/performance/" aria-label="阅读教程《性能优化》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="大型项目架构 进阶 # 大型项目架构
+
+在 10 万行以上的代码库中应用 vibe coding，需要系统性的架构策略。
+
+## 核心挑战
+
+大型项目的 vibe coding 面临三个核心挑战：
+
+1. **上下文爆炸**：相关代码分散在数十个文件中
+2. **一致性维护**：ai 生成的代码需要与现有架构保持一致
+3. **影响面评估**：一个改动可能影响多个模块
+
+## 架构分层策略
+
+### 建立清晰的模块边界
+
+```
+src/
+├── core/          # 核心业务逻辑（最稳定，最少改动）
+├── features/      # 功能模块（按业务域划分）
+│   ├── auth/
+│   ├── orders/
+│   └── products/
+├── shared/        # 跨模块共享（工具函数、类型定义）
+├── infrastructure/ # 基础设施（数据库、缓存、消息队列）
+└── api/           # api 层（路由、中间件）
+```
+
+**vibe coding 原则**：每次任务只在一个模块内工作，跨模块改动需要拆分为多个任务。
+
+### 接口优先设计
+
+在让 ai 实现之前，先定义模块接口：
+
+```typescript
+// 先定义接口（人工设计）
+interface orderrepository {
+  findbyid(id: string): promise<order | null>
+  findbyuserid(userid: string, page: page): promise<pageresult<order>>
+  create(data: createorderdata): promise<order>
+  updatestatus(id: string, status: orderstatus): promise<order>
+}
+
+// 再让 ai 实现（基于接口）
+// 任务：实现 postgresorderrepository，满足 orderrepository 接口
+// 约束：使用 prisma orm，不改动接口定义
+```
+
+## 代码库知识管理
+
+### 架构决策记录（adr）
+
+为每个重要的架构决策创建 adr 文件，让 ai 理解&quot;为什么这样设计&quot;：
+
+```markdown
+# adr-001: 使用 repository 模式隔离数据访问
+
+## 状态：已采纳
+
+## 背景
+直接在 service 层调用 orm 导致测试困难，且数据库实现细节泄漏到业务层。
+
+## 决策
+所有数据访问通过 repository 接口进行，service 层只依赖接口。
+
+## 影响
+- 新增数据访问功能必须通过 repository 接口
+- 不允许在 service 层直接使用 prisma client
+```
+
+### 项目规则文件
+
+把架构约定（模块依赖规则、禁止事项）写入项目规则文件，让 ai 每次自动遵守。规则文件的格式和团队维护规范详见[团队协作规范](/tutorial/advanced/team-collaboration/)。
+
+## 重构策略
+
+### 渐进式重构
+
+不要一次性重构整个模块，采用&quot;绞杀者模式&quot;：
+
+```mermaid
+graph lr
+    a[旧实现] --> b[新接口包装层]
+    b --> c[新实现（逐步迁移）]
+    b --> a
+```
+
+1. 创建新接口，让旧实现满足该接口
+2. 逐步把调用方迁移到新接口
+3. 当所有调用方迁移完成，删除旧实现
+
+### ai 辅助重构的安全边界
+
+```text
+安全的 ai 重构任务：
+- 提取重复代码到工具函数
+- 把大函数拆分为小函数
+- 添加类型注解
+- 统一错误处理模式
+
+需要人工主导的重构：
+- 改变模块边界
+- 修改核心数据模型
+- 改变认证授权逻辑
+- 修改公共 api 接口
+```
+
+## 测试策略
+
+大型项目的测试分层：
+
+| 层次 | 覆盖目标 | ai 辅助程度 |
+| --- | --- | --- |
+| 单元测试 | 纯函数、工具函数 | 高（ai 可以批量生成） |
+| 集成测试 | repository、service | 中（需要人工设计场景） |
+| e2e 测试 | 关键业务路径 | 低（需要人工定义验收标准） |
+| 性能测试 | 核心接口 | 中（ai 生成脚本，人工设定指标） |" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 进阶</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/advanced/architecture/" data-astro-cid-62u2qymq>大型项目架构</a></h2></div><a class="row-arrow" href="/tutorial/advanced/architecture/" aria-label="阅读教程《大型项目架构》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="团队协作规范 进阶 # 团队协作规范
+
+把个人 vibe coding 实践升级为团队标准，让整个团队都能稳定交付。
+
+## 团队规范体系
+
+```mermaid
+graph td
+    a[个人实践] --> b[团队规范]
+    b --> c[项目规则文件]
+    b --> d[提示词模板库]
+    b --> e[验收标准清单]
+    b --> f[复盘机制]
+```
+
+## 项目规则文件
+
+每个项目维护一个 `.trae/rules/project_rules.md`，包含：
+
+```markdown
+# [项目名] vibe coding 规则
+
+## 技术栈
+[列出所有主要依赖和版本]
+
+## 目录结构约定
+[说明各目录的职责和边界]
+
+## 代码约定
+[命名规范、文件组织、注释要求]
+
+## 禁止事项
+[明确列出不允许 ai 做的事情]
+
+## 验收标准
+[每次任务完成后必须运行的命令]
+
+## 常见陷阱
+[本项目中 ai 容易犯的错误]
+```
+
+## 提示词模板库管理
+
+### 模板分级
+
+| 级别 | 说明 | 维护方式 |
+| --- | --- | --- |
+| 通用模板 | 跨项目可用 | 团队 wiki |
+| 项目模板 | 项目特定约定 | 项目仓库 |
+| 个人模板 | 个人习惯 | 个人笔记 |
+
+### 模板评审流程
+
+1. 开发者提交新模板到团队 wiki
+2. 至少 2 人在实际任务中验证
+3. 记录验证结果和适用场景
+4. 正式纳入团队模板库
+
+## code review 规范
+
+### ai 生成代码的额外检查项
+
+在常规 code review 基础上，增加：
+
+- [ ] 代码是否与项目架构约定一致
+- [ ] 是否引入了不在 `package.json` 中的依赖
+- [ ] 错误处理是否完整（ai 容易遗漏边界情况）
+- [ ] 安全敏感逻辑是否经过人工深度审查
+- [ ] 测试覆盖率是否满足要求
+
+### pr 描述模板
+
+```markdown
+## 变更摘要
+[简述做了什么]
+
+## ai 协作说明
+- 使用的提示词模板：[模板名称]
+- ai 生成的部分：[列出 ai 生成的文件/函数]
+- 人工修改的部分：[列出人工调整的内容]
+
+## 验证结果
+- [ ] 单元测试通过：`[测试命令]`
+- [ ] 类型检查通过：`[类型检查命令]`
+- [ ] 构建成功：`[构建命令]`
+- [ ] 手动验收：[验收步骤]
+
+## 残余风险
+[列出未覆盖的边界情况或已知限制]
+```
+
+## 团队复盘机制
+
+### 每周 vibe coding 分享（15 分钟）
+
+- 本周最有效的提示词模式
+- 本周遇到的 ai 失败案例和解决方法
+- 新发现的工具或技巧
+
+### 月度模板库更新
+
+- 收集本月的有效模板
+- 淘汰效果不好的模板
+- 更新项目规则文件
+
+## 新人入职指南
+
+新成员加入团队后的 vibe coding 上手路径：
+
+1. 阅读项目规则文件（`.trae/rules/project_rules.md`）
+2. 完成 3 个&quot;带师傅&quot;任务（有经验成员 review）
+3. 独立完成 1 个小功能，提交 pr
+4. 参加第一次团队复盘分享
+
+> **提示 · 关键原则**
+>
+> 团队规范不是限制，而是让每个人都能快速上手的加速器。规范应该随着团队实践不断演进，而不是一成不变。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 进阶</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/advanced/team-collaboration/" data-astro-cid-62u2qymq>团队协作规范</a></h2></div><a class="row-arrow" href="/tutorial/advanced/team-collaboration/" aria-label="阅读教程《团队协作规范》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="常见问题排查 进阶 # 常见问题排查
+
+系统性诊断 vibe coding 中的常见问题。
+
+## 问题诊断框架
+
+遇到问题时，按以下顺序排查：
+
+```mermaid
+graph td
+    a[ai 输出不符合预期] --> b{规格是否清晰?}
+    b -->|否| c[重写规格，补充约束]
+    b -->|是| d{上下文是否充分?}
+    d -->|否| e[补充相关代码和约定]
+    d -->|是| f{任务是否过大?}
+    f -->|是| g[拆分为更小的任务]
+    f -->|否| h[换一个 ai 模型或方法]
+```
+
+## 常见问题及解决方案
+
+### 问题一：ai 修改了不该改的文件
+
+**症状**：ai 在没有被要求的情况下修改了其他文件。
+
+**根因**：规格中没有明确的范围约束。
+
+**解决方案**：
+```text
+在规格中添加：
+&quot;只修改 [文件路径]，不改动其他任何文件。
+如果发现其他文件需要修改，先告诉我，等我确认后再改。&quot;
+```
+
+### 问题二：ai 引入了不存在的依赖
+
+**症状**：生成的代码 import 了项目中没有安装的包。
+
+**根因**：ai 不知道项目的实际依赖列表。
+
+**解决方案**：
+```text
+在上下文中附上 package.json 或 requirements.txt，
+并在约束中明确：&quot;不引入新的依赖，只使用已有的包。&quot;
+```
+
+### 问题三：生成的代码风格与项目不一致
+
+**症状**：ai 使用了不同的命名规范、代码结构或错误处理方式。
+
+**根因**：没有提供风格参考。
+
+**解决方案**：
+```text
+附上同类功能的现有实现作为参考：
+&quot;请参考以下现有实现的风格（命名、结构、错误处理）：
+[附上参考代码]&quot;
+```
+
+### 问题四：ai 两次生成相同的错误结果
+
+**症状**：修改提示词后，ai 仍然生成相同的错误。
+
+**根因**：问题可能在规格或上下文，而不在提示词措辞。
+
+**解决方案**：
+1. 停止重试，分析失败的根因
+2. 检查规格是否有歧义
+3. 检查上下文是否缺少关键信息
+4. 尝试把任务拆得更小
+
+### 问题五：验证通过但功能不正确
+
+**症状**：测试全部通过，但手动测试发现功能有问题。
+
+**根因**：测试用例没有覆盖实际的使用场景。
+
+**解决方案**：
+```text
+在验收标准中增加手动验收步骤：
+&quot;除了运行测试，还需要手动验证以下场景：
+1. [场景 1]
+2. [场景 2]&quot;
+```
+
+### 问题六：ai 在长对话中忘记了约束
+
+**症状**：对话进行到后期，ai 开始违反之前设定的约束。
+
+**根因**：上下文窗口中早期的约束被后续内容稀释。
+
+**解决方案**：
+- 开启新对话，重新提供约束
+- 在每次请求中重复关键约束
+- 把约束写入项目规则文件，让 ai 每次自动读取
+
+## 快速诊断清单
+
+遇到问题时，快速检查：
+
+- [ ] 规格是否包含目标、范围、约束、验收四个要素？
+- [ ] 是否提供了相关代码作为上下文？
+- [ ] 是否明确说明了&quot;不做什么&quot;？
+- [ ] 任务是否只涉及 1-3 个文件？
+- [ ] 验收标准是否具体可执行？
+
+如果以上都满足但问题仍然存在，考虑：
+- 换一个更强的模型
+- 把任务拆得更小
+- 人工实现这个特定部分" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 进阶</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/advanced/troubleshooting/" data-astro-cid-62u2qymq>常见问题排查</a></h2></div><a class="row-arrow" href="/tutorial/advanced/troubleshooting/" aria-label="阅读教程《常见问题排查》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="未来趋势 进阶 # 未来趋势
+
+ai 编码正在快速演进。了解趋势，提前布局。
+
+## 当前技术边界（2026）
+
+| 能力 | 当前状态 | 限制 |
+| --- | --- | --- |
+| 单文件代码生成 | 成熟 | 质量稳定 |
+| 多文件协调修改 | 成熟 | 大型项目需要精确上下文 |
+| 自主 bug 修复 | 实用 | 复杂 bug 仍需人工定位 |
+| 架构设计 | 辅助 | 需要人工主导决策 |
+| 完全自主交付 | 早期实用 | 适用于中等复杂度任务 |
+| 多 agent 协作 | 实验 | 协调成本高，适合特定场景 |
+
+## 近期趋势（1-2 年）
+
+### 趋势一：agent 模式成熟
+
+ai 将能够自主完成更复杂的任务链：
+
+```
+接收需求
+  → 分析代码库
+  → 制定实现计划
+  → 逐步实现
+  → 运行测试
+  → 修复失败
+  → 提交 pr
+```
+
+**对开发者的影响**：任务定义和验收标准的质量变得更加关键，因为 ai 会自主执行更多步骤。
+
+### 趋势二：代码库级别的理解
+
+模型将能够理解整个代码库的架构，而不仅仅是当前上下文中的代码：
+
+- 自动识别相关模块
+- 理解历史变更的意图
+- 主动发现潜在的影响面
+
+**对开发者的影响**：上下文管理的负担降低，但架构决策的重要性提升。
+
+### 趋势三：验证自动化
+
+ai 将能够自动生成和运行验证：
+
+- 根据规格自动生成测试用例
+- 自动运行测试并修复失败
+- 自动进行安全扫描
+
+**对开发者的影响**：验证的重心从&quot;运行测试&quot;转移到&quot;设计测试场景&quot;。
+
+## 中期趋势（3-5 年）
+
+### 专业化 ai 模型
+
+针对特定领域（安全、性能、数据库）的专业化模型将出现，在各自领域的能力超过通用模型。
+
+### 持续学习
+
+ai 将能够从项目历史中学习，自动适应项目的特定约定和风格，无需每次手动提供上下文。
+
+### 人机协作界面演进
+
+从&quot;对话框&quot;到&quot;协作工作台&quot;——ai 和开发者在同一个可视化界面中协作，实时看到彼此的操作。
+
+## 保持竞争力的策略
+
+面对快速变化的 ai 能力，以下能力将长期保持价值：
+
+### 不会被 ai 替代的能力
+
+1. **问题定义**：把模糊的业务需求转化为精确的技术规格
+2. **质量判断**：评估 ai 输出是否真正解决了问题
+3. **架构决策**：在多个技术方案中做出符合业务目标的选择
+4. **风险评估**：识别 ai 看不到的业务风险和安全隐患
+5. **用户理解**：理解真实用户的需求和使用场景
+
+### 需要持续更新的能力
+
+- 了解最新的 ai 工具和模型能力
+- 掌握新的提示词技术和工作流模式
+- 跟踪 ai 安全和伦理的最新发展
+
+## 给团队的建议
+
+> **提示 · 现在就开始**
+>
+> 不要等待 ai 技术&quot;成熟&quot;再开始。现在建立的工作流和知识积累，在 ai 能力提升后会成倍放大。
+>
+> **提示 · 投资于可迁移的能力**
+>
+> 专注于问题定义、系统思维和质量判断——这些能力在任何 ai 工具上都有价值。
+>
+> **提示 · 保持实验精神**
+>
+> 每隔 3 个月重新评估你的工作流。ai 能力的提升速度很快，昨天需要人工的步骤，今天可能已经可以自动化。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 进阶</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/advanced/future/" data-astro-cid-62u2qymq>未来趋势</a></h2></div><a class="row-arrow" href="/tutorial/advanced/future/" aria-label="阅读教程《未来趋势》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="工具 工具 # 工具
+
+本章介绍 vibe coding 生态中的核心工具，以及本教程站点的部署方式。
+
+## 本章内容
+
+| 章节 | 内容 |
+| --- | --- |
+| [mcp 扩展](/tutorial/tools/mcp/) | 连接数据库、github、搜索引擎等外部服务 |
+| [skills 与自动化](/tutorial/tools/skills/) | claude code skills、kiro hooks、自动化工作流 |
+| [github pages 部署](/tutorial/tools/github-pages/) | 把本教程站点发布到 github pages |
+| [推荐工具链](/tutorial/tools/toolchain/) | vibe coding 的完整工具生态 |" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工具</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/tools/" data-astro-cid-62u2qymq>工具</a></h2></div><a class="row-arrow" href="/tutorial/tools/" aria-label="阅读教程《工具》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="mcp 扩展 工具 # mcp 扩展
+
+mcp（model context protocol）是 anthropic 提出的开放标准，让 ai 工具能够连接外部服务——数据库、代码仓库、搜索引擎、云平台——就像给 ai 装上了各种&quot;手&quot;。
+
+## mcp 解决什么问题
+
+ai 模型本身只能处理对话中的文本。没有 mcp，你需要手动把数据库查询结果、github issue 内容、文档页面复制粘贴给 ai。
+
+有了 mcp，ai 可以直接：
+
+- 查询你的数据库，拿到真实数据
+- 读取 github pr 和 issue
+- 搜索最新的网页内容
+- 操作文件系统
+- 调用任意 api
+
+## 在 claude code 中配置 mcp
+
+mcp 服务器配置在 `~/.claude/settings.json`（全局）或项目根目录的 `.claude/settings.json`（项目级）：
+
+```json
+{
+  &quot;mcpservers&quot;: {
+    &quot;github&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;@modelcontextprotocol/server-github&quot;],
+      &quot;env&quot;: {
+        &quot;github_personal_access_token&quot;: &quot;your-token&quot;
+      }
+    },
+    &quot;filesystem&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;@modelcontextprotocol/server-filesystem&quot;, &quot;/path/to/project&quot;]
+    },
+    &quot;brave-search&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;@modelcontextprotocol/server-brave-search&quot;],
+      &quot;env&quot;: {
+        &quot;brave_api_key&quot;: &quot;your-api-key&quot;
+      }
+    }
+  }
+}
+```
+
+配置后重启 claude code，用 `/mcp` 命令查看已连接的服务器。
+
+## 在 kiro 中配置 mcp
+
+点击 kiro 面板右上角的铅笔图标，编辑 mcp 配置文件：
+
+```json
+{
+  &quot;mcpservers&quot;: {
+    &quot;brave-search&quot;: {
+      &quot;command&quot;: &quot;uvx&quot;,
+      &quot;args&quot;: [&quot;mcp-server-brave-search&quot;],
+      &quot;env&quot;: {
+        &quot;brave_api_key&quot;: &quot;your-api-key&quot;
+      },
+      &quot;disabled&quot;: false,
+      &quot;autoapprove&quot;: [&quot;search&quot;]
+    },
+    &quot;postgres&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;@modelcontextprotocol/server-postgres&quot;, &quot;postgresql://localhost/mydb&quot;],
+      &quot;disabled&quot;: false
+    }
+  }
+}
+```
+
+连接后在对话中用 `#mcp` 引用工具，例如：`#[brave-search] 搜索 react 19 新特性`。
+
+## 在 cursor 中配置 mcp
+
+在 cursor settings → mcp 页面添加服务器，或编辑 `~/.cursor/mcp.json`：
+
+```json
+{
+  &quot;mcpservers&quot;: {
+    &quot;github&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [&quot;-y&quot;, &quot;@modelcontextprotocol/server-github&quot;],
+      &quot;env&quot;: {
+        &quot;github_personal_access_token&quot;: &quot;your-token&quot;
+      }
+    }
+  }
+}
+```
+
+## 常用 mcp 服务器
+
+### 开发工具
+
+| 服务器 | 安装 | 用途 |
+| --- | --- | --- |
+| **github** | `@modelcontextprotocol/server-github` | 读写 pr、issue、代码、仓库 |
+| **gitlab** | `@modelcontextprotocol/server-gitlab` | 项目管理、ci/cd 操作 |
+| **filesystem** | `@modelcontextprotocol/server-filesystem` | 安全的本地文件读写 |
+| **playwright** | `@executeautomation/playwright-mcp-server` | 浏览器自动化、截图、测试 |
+
+### 数据库
+
+| 服务器 | 安装 | 用途 |
+| --- | --- | --- |
+| **postgresql** | `@modelcontextprotocol/server-postgres` | 查询 pg 数据库，含 schema 检查 |
+| **sqlite** | `@modelcontextprotocol/server-sqlite` | 轻量级本地数据库操作 |
+| **mongodb** | `mongodb-mcp-server` | mongodb 集合查询和管理 |
+| **redis** | `mcp-server-redis` | 自然语言操作 redis |
+
+### 搜索与信息
+
+| 服务器 | 安装 | 用途 |
+| --- | --- | --- |
+| **brave search** | `mcp-server-brave-search` | 实时网页搜索 |
+| **exa** | `exa-mcp-server` | 语义搜索，适合技术文档查找 |
+| **fetch** | `@modelcontextprotocol/server-fetch` | 抓取任意网页内容 |
+
+### 协作与云服务
+
+| 服务器 | 安装 | 用途 |
+| --- | --- | --- |
+| **slack** | `@modelcontextprotocol/server-slack` | 读写 slack 消息 |
+| **notion** | `notion-mcp-server` | 管理 notion 页面和数据库 |
+| **atlassian** | `mcp-atlassian` | jira + confluence 一体 |
+| **cloudflare** | `@cloudflare/mcp-server-cloudflare` | workers、kv、r2、d1 管理 |
+
+## 实际使用示例
+
+配置好 github mcp 后，你可以直接在对话中：
+
+```text
+帮我看一下 #23 这个 issue 的描述，然后在 src/auth/ 目录下实现它要求的功能。
+```
+
+claude 会自动调用 github mcp 读取 issue 内容，再结合本地代码生成实现。
+
+配置好数据库 mcp 后：
+
+```text
+查一下 users 表里最近 7 天注册但没有完成邮箱验证的用户数量。
+```
+
+ai 直接查询数据库返回结果，不需要你手动写 sql 再粘贴。
+
+## 安全注意事项
+
+> **注意 · mcp 服务器有执行权限**
+>
+> mcp 服务器可以读写文件、查询数据库、调用 api。只安装来源可信的服务器，优先使用官方维护的实现。
+>
+- 数据库 mcp 建议使用只读账号
+- 不要在 `env` 中硬编码密钥，使用环境变量或密钥管理工具
+- 生产数据库不要直接连接，使用只读副本" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工具</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/tools/mcp/" data-astro-cid-62u2qymq>MCP 扩展</a></h2></div><a class="row-arrow" href="/tutorial/tools/mcp/" aria-label="阅读教程《MCP 扩展》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="skills 与自动化 工具 # skills 与自动化
+
+skills 和 hooks 是把重复工作流固化成可复用自动化的核心机制。写一次，之后每次都能一键触发或自动执行。
+
+## claude code skills
+
+skills 是 claude code 的可复用指令包。把你经常重复粘贴的操作步骤、检查清单、或多步流程写成 skill，之后用 `/skill-name` 直接调用，或者让 claude 在相关场景下自动触发。
+
+### skills vs claude.md
+
+| | claude.md | skills |
+| --- | --- | --- |
+| **加载时机** | 每次对话都加载 | 只在被调用时加载 |
+| **适合内容** | 项目约定、背景知识 | 可执行的操作流程 |
+| **token 消耗** | 每次都消耗 | 按需消耗 |
+| **调用方式** | 自动生效 | `/skill-name` 或自动触发 |
+
+### 创建第一个 skill
+
+skill 是一个目录，核心文件是 `skill.md`：
+
+```
+~/.claude/skills/          ← 个人 skill（所有项目可用）
+  commit-check/
+    skill.md
+
+.claude/skills/            ← 项目 skill（仅当前项目）
+  deploy/
+    skill.md
+```
+
+**示例：提交前检查 skill**
+
+```bash
+mkdir -p ~/.claude/skills/pre-commit-check
+```
+
+`.claude/skills/pre-commit-check/skill.md`：
+
+```markdown
+---
+description: 提交前检查代码质量。当用户说&quot;准备提交&quot;、&quot;检查代码&quot;或&quot;commit 前&quot;时触发。
+---
+
+## 当前改动
+
+!`git diff head --stat`
+
+## 检查步骤
+
+1. 运行类型检查：!`npx tsc --noemit 2>&amp;1 | head -20`
+2. 运行 lint：!`npx eslint . --max-warnings 0 2>&amp;1 | tail -20`
+3. 运行测试：!`npx vitest run 2>&amp;1 | tail -30`
+
+根据以上结果，报告：
+- 是否可以安全提交
+- 如果有问题，列出需要修复的内容（按严重程度排序）
+- 建议的提交信息
+```
+
+**示例：pr 描述生成 skill**
+
+```markdown
+---
+description: 根据当前分支的改动生成 pr 描述。
+disable-model-invocation: true
+---
+
+## 改动内容
+
+!`git log main..head --oneline`
+
+!`git diff main...head --stat`
+
+请生成一份 pr 描述，包含：
+1. **summary**：2-3 句话说明这个 pr 做了什么
+2. **changes**：按文件或模块分组的改动列表
+3. **test plan**：验证这些改动的步骤
+
+输出 markdown 格式，可以直接粘贴到 github pr 描述框。
+```
+
+### frontmatter 关键字段
+
+```yaml
+---
+description: 技能描述（claude 用这个判断何时自动触发）
+disable-model-invocation: true   # 只允许手动 /调用，不自动触发
+user-invocable: false            # 只允许 claude 自动触发，不显示在 / 菜单
+allowed-tools: read grep bash    # 该 skill 可以使用的工具
+context: fork                    # 在独立子 agent 中运行
+---
+```
+
+### 动态上下文注入
+
+用 `` !`command` `` 在 skill 加载时执行命令并注入结果：
+
+```markdown
+## 当前 git 状态
+!`git status --short`
+
+## 最近提交
+!`git log --oneline -5`
+```
+
+claude 看到的是命令的实际输出，而不是命令本身。
+
+### 内置 skills
+
+claude code 自带一批开箱即用的 skills：
+
+| skill | 用途 |
+| --- | --- |
+| `/code-review` | 审查当前改动，按严重程度列出问题 |
+| `/debug` | 系统性调试当前错误 |
+| `/run` | 启动项目并验证功能 |
+| `/verify` | 确认代码改动实际生效 |
+| `/batch` | 批量处理多个文件 |
+
+## kiro hooks
+
+kiro 的 hooks 是事件驱动的自动化——文件保存、任务完成、手动触发时，自动执行你定义的操作。
+
+### hook 类型
+
+| 类型 | 触发时机 | 典型用途 |
+| --- | --- | --- |
+| **文件事件** | 文件创建/保存/删除 | 保存组件时自动生成测试 |
+| **spec 任务** | 任务完成时 | 任务完成后自动更新文档 |
+| **手动触发** | 你主动激活 | 一键执行复杂操作 |
+
+### 配置示例
+
+在 kiro 面板的 hooks 标签页，用自然语言描述触发条件和操作：
+
+```
+触发条件：src/**/*.tsx 文件被保存
+操作：为这个组件生成或更新对应的测试文件，
+      测试文件放在 src/__tests__/ 目录，
+      使用 vitest + testing library，
+      覆盖 happy path 和主要错误状态
+```
+
+```
+触发条件：手动触发（名称：同步 api 文档）
+操作：扫描 src/api/ 目录下所有路由文件，
+      更新 docs/api.md 中的接口文档，
+      保持现有格式不变
+```
+
+### kiro steering 文件
+
+steering 文件放在 `.kiro/steering/`，让 kiro 每次都了解你的项目背景：
+
+```
+.kiro/steering/
+  product.md      ← 产品是什么、目标用户
+  tech-stack.md   ← 技术栈和版本
+  conventions.md  ← 代码约定和禁止事项
+```
+
+**示例 `.kiro/steering/conventions.md`**：
+
+```markdown
+# 代码约定
+
+## 技术栈
+- next.js 14 app router + typescript（严格模式）
+- 样式：tailwind css，禁止内联样式
+- 状态：zustand，禁止 redux
+
+## 文件命名
+- 组件：pascalcase（usercard.tsx）
+- 工具函数：camelcase（formatdate.ts）
+- 常量：screaming_snake_case
+
+## 禁止事项
+- 不引入新的 ui 组件库
+- 不直接修改 src/lib/auth/
+- 不使用 any 类型
+```
+
+## claude code hooks
+
+claude code 也支持 hooks，在特定事件发生时执行 shell 命令：
+
+```json
+// .claude/settings.json
+{
+  &quot;hooks&quot;: {
+    &quot;posttooluse&quot;: [
+      {
+        &quot;matcher&quot;: &quot;edit|write&quot;,
+        &quot;hooks&quot;: [
+          {
+            &quot;type&quot;: &quot;command&quot;,
+            &quot;command&quot;: &quot;npx tsc --noemit 2>&amp;1 | head -5&quot;
+          }
+        ]
+      }
+    ],
+    &quot;stop&quot;: [
+      {
+        &quot;hooks&quot;: [
+          {
+            &quot;type&quot;: &quot;command&quot;,
+            &quot;command&quot;: &quot;echo 'claude 完成任务'&quot;
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+常用 hook 事件：
+
+| 事件 | 触发时机 |
+| --- | --- |
+| `pretooluse` | 工具调用前 |
+| `posttooluse` | 工具调用后 |
+| `stop` | claude 完成回复时 |
+| `notification` | claude 需要通知时 |
+
+## 推荐的自动化组合
+
+**前端项目**：保存文件后自动类型检查
+
+```json
+{
+  &quot;hooks&quot;: {
+    &quot;posttooluse&quot;: [{
+      &quot;matcher&quot;: &quot;edit|write&quot;,
+      &quot;hooks&quot;: [{&quot;type&quot;: &quot;command&quot;, &quot;command&quot;: &quot;npx tsc --noemit 2>&amp;1 | tail -5&quot;}]
+    }]
+  }
+}
+```
+
+**全栈项目**：提交前自动跑测试（kiro hook）
+
+```
+触发条件：手动触发（名称：提交前检查）
+操作：运行 pnpm test，如果失败列出失败的测试用例和原因
+```
+
+**文档项目**：保存 markdown 后自动检查链接
+
+```json
+{
+  &quot;hooks&quot;: {
+    &quot;posttooluse&quot;: [{
+      &quot;matcher&quot;: &quot;write&quot;,
+      &quot;hooks&quot;: [{&quot;type&quot;: &quot;command&quot;, &quot;command&quot;: &quot;mkdocs build --strict 2>&amp;1 | tail -3&quot;}]
+    }]
+  }
+}
+```" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工具</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/tools/skills/" data-astro-cid-62u2qymq>Skills 与自动化</a></h2></div><a class="row-arrow" href="/tutorial/tools/skills/" aria-label="阅读教程《Skills 与自动化》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="项目规则文件 工具 # 项目规则文件
+
+项目规则文件是 vibe coding 中&quot;让 ai 持续遵守项目约定&quot;的核心机制。写一次，之后每次对话都自动生效，不需要重复说明。
+
+## 各工具的规则文件位置
+
+| 工具 | 文件位置 | 加载方式 |
+| --- | --- | --- |
+| **cursor** | `.cursor/rules/*.mdc` | 按条件自动注入 |
+| **claude code** | `claude.md`（项目根）或 `~/.claude/claude.md`（全局） | 每次对话自动加载 |
+| **kiro** | `.kiro/steering/*.md` | 每次对话自动加载 |
+| **windsurf** | `.windsurfrules` | 每次对话自动加载 |
+
+---
+
+## cursor rules（`.cursor/rules/`）
+
+cursor 的规则系统最灵活，支持按文件类型、目录、场景条件触发不同规则。
+
+### 文件格式
+
+每个规则是一个 `.mdc` 文件，包含 frontmatter 和正文：
+
+```markdown
+---
+description: 规则描述（agent 用这个判断何时应用）
+globs: src/**/*.tsx
+alwaysapply: false
+---
+
+规则正文（markdown 格式）
+```
+
+### 三种触发模式
+
+**`alwaysapply: true`** — 每次对话都加载，适合全局约定：
+
+```markdown
+---
+description: 项目全局约定
+alwaysapply: true
+---
+
+## 技术栈
+- next.js 14 app router + typescript 严格模式
+- 样式：tailwind css，禁止内联样式
+- 状态：zustand，禁止引入 redux
+
+## 禁止事项
+- 不引入新的 ui 组件库
+- 不直接修改 src/lib/auth/
+- 不使用 any 类型
+```
+
+**`globs`** — 匹配特定文件时自动注入，适合领域约定：
+
+```markdown
+---
+description: react 组件开发规范
+globs: src/components/**/*.tsx
+alwaysapply: false
+---
+
+## 组件约定
+- 使用函数组件 + hooks，不使用 class 组件
+- props 类型用 interface 定义，不用 type
+- 组件文件只导出一个组件
+- 测试文件放在同目录下，命名为 componentname.test.tsx
+```
+
+**`description` 触发** — agent 根据描述判断是否应用，适合场景规则：
+
+```markdown
+---
+description: 数据库迁移规范。当任务涉及数据库 schema 变更时应用。
+alwaysapply: false
+---
+
+## 迁移规范
+- 所有迁移必须可回滚（提供 down 方法）
+- 大表变更（超过 100 万行）需要在规格中说明执行策略
+- 迁移文件命名：yyyymmddhhmmss_描述.ts
+- 不在迁移文件中写业务逻辑
+```
+
+### 推荐的规则文件结构
+
+```
+.cursor/rules/
+  project.mdc          ← 全局约定（alwaysapply: true）
+  frontend.mdc         ← 前端组件规范（globs: src/**/*.tsx）
+  backend.mdc          ← 后端 api 规范（globs: src/api/**/*.ts）
+  database.mdc         ← 数据库迁移规范（description 触发）
+  testing.mdc          ← 测试编写规范（globs: **/*.test.ts）
+```
+
+### 实际示例：全栈项目的 project.mdc
+
+```markdown
+---
+description: 项目全局约定
+alwaysapply: true
+---
+
+## 项目概述
+电商平台后台管理系统，next.js 14 + fastapi + postgresql。
+
+## 技术栈
+- 前端：next.js 14 app router，typescript 严格模式
+- 样式：tailwind css + shadcn/ui，禁止内联样式
+- 状态：zustand（客户端），react query（服务端状态）
+- 后端：fastapi，pydantic v2，sqlalchemy 2.0
+- 数据库：postgresql 16，alembic 迁移
+
+## 代码约定
+- 组件：pascalcase（usercard.tsx）
+- 工具函数：camelcase（formatdate.ts）
+- api 路由：kebab-case（/api/user-orders）
+- 数据库表：snake_case（user_orders）
+
+## 禁止事项
+- 不引入新的 npm 包（需要先讨论）
+- 不直接修改 src/lib/auth/（安全敏感）
+- 不在前端代码中硬编码 api url
+- 不使用 any 类型
+- 不在迁移文件中写业务逻辑
+
+## 验证命令
+- 前端类型检查：`pnpm tsc --noemit`
+- 前端测试：`pnpm vitest run`
+- 后端测试：`pytest`
+- 构建检查：`pnpm build`
+```
+
+---
+
+## claude code（`claude.md`）
+
+`claude.md` 是纯 markdown 文件，每次对话自动加载。支持项目级（项目根目录）和全局级（`~/.claude/claude.md`）。
+
+```markdown
+# 项目约定
+
+## 技术栈
+- python 3.11 + fastapi + sqlalchemy 2.0
+- 测试：pytest + pytest-asyncio
+- 代码格式：ruff（lint + format）
+
+## 运行命令
+- 启动：`uvicorn main:app --reload`
+- 测试：`pytest -x`
+- 格式化：`ruff format . &amp;&amp; ruff check --fix .`
+
+## 禁止事项
+- 不修改 src/auth/（需要安全审查）
+- 不引入新依赖（先在 requirements.txt 中确认）
+- 不在代码中硬编码密钥或 url
+
+## 项目结构
+src/
+  api/        ← 路由层，只做参数验证和响应格式化
+  services/   ← 业务逻辑层
+  models/     ← sqlalchemy 模型
+  schemas/    ← pydantic 模型
+```
+
+---
+
+## 规则文件的维护节奏
+
+规则文件不是一次性配置，而是随项目演进持续更新的活文档。
+
+**什么时候更新**：
+
+- ai 生成了与项目风格不一致的代码 → 把正确约定补进规则文件
+- 某个禁止事项被 ai 反复违反 → 措辞改得更明确
+- 引入了新的技术栈或约定 → 及时同步到规则文件
+- 复盘时发现某个提示词模式很有效 → 提炼成规则
+
+**团队协作**：规则文件提交到 git，团队共享。新成员加入时，规则文件也是项目约定的文档。
+
+---
+
+## 常见问题
+
+> **注意 · 规则文件太长导致 ai 忽略部分内容**
+>
+> 把规则拆分成多个文件，按触发条件分类。全局规则保持简洁（20 行以内），领域规则按需加载。
+>
+> **注意 · 规则和任务简报冲突**
+>
+> 任务简报中的约束优先级高于规则文件。如果某次任务需要临时突破规则，在任务简报中明确说明。
+>
+> **提示 · 验证规则是否生效**
+>
+> 在对话开始时问 ai：&quot;你了解这个项目的哪些约定？&quot;根据回答判断规则文件是否被正确加载。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工具</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/tools/cursor-rules/" data-astro-cid-62u2qymq>项目规则文件</a></h2></div><a class="row-arrow" href="/tutorial/tools/cursor-rules/" aria-label="阅读教程《项目规则文件》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="github pages 部署 工具 # github pages 部署
+
+本站使用 github actions 自动构建并发布到 github pages。推送到 `main` 分支后，站点在 1-2 分钟内自动更新。
+
+## 首次部署流程
+
+### 第一步：创建 github 仓库
+
+```bash
+gh repo create your-username/your-repo --public --source . --remote origin --push
+```
+
+或者在 github 网页创建仓库后：
+
+```bash
+git remote add origin https://github.com/your-username/your-repo.git
+git push -u origin main
+```
+
+### 第二步：开启 github pages
+
+1. 进入仓库 → **settings** → **pages**
+2. source 选择 **deploy from a branch**
+3. branch 选择 **gh-pages**，目录选 **/ (root)**
+4. 点击 **save**
+
+> **信息 · gh-pages 分支何时出现**
+>
+> 第一次推送到 `main` 后，github actions 会自动创建 `gh-pages` 分支。如果 pages 设置里看不到这个分支，等 actions 跑完再刷新。
+>
+### 第三步：确认 actions 权限
+
+进入仓库 → **settings** → **actions** → **general** → **workflow permissions**，选择 **read and write permissions**。
+
+这是 `mkdocs gh-deploy` 写入 `gh-pages` 分支所必需的。
+
+## 工作流说明
+
+`.github/workflows/deploy.yml` 在每次推送到 `main` 时触发：
+
+1. 拉取仓库代码
+2. 安装 python 和依赖（带缓存，通常 10 秒内完成）
+3. 运行 `mkdocs build --strict`（构建失败则终止，不发布）
+4. 运行 `mkdocs gh-deploy --force` 推送到 `gh-pages` 分支
+
+## 自定义域名（可选）
+
+如果你有自己的域名：
+
+1. 在域名 dns 添加 cname 记录，指向 `your-username.github.io`
+2. 在仓库 settings → pages → custom domain 填入域名
+3. 在 `docs/` 目录创建 `cname` 文件，内容为你的域名：
+
+```
+docs.yourdomain.com
+```
+
+4. 在 `mkdocs.yml` 更新 `site_url`：
+
+```yaml
+site_url: https://docs.yourdomain.com/
+```
+
+## 常见问题
+
+**actions 报错：`permission denied to github-actions[bot]`**
+
+进入 settings → actions → general → workflow permissions，改为 read and write permissions。
+
+**站点 404**
+
+- 确认 pages 设置里选的是 `gh-pages` 分支
+- 确认 actions 已经成功跑完（绿色勾）
+- 等待 1-2 分钟让 cdn 刷新
+
+**`mkdocs build --strict` 失败**
+
+本地运行同样的命令查看具体错误：
+
+```bash
+mkdocs build --strict
+```
+
+常见原因：markdown 语法错误、引用了不存在的文件、`mkdocs.yml` 配置有误。
+
+**样式丢失，只显示纯文本**
+
+`mkdocs.yml` 中的 `site_url` 必须与实际访问地址一致。如果用 github pages 默认域名，格式为：
+
+```yaml
+site_url: https://your-username.github.io/your-repo/
+```
+
+注意末尾的斜杠不能省略。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工具</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/tools/github-pages/" data-astro-cid-62u2qymq>GitHub Pages 部署</a></h2></div><a class="row-arrow" href="/tutorial/tools/github-pages/" aria-label="阅读教程《GitHub Pages 部署》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="推荐工具链 工具 # 推荐工具链
+
+vibe coding 的完整工具生态，按使用频率和重要性排列。
+
+## ai ide
+
+| 工具 | 特点 | 适用场景 |
+| --- | --- | --- |
+| **kiro** | 规格驱动、agent 模式、aws 深度集成 | 复杂项目、团队协作、云原生开发 |
+| **cursor** | 代码库理解、多文件编辑、tab 补全 | 日常开发、快速迭代 |
+| **windsurf** | 流畅的 ai 协作体验、cascade agent | 个人项目、全栈开发 |
+| **claude code** | cli 驱动、强推理、mcp 扩展 | 终端工作流、脚本自动化 |
+| **github copilot** | 深度 ide 集成、pr 审查 | 已有 vs code/jetbrains 工作流 |
+
+## ai 模型（2026 年主流）
+
+| 模型 | 优势 | 适用任务 |
+| --- | --- | --- |
+| claude sonnet 4.6 / opus 4.7 | 长上下文（1m token）、代码质量高、强推理 | 复杂重构、架构设计、agent 任务 |
+| gpt-5.5 | 速度快、多模态、工具调用稳定 | 快速迭代、图片理解、函数调用 |
+| gemini 3.5 flash | 超快响应、低成本、多模态 | 高频调用、实时补全、大批量任务 |
+| deepseek v4 | 成本极低、中文友好、开源可本地部署 | 日常任务、私有化部署、成本敏感场景 |
+
+## 版本控制
+
+```bash
+# 推荐的 git 工作流
+git checkout -b feature/task-name
+# ... vibe coding 任务 ...
+git add -p  # 精确暂存，避免意外提交
+git commit -m &quot;feat: 添加用户头像上传功能&quot;
+git push -u origin feature/task-name
+gh pr create --title &quot;feat: 用户头像上传&quot; --body &quot;...&quot;
+```
+
+## 测试工具
+
+| 语言 | 推荐工具 |
+| --- | --- |
+| typescript/javascript | vitest + testing library |
+| python | pytest + pytest-cov |
+| go | testing + testify |
+| rust | cargo test |
+
+## 代码质量
+
+| 工具 | 用途 |
+| --- | --- |
+| eslint / biome | javascript/typescript lint |
+| ruff | python lint + format |
+| typescript | 静态类型检查 |
+| sonarqube | 代码质量扫描 |
+
+## 本地开发环境
+
+```bash
+# 推荐的本地环境配置
+# 1. 版本管理
+nvm use  # node.js 版本
+pyenv local 3.11  # python 版本
+
+# 2. 依赖管理
+pnpm install  # node.js（推荐 pnpm）
+uv sync  # python（推荐 uv）
+
+# 3. 环境变量
+cp .env.example .env.local
+# 编辑 .env.local，填入本地配置
+```
+
+## 文档工具
+
+| 工具 | 用途 |
+| --- | --- |
+| mkdocs material | 技术文档站点（本站使用） |
+| notion / confluence | 团队 wiki |
+| mermaid | 流程图和架构图 |
+| excalidraw | 手绘风格示意图 |" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 工具</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/tools/toolchain/" data-astro-cid-62u2qymq>推荐工具链</a></h2></div><a class="row-arrow" href="/tutorial/tools/toolchain/" aria-label="阅读教程《推荐工具链》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="实战案例 实战案例 # 实战案例
+
+真实项目的完整 vibe coding 记录——从需求到上线，包括中间跑偏和纠正的过程。
+
+## 案例列表
+
+| 案例 | 技术栈 | 难度 | 核心收获 |
+| --- | --- | --- | --- |
+| [用户评论功能](/tutorial/cases/comment-feature/) | next.js + postgresql | 中等 | 跨模块任务拆分、ai 越界处理 |
+
+---
+
+## 怎么读这些案例
+
+每个案例都按真实流程记录，不只展示成功路径，也记录：
+
+- **跑偏时刻**：ai 做了什么错误假设，我是怎么发现的
+- **纠正方式**：重新写规格还是开新对话
+- **沉淀结果**：这次任务产出了哪些可复用的提示词或规则
+
+如果你只想看&quot;正确做法&quot;，直接看[提示词库](/tutorial/prompting/library/)。
+如果你想理解&quot;为什么这样做&quot;，读这里的案例。
+
+---
+
+## 贡献案例
+
+有真实项目的 vibe coding 记录？欢迎通过 [github issues](https://github.com/ninthless/vibe-coding-tutorial/issues) 提交。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 实战案例</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/cases/" data-astro-cid-62u2qymq>实战案例</a></h2></div><a class="row-arrow" href="/tutorial/cases/" aria-label="阅读教程《实战案例》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="案例：用户评论功能 实战案例 # 案例：用户评论功能
+
+**项目背景**：一个内容平台，next.js 14 + postgresql + prisma，已有文章列表和详情页。
+
+**任务目标**：为文章详情页添加评论功能，包括展示评论列表、发表评论、删除自己的评论。
+
+**实际耗时**：约 2.5 小时（含两次跑偏纠正）
+
+---
+
+## 第一步：拆分任务
+
+评论功能看起来是一个任务，实际上是四个独立任务：
+
+```
+1. 数据库：comments 表迁移
+2. 后端：评论 crud api（3 个接口）
+3. 前端：commentlist 组件
+4. 前端：commentform 组件 + 发表逻辑
+```
+
+每个任务独立完成、独立验证，不一次性全部交给 ai。
+
+---
+
+## 任务一：数据库迁移
+
+**规格**：
+
+```text
+目标：创建 comments 表
+字段：id, article_id, user_id, content(text), created_at
+约束：article_id 外键关联 articles.id（级联删除），user_id 外键关联 users.id
+范围：只创建迁移文件，不修改现有 schema
+验收：prisma migrate dev 执行成功，prisma migrate reset 可回滚
+```
+
+**结果**：一次通过，ai 生成了正确的 prisma schema 和迁移文件。
+
+---
+
+## 任务二：评论 api
+
+**规格**：
+
+```text
+背景：next.js 14 app router，api 路由在 src/app/api/，
+      认证使用 nextauth，session 中有 user.id。
+      现有接口参考：src/app/api/articles/route.ts（附上内容）
+
+目标：实现三个接口
+  get  /api/articles/[id]/comments  → 返回评论列表（按时间倒序）
+  post /api/articles/[id]/comments  → 发表评论（需登录）
+  delete /api/comments/[id]         → 删除评论（只能删自己的）
+
+范围：创建以下文件
+  src/app/api/articles/[id]/comments/route.ts
+  src/app/api/comments/[id]/route.ts
+
+约束：
+  - 沿用现有的 prisma client 实例（src/lib/prisma.ts）
+  - 未登录用户访问 post/delete 返回 401
+  - 删除他人评论返回 403（不是 404）
+  - 评论内容不能为空，超过 1000 字返回 400
+
+验收：运行 pnpm test src/app/api/articles 全部通过
+```
+
+### 跑偏 #1：ai 修改了 nextauth 配置
+
+ai 生成了正确的接口代码，但同时修改了 `src/lib/auth.ts`，添加了一个它认为&quot;缺少的&quot; session 字段。
+
+**发现方式**：验证时运行 `git diff --stat`，看到了不在规格范围内的文件被修改。
+
+**根因**：规格里写了&quot;session 中有 user.id&quot;，但没有附上实际的 auth 配置，ai 猜测 session 结构并做了&quot;修复&quot;。
+
+**纠正**：
+1. `git checkout src/lib/auth.ts` 回退这个文件
+2. 重新发请求，这次附上了 `src/lib/auth.ts` 的实际内容，并在约束中加了&quot;不修改 src/lib/auth.ts&quot;
+
+**沉淀**：涉及认证的任务，必须附上 auth 配置文件，并在约束中明确禁止修改它。
+
+---
+
+## 任务三：commentlist 组件
+
+**规格**：
+
+```text
+背景：项目使用 react + tailwind css，
+      参考现有组件：src/components/articlecard.tsx（附上内容）
+
+目标：创建 commentlist 组件
+props：
+  - articleid: string
+  - currentuserid?: string（未登录时为 undefined）
+
+行为：
+  - 调用 get /api/articles/[id]/comments 获取数据
+  - 展示评论列表，每条评论显示：头像、用户名、时间、内容
+  - 当前用户的评论右侧显示删除按钮
+  - 删除后乐观更新（先从列表移除，失败时恢复）
+  - 加载中显示 3 个骨架屏
+  - 空状态显示&quot;还没有评论，来发表第一条吧&quot;
+
+范围：创建 src/components/commentlist.tsx
+约束：不引入新依赖，使用 fetch api（不用 swr 或 react query）
+
+验收：typescript 无错误，在文章详情页正常渲染
+```
+
+**结果**：一次通过，风格与现有组件一致。
+
+---
+
+## 任务四：commentform 组件
+
+**规格**：
+
+```text
+背景：同上，参考 src/components/articlecard.tsx
+
+目标：创建 commentform 组件
+props：
+  - articleid: string
+  - onsuccess: () => void（发表成功后调用，用于刷新列表）
+
+行为：
+  - 文本框 + 发表按钮
+  - 未登录时显示&quot;登录后发表评论&quot;，点击跳转 /login
+  - 发表中禁用按钮，显示 loading 状态
+  - 发表成功后清空文本框，调用 onsuccess
+  - 发表失败显示错误提示
+
+范围：创建 src/components/commentform.tsx
+约束：不引入新依赖
+
+验收：typescript 无错误，登录/未登录状态均正常
+```
+
+### 跑偏 #2：ai 在组件内部实现了登录状态检查
+
+ai 在 `commentform` 内部调用了 `getsession()`，而不是通过 props 接收 `currentuserid`。这导致组件内部有异步逻辑，与项目其他组件的模式不一致。
+
+**发现方式**：代码审查时注意到组件内有 `useeffect` + `getsession()`，与规格中&quot;未登录时显示登录提示&quot;的实现方式不符。
+
+**根因**：规格里没有说明登录状态从哪里来，ai 自己决定了获取方式。
+
+**纠正**：修改规格，明确 props 增加 `isloggedin: boolean`，登录状态由父组件传入。重新请求，一次通过。
+
+**沉淀**：组件的数据来源（props vs 内部获取）必须在规格中明确，不能让 ai 自己决定。
+
+---
+
+## 整合与验证
+
+四个任务完成后，在文章详情页整合：
+
+```typescript
+// src/app/articles/[id]/page.tsx 中新增
+<commentlist articleid={article.id} currentuserid={session?.user?.id} />
+<commentform articleid={article.id} isloggedin={!!session} onsuccess={refreshcomments} />
+```
+
+整合本身没有让 ai 参与，手动写了 5 行代码。
+
+**最终验证**：
+- [ ] 未登录：看到评论列表，看到&quot;登录后发表评论&quot;
+- [ ] 登录后：可以发表评论，评论出现在列表顶部
+- [ ] 删除自己的评论：列表立即更新
+- [ ] 尝试删除他人评论：返回 403（通过 curl 验证）
+- [ ] typescript 检查：`pnpm tsc --noemit` 无错误
+
+---
+
+## 复盘总结
+
+**有效的**：
+- 把&quot;评论功能&quot;拆成 4 个独立任务，每个任务边界清晰，ai 没有越界
+- 附上现有同类代码作为风格参考，生成结果与项目一致
+
+**两次跑偏的共同根因**：
+- 规格里有隐含假设（session 结构、登录状态来源），没有显式说明
+- 修复方式：把隐含假设变成显式约束
+
+**沉淀到提示词库的规则**：
+1. 涉及认证的任务 → 附上 auth 配置，约束中禁止修改
+2. 组件的数据来源 → 在 props 定义中明确，不留给 ai 决定
+3. 整合步骤 → 手动写，不交给 ai（5 行代码，不值得写规格）" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 实战案例</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/cases/comment-feature/" data-astro-cid-62u2qymq>案例：用户评论功能</a></h2></div><a class="row-arrow" href="/tutorial/cases/comment-feature/" aria-label="阅读教程《案例：用户评论功能》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="质量 质量 # 质量
+
+vibe coding 的质量来自系统性的验证，而不是模型的自信。
+
+## 本章内容
+
+| 章节 | 内容 |
+| --- | --- |
+| [验收清单](/tutorial/quality/checklist/) | 按任务类型分类的完整验收清单 |
+
+## 质量的三个层次
+
+**层次一：功能正确性**
+代码做了它应该做的事，没有做它不应该做的事。
+
+**层次二：工程质量**
+代码可读、可测试、可维护，符合项目约定。
+
+**层次三：系统质量**
+代码在真实负载下稳定运行，安全可靠。
+
+vibe coding 的验证体系需要覆盖这三个层次。" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 质量</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/quality/" data-astro-cid-62u2qymq>质量</a></h2></div><a class="row-arrow" href="/tutorial/quality/" aria-label="阅读教程《质量》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="验收清单 质量 # 验收清单
+
+按任务类型分类的完整验收清单，每次任务完成后对照检查。
+
+## 通用清单（所有任务必须）
+
+- [ ] 相关测试全部通过
+- [ ] 类型检查无错误（typescript / mypy / 等）
+- [ ] 构建成功
+- [ ] 没有引入新的 lint 错误
+- [ ] 没有意外修改范围外的文件
+
+## 新功能开发
+
+- [ ] happy path 正常工作
+- [ ] 错误情况有适当的错误信息
+- [ ] 边界情况（空值、最大值、并发）已处理
+- [ ] 新功能有测试覆盖
+- [ ] api 接口有文档更新（如适用）
+
+## bug 修复
+
+- [ ] 原始 bug 已修复（按复现步骤验证）
+- [ ] 添加了防回归测试
+- [ ] 根因已修复（不只是症状修复）
+- [ ] 没有引入新的 bug（相关功能回归测试通过）
+
+## 重构
+
+- [ ] 所有现有测试继续通过
+- [ ] 接口（公共 api）没有改变
+- [ ] 性能没有明显下降
+- [ ] 代码复杂度降低（圈复杂度、文件长度等）
+
+## 安全敏感改动
+
+- [ ] 人工代码审查（不只是 ai 生成）
+- [ ] 输入验证完整
+- [ ] 权限检查完整
+- [ ] 敏感数据不会出现在日志中
+- [ ] 安全测试通过
+
+## 数据库变更
+
+- [ ] 迁移文件可以正向执行
+- [ ] 迁移文件可以回滚
+- [ ] 数据完整性约束正确
+- [ ] 大表变更有性能评估
+
+## devops / 基础设施变更
+
+- [ ] 在测试环境验证通过
+- [ ] 回滚方案已准备
+- [ ] 监控告警已更新
+- [ ] 变更影响已评估
+
+## 最终交付检查
+
+- [ ] 改动摘要已记录
+- [ ] 残余风险已识别
+- [ ] pr 描述完整
+- [ ] 复盘要点已记录" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 质量</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/quality/checklist/" data-astro-cid-62u2qymq>验收清单</a></h2></div><a class="row-arrow" href="/tutorial/quality/checklist/" aria-label="阅读教程《验收清单》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article><article class="tutorial-search-row" data-search-item data-search-text="学习路线图 学习路线图 # 学习路线图
+
+从零开始到能独立交付大型项目，分四个阶段。
+
+## 阶段一：建立基础（1-2 天）
+
+目标：理解 vibe coding 的核心思维，完成第一个端到端任务。
+
+```
+环境准备 → 核心概念 → 规格先行 → 快速上手
+```
+
+| 章节 | 你会获得什么 |
+| --- | --- |
+| [环境准备](/tutorial/get-started/environment/) | 搭好 ai ide + 基础工具链 |
+| [核心概念](/tutorial/get-started/concepts/) | 统一术语，建立思维模型 |
+| [vibe coding 是什么](/tutorial/basics/what-is-vibe-coding/) | 理解与传统开发的本质差异 |
+| [规格先行](/tutorial/workflow/spec-first/) | 学会在写代码前固定问题边界 |
+| [快速上手](/tutorial/get-started/quickstart/) | 完成第一个完整的 vibe coding 任务 |
+
+**阶段验收**：能独立写出一份可执行规格，并用它完成一个小功能。
+
+---
+
+## 阶段二：掌握工作流（3-5 天）
+
+目标：建立可重复的交付流程，不再依赖运气。
+
+```
+任务简报 → 上下文管理 → 验证闭环 → 提示词库
+```
+
+| 章节 | 你会获得什么 |
+| --- | --- |
+| [任务简报模板](/tutorial/prompting/task-brief/) | 组织完整编码请求的标准格式 |
+| [提示词设计原则](/tutorial/prompting/design-principles/) | 理解为什么有些提示词有效，有些无效 |
+| [上下文管理](/tutorial/workflow/context-management/) | 精准提供上下文，避免 ai 跑偏 |
+| [验证闭环](/tutorial/workflow/verification/) | 每次任务后的系统性检查流程 |
+| [常用提示词库](/tutorial/prompting/library/) | 直接可用的提示词模板集合 |
+| [复盘沉淀](/tutorial/workflow/retrospective/) | 把经验转化为可复用资产 |
+
+**阶段验收**：连续完成 5 个任务，每次都经过完整的验证闭环，并记录复盘。
+
+---
+
+## 阶段三：领域深入（按需，1-2 周）
+
+目标：在你的主要工作领域建立高效的 vibe coding 模式。
+
+根据你的方向选择对应章节：
+
+| 方向 | 章节 |
+| --- | --- |
+| 前端开发 | [前端开发](/tutorial/domains/frontend/) |
+| 后端服务 | [后端服务](/tutorial/domains/backend/) |
+| 移动端 | [移动端开发](/tutorial/domains/mobile/) |
+| 数据工程 | [数据工程](/tutorial/domains/data/) |
+| ai 集成 | [ai 集成](/tutorial/domains/ai-integration/) |
+| devops | [devops 流程](/tutorial/domains/devops/) |
+
+同时建议配合工具章节：
+
+- [mcp 扩展](/tutorial/tools/mcp/)：让 ai 直接访问数据库、github、搜索
+- [项目规则文件](/tutorial/tools/cursor-rules/)：让 ai 持续遵守你的项目约定
+- [skills 与自动化](/tutorial/tools/skills/)：把重复工作流固化成一键触发
+
+**阶段验收**：在真实项目中完成一个完整功能，从规格到上线。
+
+---
+
+## 阶段四：进阶与规模化（持续）
+
+目标：在大型项目和团队中稳定应用 vibe coding。
+
+| 章节 | 你会获得什么 |
+| --- | --- |
+| [大型项目架构](/tutorial/advanced/architecture/) | 10 万行以上代码库的上下文和一致性策略 |
+| [团队协作规范](/tutorial/advanced/team-collaboration/) | 团队共享提示词库和规则文件的方法 |
+| [高级工作流](/tutorial/advanced/workflows/) | 复杂任务的拆分和并行策略 |
+| [性能优化](/tutorial/advanced/performance/) | 提升 ai 响应质量和速度的技巧 |
+| [常见问题排查](/tutorial/advanced/troubleshooting/) | ai 跑偏、上下文丢失等问题的系统性解法 |
+
+---
+
+## 快速参考
+
+已经有基础，想直接找某类内容：
+
+- **写不出好提示词** → [提示词设计原则](/tutorial/prompting/design-principles/)
+- **ai 总是跑偏** → [上下文管理](/tutorial/workflow/context-management/) + [规格先行](/tutorial/workflow/spec-first/)
+- **不知道怎么验证结果** → [验证闭环](/tutorial/workflow/verification/) + [验收清单](/tutorial/quality/checklist/)
+- **想看真实案例** → [实战案例](/tutorial/cases/)
+- **团队推广 vibe coding** → [团队协作规范](/tutorial/advanced/team-collaboration/)" data-astro-cid-62u2qymq><div class="tutorial-search-row__icon" aria-hidden="true" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-book-open"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><div data-astro-cid-62u2qymq><p data-astro-cid-62u2qymq>教程 / 学习路线图</p><h2 data-astro-cid-62u2qymq><a href="/tutorial/roadmap/" data-astro-cid-62u2qymq>学习路线图</a></h2></div><a class="row-arrow" href="/tutorial/roadmap/" aria-label="阅读教程《学习路线图》" data-astro-cid-62u2qymq><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-62u2qymq="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></article></div></section></div><div id="search-empty" class="empty-state" hidden><strong>没有找到匹配的内容。</strong><p>换一个更短的关键词，或者进入教程目录继续浏览。</p><a class="text-link" href="/tutorial/">浏览教程目录 <span aria-hidden="true">→</span></a></div></section><script type="module">var e=document.querySelector(`#search-input`),t=[...document.querySelectorAll(`[data-search-item]`)],n=document.querySelector(`#search-status`),r=document.querySelector(`#search-empty`),i=[...document.querySelectorAll(`[data-search-group]`)];function a(e){let a=e.trim().toLocaleLowerCase(`zh-CN`),o=0;for(let e of t){let t=!a||e.dataset.searchText?.includes(a);e.hidden=!t,t&&(o+=1)}for(let e of i)e.hidden=!e.querySelector(`[data-search-item]:not([hidden])`);n&&(n.textContent=a?`找到 ${o} 个结果`:`显示全部 ${o} 个结果`),r&&(r.hidden=o>0);let s=new URL(window.location.href);a?s.searchParams.set(`q`,e.trim()):s.searchParams.delete(`q`),history.replaceState({},``,s)}var o=new URLSearchParams(window.location.search).get(`q`)??``;e&&(e.value=o,e.addEventListener(`input`,()=>a(e.value))),a(o);</script></main><footer class="site-footer"><div class="shell footer-inner"><div><strong>Ninthless</strong><p>代码、工具与随手实验。</p></div><div class="footer-links"><a href="/tutorial/">Vibe Coding 教程<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a href="https://github.com/Ninthless" target="_blank" rel="noreferrer">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/rss.xml">RSS</a></div><p class="copyright">© 2026 Ninthless</p></div></footer></body></html>

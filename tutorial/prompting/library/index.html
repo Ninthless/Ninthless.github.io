@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v7.1.1"><meta name="description" content="提示词工程章节：常用提示词库。面向真实项目交付的 Vibe Coding 教程。"><meta name="theme-color" content="#f4f6f3" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#111412" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/images/ninthless.png"><link rel="canonical" href="https://ninthless.github.io/tutorial/prompting/library/"><link rel="alternate" type="application/rss+xml" title="Ninthless RSS" href="/rss.xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Ninthless"><meta property="og:title" content="常用提示词库 — Vibe Coding 教程"><meta property="og:description" content="提示词工程章节：常用提示词库。面向真实项目交付的 Vibe Coding 教程。"><meta property="og:url" content="https://ninthless.github.io/tutorial/prompting/library/"><meta property="og:image" content="https://ninthless.github.io/images/ninthless.png"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="常用提示词库 — Vibe Coding 教程"><meta name="twitter:description" content="提示词工程章节：常用提示词库。面向真实项目交付的 Vibe Coding 教程。"><meta name="twitter:image" content="https://ninthless.github.io/images/ninthless.png"><title>常用提示词库 — Vibe Coding 教程</title><script>
+	const storedTheme = localStorage.getItem('theme');
+	const preferredTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	document.documentElement.dataset.theme = storedTheme || preferredTheme;
+</script><link rel="stylesheet" href="/_astro/tutorial.C8VXcDjp.css"><link rel="stylesheet" href="/_astro/BaseLayout.BjJxL8Uv.css"></head><body class="tutorial-page"><a class="skip-link" href="#main-content">跳到主要内容</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Ninthless 首页"><span class="brand-mark" aria-hidden="true">N/</span><span>Ninthless</span></a><nav class="primary-nav" aria-label="主要导航"><a href="/posts/">文章</a><a class="active" href="/tutorial/" aria-current="page">教程</a><a href="/projects/">项目</a><a href="/about/">关于</a></nav><div class="header-actions"><a class="icon-button" href="/search/" aria-label="搜索站点内容" title="搜索"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-search"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></a><a class="icon-button" href="/rss.xml" aria-label="订阅 RSS" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a><a class="icon-button" href="https://github.com/Ninthless" aria-label="访问 Ninthless 的 GitHub" title="GitHub" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-git-branch"><path d="M15 6a9 9 0 0 0-9 9V3"></path><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle></svg></a><button class="icon-button theme-toggle" type="button" aria-label="切换为深色主题" title="切换主题"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-sun theme-icon theme-icon--light"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-moon theme-icon theme-icon--dark"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><script type="module">var e=document.querySelector(`.theme-toggle`);function t(){if(!e)return;let t=document.documentElement.dataset.theme===`dark`;e.setAttribute(`aria-label`,t?`切换为浅色主题`:`切换为深色主题`)}e?.addEventListener(`click`,()=>{let e=document.documentElement.dataset.theme===`dark`?`light`:`dark`;document.documentElement.dataset.theme=e,localStorage.setItem(`theme`,e),window.dispatchEvent(new CustomEvent(`themechange`,{detail:{theme:e}})),t()}),t();</script></div></div></header><main id="main-content"><div class="tutorial-context-bar"><div class="shell tutorial-context-bar__inner"><nav class="tutorial-breadcrumb" aria-label="面包屑"><a href="/tutorial/">教程</a><span aria-hidden="true">/</span><a href="/tutorial/prompting/">提示词工程</a><span aria-hidden="true">/</span><span aria-current="page">常用提示词库</span></nav><a class="tutorial-source-link" href="https://github.com/Ninthless/vibe-coding-tutorial/blob/main/docs/prompting/library.md" target="_blank" rel="noreferrer">查看源文件<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="tutorial-mobile-directory shell"><details><summary><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-list-tree"><path d="M8 5h13"></path><path d="M13 12h8"></path><path d="M13 19h8"></path><path d="M3 10a2 2 0 0 0 2 2h3"></path><path d="M3 5v12a2 2 0 0 0 2 2h3"></path></svg> 教程目录 <span>提示词工程</span></summary><nav class="tutorial-nav" aria-label="教程章节"><a class="tutorial-nav__home" href="/tutorial/"><span>00</span><strong>教程首页</strong></a><div class="tutorial-nav__sections"><details><summary><span>01</span><strong>入门</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/get-started/">章节概览</a></li><li><a href="/tutorial/get-started/environment/">环境准备</a></li><li><a href="/tutorial/get-started/concepts/">核心概念</a></li><li><a href="/tutorial/get-started/quickstart/">快速上手</a></li></ul></details><details><summary><span>02</span><strong>基础理论</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/basics/">章节概览</a></li><li><a href="/tutorial/basics/what-is-vibe-coding/">Vibe Coding 是什么</a></li><li><a href="/tutorial/basics/history/">起源与发展</a></li><li><a href="/tutorial/basics/principles/">核心设计理念</a></li><li><a href="/tutorial/basics/vs-traditional/">与传统开发的差异</a></li></ul></details><details><summary><span>03</span><strong>工作流</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/workflow/">章节概览</a></li><li><a href="/tutorial/workflow/spec-first/">规格先行</a></li><li><a href="/tutorial/workflow/task-breakdown/">任务拆分</a></li><li><a href="/tutorial/workflow/context-management/">上下文管理</a></li><li><a href="/tutorial/workflow/verification/">验证闭环</a></li><li><a href="/tutorial/workflow/retrospective/">复盘沉淀</a></li></ul></details><details open><summary><span>04</span><strong>提示词工程</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/prompting/">章节概览</a></li><li><a href="/tutorial/prompting/task-brief/">任务简报模板</a></li><li><a href="/tutorial/prompting/design-principles/">提示词设计原则</a></li><li><a class="active" href="/tutorial/prompting/library/" aria-current="page">常用提示词库</a></li></ul></details><details><summary><span>05</span><strong>领域应用</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/domains/">章节概览</a></li><li><a href="/tutorial/domains/frontend/">前端开发</a></li><li><a href="/tutorial/domains/backend/">后端服务</a></li><li><a href="/tutorial/domains/mobile/">移动端开发</a></li><li><a href="/tutorial/domains/data/">数据工程</a></li><li><a href="/tutorial/domains/ai-integration/">AI 集成</a></li><li><a href="/tutorial/domains/devops/">DevOps 流程</a></li></ul></details><details><summary><span>06</span><strong>进阶</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/advanced/">章节概览</a></li><li><a href="/tutorial/advanced/workflows/">高级工作流</a></li><li><a href="/tutorial/advanced/performance/">性能优化</a></li><li><a href="/tutorial/advanced/architecture/">大型项目架构</a></li><li><a href="/tutorial/advanced/team-collaboration/">团队协作规范</a></li><li><a href="/tutorial/advanced/troubleshooting/">常见问题排查</a></li><li><a href="/tutorial/advanced/future/">未来趋势</a></li></ul></details><details><summary><span>07</span><strong>工具</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/tools/">章节概览</a></li><li><a href="/tutorial/tools/mcp/">MCP 扩展</a></li><li><a href="/tutorial/tools/skills/">Skills 与自动化</a></li><li><a href="/tutorial/tools/cursor-rules/">项目规则文件</a></li><li><a href="/tutorial/tools/github-pages/">GitHub Pages 部署</a></li><li><a href="/tutorial/tools/toolchain/">推荐工具链</a></li></ul></details><details><summary><span>08</span><strong>实战案例</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/cases/">章节概览</a></li><li><a href="/tutorial/cases/comment-feature/">用户评论功能</a></li></ul></details><details><summary><span>09</span><strong>质量</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/quality/">章节概览</a></li><li><a href="/tutorial/quality/checklist/">验收清单</a></li></ul></details><details><summary><span>10</span><strong>学习路线图</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/roadmap/">章节概览</a></li></ul></details></div></nav></details></div><div class="tutorial-reading-shell shell"><aside class="tutorial-sidebar"><nav class="tutorial-nav" aria-label="教程章节"><a class="tutorial-nav__home" href="/tutorial/"><span>00</span><strong>教程首页</strong></a><div class="tutorial-nav__sections"><details><summary><span>01</span><strong>入门</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/get-started/">章节概览</a></li><li><a href="/tutorial/get-started/environment/">环境准备</a></li><li><a href="/tutorial/get-started/concepts/">核心概念</a></li><li><a href="/tutorial/get-started/quickstart/">快速上手</a></li></ul></details><details><summary><span>02</span><strong>基础理论</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/basics/">章节概览</a></li><li><a href="/tutorial/basics/what-is-vibe-coding/">Vibe Coding 是什么</a></li><li><a href="/tutorial/basics/history/">起源与发展</a></li><li><a href="/tutorial/basics/principles/">核心设计理念</a></li><li><a href="/tutorial/basics/vs-traditional/">与传统开发的差异</a></li></ul></details><details><summary><span>03</span><strong>工作流</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/workflow/">章节概览</a></li><li><a href="/tutorial/workflow/spec-first/">规格先行</a></li><li><a href="/tutorial/workflow/task-breakdown/">任务拆分</a></li><li><a href="/tutorial/workflow/context-management/">上下文管理</a></li><li><a href="/tutorial/workflow/verification/">验证闭环</a></li><li><a href="/tutorial/workflow/retrospective/">复盘沉淀</a></li></ul></details><details open><summary><span>04</span><strong>提示词工程</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/prompting/">章节概览</a></li><li><a href="/tutorial/prompting/task-brief/">任务简报模板</a></li><li><a href="/tutorial/prompting/design-principles/">提示词设计原则</a></li><li><a class="active" href="/tutorial/prompting/library/" aria-current="page">常用提示词库</a></li></ul></details><details><summary><span>05</span><strong>领域应用</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/domains/">章节概览</a></li><li><a href="/tutorial/domains/frontend/">前端开发</a></li><li><a href="/tutorial/domains/backend/">后端服务</a></li><li><a href="/tutorial/domains/mobile/">移动端开发</a></li><li><a href="/tutorial/domains/data/">数据工程</a></li><li><a href="/tutorial/domains/ai-integration/">AI 集成</a></li><li><a href="/tutorial/domains/devops/">DevOps 流程</a></li></ul></details><details><summary><span>06</span><strong>进阶</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/advanced/">章节概览</a></li><li><a href="/tutorial/advanced/workflows/">高级工作流</a></li><li><a href="/tutorial/advanced/performance/">性能优化</a></li><li><a href="/tutorial/advanced/architecture/">大型项目架构</a></li><li><a href="/tutorial/advanced/team-collaboration/">团队协作规范</a></li><li><a href="/tutorial/advanced/troubleshooting/">常见问题排查</a></li><li><a href="/tutorial/advanced/future/">未来趋势</a></li></ul></details><details><summary><span>07</span><strong>工具</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/tools/">章节概览</a></li><li><a href="/tutorial/tools/mcp/">MCP 扩展</a></li><li><a href="/tutorial/tools/skills/">Skills 与自动化</a></li><li><a href="/tutorial/tools/cursor-rules/">项目规则文件</a></li><li><a href="/tutorial/tools/github-pages/">GitHub Pages 部署</a></li><li><a href="/tutorial/tools/toolchain/">推荐工具链</a></li></ul></details><details><summary><span>08</span><strong>实战案例</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/cases/">章节概览</a></li><li><a href="/tutorial/cases/comment-feature/">用户评论功能</a></li></ul></details><details><summary><span>09</span><strong>质量</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/quality/">章节概览</a></li><li><a href="/tutorial/quality/checklist/">验收清单</a></li></ul></details><details><summary><span>10</span><strong>学习路线图</strong><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg></summary><ul><li><a href="/tutorial/roadmap/">章节概览</a></li></ul></details></div></nav></aside><article class="tutorial-article"><div class="tutorial-article__index"><span>04.04</span><span>提示词工程</span></div><details class="tutorial-inline-toc"><summary>本页目录 <span>20</span></summary><nav aria-label="本页目录"><a href="#功能开发类">功能开发类</a><a class="nested" href="#新增-api-接口">新增 API 接口</a><a class="nested" href="#新增前端组件">新增前端组件</a><a class="nested" href="#数据库迁移">数据库迁移</a><a href="#重构类">重构类</a><a class="nested" href="#函数重构">函数重构</a><a class="nested" href="#依赖升级">依赖升级</a><a href="#调试类">调试类</a><a class="nested" href="#bug-修复">Bug 修复</a><a class="nested" href="#性能问题排查">性能问题排查</a><a href="#文档类">文档类</a><a class="nested" href="#生成-api-文档">生成 API 文档</a><a class="nested" href="#生成测试用例">生成测试用例</a><a href="#代码审查类">代码审查类</a><a class="nested" href="#pr-代码审查">PR 代码审查</a><a class="nested" href="#安全审查">安全审查</a><a class="nested" href="#架构评审">架构评审</a><a href="#上下文注入类">上下文注入类</a><a class="nested" href="#项目约定注入">项目约定注入</a><a class="nested" href="#错误上下文注入">错误上下文注入</a></nav></details><div class="tutorial-prose prose"><h1 id="常用提示词库">常用提示词库</h1>
+<p>按场景分类的可复用提示词模板，直接复制使用，按需填写 <code>[占位符]</code>。</p>
+<h2 id="功能开发类">功能开发类</h2>
+<h3 id="新增-api-接口">新增 API 接口</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>背景：[项目名] 使用 [框架]，接口统一返回 { data, error, code } 格式。</span></span>
+<span class="line"><span>相关文件：[附上现有接口文件]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>目标：实现 [HTTP 方法] [路径] 接口。</span></span>
+<span class="line"><span>输入参数：[参数列表和类型]</span></span>
+<span class="line"><span>返回格式：[成功响应] / [错误响应]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>范围：只修改 [文件路径]</span></span>
+<span class="line"><span>不改动：[禁止修改的文件或目录]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>约束：</span></span>
+<span class="line"><span>- 参数验证使用 [验证库]</span></span>
+<span class="line"><span>- 错误处理沿用现有中间件</span></span>
+<span class="line"><span>- 不引入新依赖</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>验收：[测试命令] 通过</span></span></code></pre>
+<h3 id="新增前端组件">新增前端组件</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>背景：项目使用 [框架] + [样式方案]，组件库为 [组件库名]。</span></span>
+<span class="line"><span>参考组件：[附上同类组件代码]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>目标：创建 [组件名] 组件。</span></span>
+<span class="line"><span>Props：[Props 类型定义]</span></span>
+<span class="line"><span>行为：[交互描述]</span></span>
+<span class="line"><span>样式：[样式要求]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>范围：创建 src/components/[组件名].tsx，不修改其他文件</span></span>
+<span class="line"><span>约束：不引入新的 npm 包，沿用现有设计 token</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>验收：组件在 [页面] 中正常渲染，无 TypeScript 错误</span></span></code></pre>
+<h3 id="数据库迁移">数据库迁移</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>背景：项目使用 [ORM]，数据库为 [数据库类型]。</span></span>
+<span class="line"><span>现有 Schema：[附上相关 Schema 文件]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>目标：[迁移描述，如"为 users 表添加 avatar_url 字段"]</span></span>
+<span class="line"><span>字段定义：[字段名、类型、约束、默认值]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>范围：只创建迁移文件，不修改现有 Schema 文件</span></span>
+<span class="line"><span>约束：迁移必须可回滚</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>验收：[迁移命令] 执行成功，[回滚命令] 执行成功</span></span></code></pre>
+<h2 id="重构类">重构类</h2>
+<h3 id="函数重构">函数重构</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>背景：以下函数需要重构，接口保持不变。</span></span>
+<span class="line"><span>现有实现：[附上函数代码]</span></span>
+<span class="line"><span>现有测试：[附上测试代码]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>目标：[重构目标，如"提取重复逻辑"、"降低圈复杂度"]</span></span>
+<span class="line"><span>约束：</span></span>
+<span class="line"><span>- 函数签名不变</span></span>
+<span class="line"><span>- 所有现有测试必须继续通过</span></span>
+<span class="line"><span>- 不改动调用方</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>验收：[测试命令] 通过，[类型检查命令] 无错误</span></span></code></pre>
+<h3 id="依赖升级">依赖升级</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>背景：项目当前使用 [依赖名] v[旧版本]，需要升级到 v[新版本]。</span></span>
+<span class="line"><span>变更日志关键点：[附上 breaking changes]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>目标：完成升级并修复所有 breaking changes。</span></span>
+<span class="line"><span>范围：只修改受影响的文件，不做额外重构</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>验收：[构建命令] 成功，[测试命令] 通过</span></span></code></pre>
+<h2 id="调试类">调试类</h2>
+<h3 id="bug-修复">Bug 修复</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>背景：[项目名]，相关模块：[模块路径]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>问题描述：[具体现象]</span></span>
+<span class="line"><span>复现步骤：</span></span>
+<span class="line"><span>1. [步骤 1]</span></span>
+<span class="line"><span>2. [步骤 2]</span></span>
+<span class="line"><span>期望行为：[期望]</span></span>
+<span class="line"><span>实际行为：[实际]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>错误信息：</span></span>
+<span class="line"><span>[完整错误堆栈]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>相关代码：[附上相关文件]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>约束：</span></span>
+<span class="line"><span>- 只修改导致 Bug 的根因，不做额外改动</span></span>
+<span class="line"><span>- 修复后添加防回归测试</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>验收：复现步骤不再触发错误，新增测试通过</span></span></code></pre>
+<h3 id="性能问题排查">性能问题排查</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>背景：[接口/页面] 响应时间过长，当前 P99 为 [时间]，目标 [时间]。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>性能数据：[附上 profiling 结果或慢查询日志]</span></span>
+<span class="line"><span>相关代码：[附上相关文件]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>目标：定位性能瓶颈并提出优化方案（先不实现，等确认后再改）</span></span>
+<span class="line"><span>约束：不改变接口行为，不引入新依赖</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>输出格式：</span></span>
+<span class="line"><span>1. 瓶颈定位（2-3 个候选原因）</span></span>
+<span class="line"><span>2. 推荐优化方案</span></span>
+<span class="line"><span>3. 预期效果</span></span></code></pre>
+<h2 id="文档类">文档类</h2>
+<h3 id="生成-api-文档">生成 API 文档</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>以下是 [接口名] 的实现代码，请生成 OpenAPI 3.0 格式的接口文档。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>代码：[附上接口代码]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>要求：</span></span>
+<span class="line"><span>- 包含所有参数的类型和描述</span></span>
+<span class="line"><span>- 包含成功和错误响应示例</span></span>
+<span class="line"><span>- 使用中文描述</span></span>
+<span class="line"><span>- 输出 YAML 格式</span></span></code></pre>
+<h3 id="生成测试用例">生成测试用例</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>以下是 [函数/接口] 的实现，请生成完整的测试用例。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>实现代码：[附上代码]</span></span>
+<span class="line"><span>测试框架：[框架名]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>要求：</span></span>
+<span class="line"><span>- 覆盖 Happy Path</span></span>
+<span class="line"><span>- 覆盖所有错误分支</span></span>
+<span class="line"><span>- 覆盖边界情况（空值、最大值、并发等）</span></span>
+<span class="line"><span>- 每个测试用例有清晰的描述</span></span></code></pre>
+<h2 id="代码审查类">代码审查类</h2>
+<h3 id="pr-代码审查">PR 代码审查</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>请审查以下代码改动，重点关注正确性问题（不是风格问题）。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>改动内容：[附上 diff 或改动文件]</span></span>
+<span class="line"><span>背景：[这个 PR 要解决什么问题]</span></span>
+<span class="line"><span>测试覆盖：[已有哪些测试]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>审查重点：</span></span>
+<span class="line"><span>1. 逻辑错误或边界情况遗漏</span></span>
+<span class="line"><span>2. 安全隐患（注入、越权、敏感数据泄露）</span></span>
+<span class="line"><span>3. 并发或竞态条件</span></span>
+<span class="line"><span>4. 性能问题（N+1 查询、不必要的循环）</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>输出格式：</span></span>
+<span class="line"><span>- 按严重程度分级（阻塞/建议/可选）</span></span>
+<span class="line"><span>- 每条问题说明位置、原因和修复建议</span></span>
+<span class="line"><span>- 不超过 10 条，只列真正重要的</span></span></code></pre>
+<h3 id="安全审查">安全审查</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>请对以下代码进行安全审查，重点检查 OWASP Top 10 相关风险。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>代码：[附上相关文件]</span></span>
+<span class="line"><span>功能描述：[这段代码做什么]</span></span>
+<span class="line"><span>数据敏感性：[处理哪类数据，如用户密码、支付信息]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>检查项：</span></span>
+<span class="line"><span>- SQL 注入 / NoSQL 注入</span></span>
+<span class="line"><span>- XSS（跨站脚本）</span></span>
+<span class="line"><span>- 身份验证和授权缺陷</span></span>
+<span class="line"><span>- 敏感数据暴露（日志、响应体）</span></span>
+<span class="line"><span>- 输入验证缺失</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>输出格式：</span></span>
+<span class="line"><span>- 发现的风险（高/中/低）</span></span>
+<span class="line"><span>- 具体位置和触发条件</span></span>
+<span class="line"><span>- 修复建议（附代码示例）</span></span></code></pre>
+<h3 id="架构评审">架构评审</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>请评审以下设计方案，从可维护性和扩展性角度给出意见。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>方案描述：[设计文档或伪代码]</span></span>
+<span class="line"><span>当前规模：[用户量、数据量、团队规模]</span></span>
+<span class="line"><span>未来 6 个月预期变化：[可能的需求变化]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>评审维度：</span></span>
+<span class="line"><span>1. 模块边界是否清晰</span></span>
+<span class="line"><span>2. 是否存在过度设计或设计不足</span></span>
+<span class="line"><span>3. 数据流是否合理</span></span>
+<span class="line"><span>4. 潜在的扩展瓶颈</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>输出：优点 2-3 条，风险 2-3 条，改进建议 1-2 条</span></span></code></pre>
+<h2 id="上下文注入类">上下文注入类</h2>
+<h3 id="项目约定注入">项目约定注入</h3>
+<p>在每次新对话开始时使用，让 AI 快速了解项目背景：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>【项目背景】</span></span>
+<span class="line"><span>项目：[项目名和简介]</span></span>
+<span class="line"><span>技术栈：[框架、语言、主要依赖]</span></span>
+<span class="line"><span>代码规范：[命名约定、文件结构]</span></span>
+<span class="line"><span>测试框架：[测试工具和运行命令]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【禁止事项】</span></span>
+<span class="line"><span>- 不引入 [某类依赖]</span></span>
+<span class="line"><span>- 不修改 [某个目录或文件]</span></span>
+<span class="line"><span>- 不改变 [某个接口的签名]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【当前任务】</span></span>
+<span class="line"><span>[任务描述]</span></span></code></pre>
+<h3 id="错误上下文注入">错误上下文注入</h3>
+<p>遇到报错时，提供完整上下文让 AI 精准定位：</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>【环境】</span></span>
+<span class="line"><span>运行命令：[命令]</span></span>
+<span class="line"><span>Node/Python/Go 版本：[版本]</span></span>
+<span class="line"><span>操作系统：[OS]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【错误信息】</span></span>
+<span class="line"><span>[完整错误堆栈，不要截断]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【相关代码】</span></span>
+<span class="line"><span>[出错的文件内容]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【已尝试的方法】</span></span>
+<span class="line"><span>1. [尝试 1] → [结果]</span></span>
+<span class="line"><span>2. [尝试 2] → [结果]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>请定位根因并给出修复方案。</span></span></code></pre>
+</div><nav class="tutorial-pagination" aria-label="教程翻页"><a href="/tutorial/prompting/design-principles/"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg><span><small>上一篇</small><strong>提示词设计原则</strong></span></a><a class="tutorial-pagination__next" href="/tutorial/domains/"><span><small>下一篇</small><strong>领域应用</strong></span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></nav></article><aside class="tutorial-toc"><strong>本页目录</strong><nav aria-label="本页目录"><a href="#功能开发类">功能开发类</a><a class="nested" href="#新增-api-接口">新增 API 接口</a><a class="nested" href="#新增前端组件">新增前端组件</a><a class="nested" href="#数据库迁移">数据库迁移</a><a href="#重构类">重构类</a><a class="nested" href="#函数重构">函数重构</a><a class="nested" href="#依赖升级">依赖升级</a><a href="#调试类">调试类</a><a class="nested" href="#bug-修复">Bug 修复</a><a class="nested" href="#性能问题排查">性能问题排查</a><a href="#文档类">文档类</a><a class="nested" href="#生成-api-文档">生成 API 文档</a><a class="nested" href="#生成测试用例">生成测试用例</a><a href="#代码审查类">代码审查类</a><a class="nested" href="#pr-代码审查">PR 代码审查</a><a class="nested" href="#安全审查">安全审查</a><a class="nested" href="#架构评审">架构评审</a><a href="#上下文注入类">上下文注入类</a><a class="nested" href="#项目约定注入">项目约定注入</a><a class="nested" href="#错误上下文注入">错误上下文注入</a></nav></aside></div><script type="module" src="/_astro/TutorialLayout.astro_astro_type_script_index_0_lang.Dl7FfqaG.js"></script></main><footer class="site-footer"><div class="shell footer-inner"><div><strong>Ninthless</strong><p>代码、工具与随手实验。</p></div><div class="footer-links"><a href="/tutorial/">Vibe Coding 教程<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a><a href="https://github.com/Ninthless" target="_blank" rel="noreferrer">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="/rss.xml">RSS</a></div><p class="copyright">© 2026 Ninthless</p></div></footer></body></html>
